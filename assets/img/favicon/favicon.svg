@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="hiro.">
+  <rect width="100" height="100" rx="22" fill="#17120e"/>
+  <g fill="none" stroke="#f4f1ea" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 24 V78"/>
+    <path d="M30 50 C30 40 38 35 50 35 C62 35 70 41 70 52 V78"/>
+  </g>
+  <circle cx="82" cy="74" r="7.5" fill="#8aa595"/>
+</svg>
