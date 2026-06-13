@@ -390,6 +390,44 @@ component > button
 }
 
 /*!
+component > logo
+------------------------------
+*/
+.c-site-logo {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15em;
+  color: inherit;
+  transition: opacity 0.25s ease;
+}
+@media (any-hover: hover) {
+  .c-site-logo:hover {
+    opacity: 0.7;
+  }
+}
+
+.c-site-logo__main {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.c-site-logo__dot {
+  color: var(--color-accent);
+}
+
+.c-site-logo__sub {
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: currentColor;
+  opacity: 0.6;
+}
+
+/*!
 component > section-head
 ------------------------------
 */
@@ -618,10 +656,12 @@ layout > header
   inset: 0 0 auto 0;
   z-index: var(--z-header);
   background-color: transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: var(--color-text-invert);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 .l-header.is-active {
   background-color: var(--color-bg-base);
+  color: var(--color-text-base);
   box-shadow: 0 1px 0 var(--color-border);
 }
 
@@ -648,7 +688,7 @@ layout > header
 .l-header__burger span {
   display: block;
   height: 2px;
-  background-color: var(--color-text-base);
+  background-color: currentColor;
 }
 @media screen and (min-width: 768px) {
   .l-header__burger {

@@ -9,10 +9,12 @@ layout > header
   inset: 0 0 auto 0;
   z-index: var(--z-header);
   background-color: transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: var(--color-text-invert);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 
   &.is-active {
     background-color: var(--color-bg-base);
+    color: var(--color-text-base);
     box-shadow: 0 1px 0 var(--color-border);
   }
 }
@@ -39,7 +41,7 @@ layout > header
   span {
     display: block;
     height: 2px;
-    background-color: var(--color-text-base);
+    background-color: currentColor;
   }
 
   @include f.mq() {

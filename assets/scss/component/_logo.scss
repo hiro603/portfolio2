@@ -31,5 +31,6 @@ component > logo
   font-size: 0.625rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: currentColor;
+  opacity: 0.6;
 }
