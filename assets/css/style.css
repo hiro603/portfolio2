@@ -1444,6 +1444,10 @@ page > detail > section
   }
 }
 
+.p-detail-body__inner > .c-button {
+  margin-top: 2.5rem;
+}
+
 /*!
 page > detail > nav
 ------------------------------
