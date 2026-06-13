@@ -319,6 +319,15 @@ a {
 utility > utility
 ------------------------------
 */
+/* span 改行（br の代わりに各行を block 化） */
+.u-line {
+  display: block;
+}
+
+.u-line--gap {
+  margin-top: 1.2em;
+}
+
 /* 非表示 */
 .u-visually-hidden {
   position: absolute !important;
