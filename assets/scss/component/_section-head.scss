@@ -1,0 +1,39 @@
+@use "../foundation" as f;
+
+/*!
+component > section-head
+------------------------------
+*/
+.c-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.c-section-head__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.c-section-head__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-tight);
+  margin-top: 0.5rem;
+}
+
+.c-section-head__meta {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}

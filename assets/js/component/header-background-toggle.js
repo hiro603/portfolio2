@@ -1,5 +1,5 @@
 /**
- * ヘッダーの背景色変更
+ * ヘッダーの背景色変更（スクロールで is-active を付与、見た目はCSS側で制御）
  */
 export const initializeHeaderBackgroundToggle = () => {
     const headerElement = document.querySelector('.js-header');
@@ -8,29 +8,10 @@ export const initializeHeaderBackgroundToggle = () => {
 
     if (!headerElement || !triggerElement) return;
 
-    const setWhiteBackground = () => {
-        headerElement.classList.add(headerActiveClass);
-        gsap.to(headerElement, {
-            backgroundColor: 'rgba(255, 255, 255, 1)',
-            duration: 0.3,
-            ease: 'power2.out',
-            boxShadow: '0 7rem 30rem 0 rgba(100, 100, 111, 0.1)',
-        });
-    };
-
-    const setTransparentBackground = () => {
-        headerElement.classList.remove(headerActiveClass);
-        gsap.to(headerElement, {
-            backgroundColor: 'rgba(255, 255, 255, 0)',
-            duration: 0.3,
-            ease: 'power2.out',
-        });
-    };
-
     ScrollTrigger.create({
         trigger: triggerElement,
         start: 'bottom top',
-        onEnter: () => setWhiteBackground(),
-        onLeaveBack: () => setTransparentBackground(),
+        onEnter: () => headerElement.classList.add(headerActiveClass),
+        onLeaveBack: () => headerElement.classList.remove(headerActiveClass),
     });
 };

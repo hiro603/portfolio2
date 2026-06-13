@@ -5,17 +5,43 @@ foundation > base
 */
 
 html {
-    font-size: var(--font-size-root);
+  font-size: var(--font-size-root);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-    font-family: var(--font-family-base);
-    color: var(--color-text-base);
-    letter-spacing: var(--letter-spacing-base);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+  color: var(--color-text-base);
+  background-color: var(--color-bg-base);
+  -webkit-font-smoothing: antialiased;
+}
 
-    @include m.mq() {
-        font-size: 1.125rem;
-    }
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Portfolio</title>
-        <meta name="description" content="ページの説明" />
+        <title>hiro — Web Designer &amp; Developer</title>
+        <meta name="description" content="デザインから実装まで一人で。直クライアント向けに、課題を解決するWebサイトをつくるWebデザイナー hiro のポートフォリオ。" />
         <meta name="format-detection" content="telephone=no, email=no" />
 
         <!-- favicon/webclipicon -->
@@ -15,7 +15,7 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- css -->
         <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -28,8 +28,193 @@
         <meta name="robots" content="noindex" />
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="l-header js-header" id="top">
+            <div class="l-header__inner">
+                <a href="#top" class="c-site-logo">
+                    <span class="c-site-logo__main">hiro<span class="c-site-logo__dot">.</span></span>
+                    <span class="c-site-logo__sub">Web Designer &amp; Developer</span>
+                </a>
+
+                <button type="button" class="l-header__burger js-header-menu-open" aria-label="メニューを開く">
+                    <span></span><span></span>
+                </button>
+
+                <dialog class="l-header__menu js-header-menu" aria-label="ナビゲーション">
+                    <button type="button" class="l-header__menu-close js-header-menu-close" aria-label="メニューを閉じる">×</button>
+                    <nav class="l-header__nav">
+                        <ul class="l-header__list">
+                            <li><a href="#works" class="l-header__link">Works</a></li>
+                            <li><a href="#about" class="l-header__link">About</a></li>
+                            <li><a href="#skill" class="l-header__link">Skill</a></li>
+                            <li><a href="#flow" class="l-header__link">Flow</a></li>
+                            <li><a href="#contact" class="l-header__link l-header__link--cta">Contact</a></li>
+                        </ul>
+                    </nav>
+                </dialog>
+            </div>
+        </header>
+        <main>
+            <section class="p-hero js-header-trigger">
+                <div class="l-container p-hero__inner">
+                    <p class="p-hero__eyebrow">Web Designer &amp; Developer</p>
+                    <h1 class="p-hero__title">Clear ideas,<br><em>careful</em> craft.</h1>
+                    <div class="p-hero__foot">
+                        <p class="p-hero__lead">考えを整理し、ていねいに形にする。<br>デザインから実装まで、一人で貫いて作ります。</p>
+                        <a href="#works" class="p-hero__scroll">Scroll <span>↓</span> Works</a>
+                    </div>
+                </div>
+            </section>
+            <section class="p-works" id="works">
+                <div class="l-container p-works__inner">
+                    <div class="c-section-head">
+                        <div>
+                            <p class="c-section-head__label">Selected Works</p>
+                            <h2 class="c-section-head__title">作品</h2>
+                        </div>
+                        <p class="c-section-head__meta">2022 — 2026 / 05 projects</p>
+                    </div>
+
+                    <a href="#" class="c-work-card c-work-card--featured js-reveal">
+                        <div class="c-work-card__shot">
+                            <img src="assets/img/works/handmade-ec.webp" alt="Handmade Accessory EC サイトのスクリーンショット" width="800" height="550" loading="lazy">
+                        </div>
+                        <div class="c-work-card__featured-meta">
+                            <p class="c-work-card__cat">01 — Featured · E-Commerce</p>
+                            <h3 class="c-work-card__title">Handmade Accessory<br>EC Site</h3>
+                            <p class="c-work-card__lead">ハンドメイドアクセサリーのECサイト。世界観の表現と購入導線の両立。</p>
+                            <ul class="c-tag-list">
+                                <li class="c-tag">E-Commerce</li>
+                                <li class="c-tag">Design</li>
+                                <li class="c-tag">Front-end</li>
+                            </ul>
+                            <span class="c-work-card__more">View case study →</span>
+                        </div>
+                    </a>
+
+                    <ul class="p-works__grid">
+                        <li>
+                            <a href="#" class="c-work-card js-reveal">
+                                <div class="c-work-card__shot">
+                                    <img src="assets/img/works/towa.webp" alt="東和精密テック コーポレートサイトのスクリーンショット" width="600" height="375" loading="lazy">
+                                </div>
+                                <h3 class="c-work-card__title">東和精密テック</h3>
+                                <p class="c-work-card__cat">Corporate · Design + Front-end</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="c-work-card js-reveal">
+                                <div class="c-work-card__shot">
+                                    <img src="assets/img/works/coffee.webp" alt="Coffee House コーポレートサイトのスクリーンショット" width="600" height="375" loading="lazy">
+                                </div>
+                                <h3 class="c-work-card__title">Coffee House</h3>
+                                <p class="c-work-card__cat">Corporate · Design + Front-end</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="p-works__list">
+                        <li class="p-works__row">
+                            <a href="#" class="p-works__row-link">
+                                <span class="p-works__row-no">04</span>
+                                <span class="p-works__row-title">Hair Salon</span>
+                                <span class="p-works__row-cat">Corporate Site</span>
+                                <span class="p-works__row-view">View →</span>
+                            </a>
+                        </li>
+                        <li class="p-works__row">
+                            <a href="#" class="p-works__row-link">
+                                <span class="p-works__row-no">05</span>
+                                <span class="p-works__row-title">Handmade Accessory LP</span>
+                                <span class="p-works__row-cat">Landing Page</span>
+                                <span class="p-works__row-view">View →</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="p-about" id="about">
+                <div class="l-container p-about__inner">
+                    <div class="p-about__photo">
+                        <img src="assets/img/about/portrait.webp" alt="hiro のポートレート" width="400" height="500" loading="lazy">
+                    </div>
+                    <div class="p-about__body js-reveal">
+                        <p class="c-section-head__label">About</p>
+                        <h2 class="p-about__title">なぜ、一人で<br><em>最後まで</em>作るのか。</h2>
+                        <p class="p-about__text">デザインと実装を分けないことで、意図のズレなく細部まで通せます。一案件ごとに、その人らしさが伝わるサイトを目指しています。丁寧なコーディングと、見やすいデザイン、その両方を一人で。</p>
+                    </div>
+                </div>
+            </section>
+            <section class="p-skill" id="skill">
+                <div class="l-container p-skill__inner">
+                    <div class="c-section-head">
+                        <div>
+                            <p class="c-section-head__label">Skill</p>
+                            <h2 class="c-section-head__title">できること</h2>
+                        </div>
+                    </div>
+                    <div class="p-skill__cols">
+                        <div class="p-skill__col js-reveal">
+                            <p class="p-skill__col-label">Design</p>
+                            <h3 class="p-skill__col-title">デザイン</h3>
+                            <ul class="p-skill__items">
+                                <li>情報設計・ワイヤーフレーム</li>
+                                <li>UIデザイン / Figma</li>
+                                <li>配色・タイポグラフィ</li>
+                            </ul>
+                        </div>
+                        <div class="p-skill__col js-reveal">
+                            <p class="p-skill__col-label">Front-end</p>
+                            <h3 class="p-skill__col-title">実装</h3>
+                            <ul class="p-skill__items">
+                                <li>HTML / CSS(SCSS) / JavaScript</li>
+                                <li>レスポンシブ・パフォーマンス</li>
+                                <li>GSAPによる演出</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-flow" id="flow">
+                <div class="l-container p-flow__inner">
+                    <div class="c-section-head">
+                        <div>
+                            <p class="c-section-head__label">Flow</p>
+                            <h2 class="c-section-head__title">制作の流れ</h2>
+                        </div>
+                    </div>
+                    <ol class="p-flow__steps">
+                        <li class="p-flow__step js-reveal"><span class="p-flow__no">01</span><span class="p-flow__name">ヒアリング</span></li>
+                        <li class="p-flow__step js-reveal"><span class="p-flow__no">02</span><span class="p-flow__name">設計・構成</span></li>
+                        <li class="p-flow__step js-reveal"><span class="p-flow__no">03</span><span class="p-flow__name">デザイン</span></li>
+                        <li class="p-flow__step js-reveal"><span class="p-flow__no">04</span><span class="p-flow__name">実装</span></li>
+                        <li class="p-flow__step js-reveal"><span class="p-flow__no">05</span><span class="p-flow__name">公開・運用</span></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="p-contact" id="contact">
+                <div class="l-container p-contact__inner js-reveal">
+                    <p class="p-contact__label">Contact</p>
+                    <h2 class="p-contact__title">Let’s build something <em>careful.</em></h2>
+                    <p class="p-contact__lead">Webサイトの相談・お見積もり、お気軽にどうぞ。</p>
+                    <a href="mailto:n.y.h.051216@gmail.com" class="c-button c-button--on-accent">お問い合わせ →</a>
+                    <ul class="p-contact__sns">
+                        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://x.com/" target="_blank" rel="noopener">X</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <div class="l-container l-footer__inner">
+                <a href="#top" class="l-footer__logo">hiro<span>.</span></a>
+                <ul class="l-footer__nav">
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy/index.html">Privacy</a></li>
+                </ul>
+                <small class="l-footer__copy">© 2026 hiro</small>
+            </div>
+        </footer>
     </body>
 </html>

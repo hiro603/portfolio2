@@ -1,40 +1,55 @@
 @use "../../foundation" as f;
 
 /*!
-page > top > top-skill
+page > top > skill
 ------------------------------
 */
-.top-skill {
-}
+.p-skill { background-color: var(--color-bg-base); }
 
-.top-skill-title {
-}
+.p-skill__inner { padding-block: var(--space-xl); }
 
-.top-skill-list {
-  margin-top: 40px;
+.p-skill__cols {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 2rem;
 
   @include f.mq() {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-top: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
 }
 
-.top-skill-item {
-  background-color: var(--color-gray-light);
-  border-radius: 100vh;
-  padding: 20px;
-  display: grid;
-  place-items: center;
-  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.1);
+.p-skill__col {
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-border);
+
+  @include f.mq() {
+    padding: 0 2.5rem;
+    border-top: none;
+    &:first-child { border-right: 1px solid var(--color-border); padding-left: 0; }
+    &:last-child { padding-right: 0; }
+  }
 }
 
-.top-skill-item-text {
-  font-size: 1.375rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  font-family: var(--font-family-en);
+.p-skill__col-label {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.p-skill__col-title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  margin: 0.5rem 0 1rem;
+}
+
+.p-skill__items {
+  li {
+    padding: 0.6rem 0;
+    border-bottom: 1px dotted var(--color-border);
+    color: var(--color-text-muted);
+    line-height: var(--lh-base);
+  }
 }
