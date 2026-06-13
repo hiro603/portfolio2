@@ -1,0 +1,30 @@
+@use "../../foundation" as f;
+
+/*!
+page > detail > detail-problem
+------------------------------
+*/
+.detail-problem {
+    background-color: var(--color-gray-light);
+}
+
+.detail-problem-title {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--color-gray);
+    font-family: var(--font-family-en);
+}
+
+.detail-problem-list {
+    margin-top: 20px;
+}
+
+.detail-problem-item {
+    font-weight: bold;
+    border-left: 3px solid #ccc;
+    padding-left: 12px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+

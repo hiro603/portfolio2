@@ -1,0 +1,44 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > top-about
+------------------------------
+*/
+.top-about {
+  background-color: var(--color-gray-light);
+}
+
+.top-about-title {
+}
+
+.top-about-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include f.mq() {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+  }
+}
+
+.top-about-item {
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 40px;
+}
+
+.top-about-item-img {
+  display: block;
+  margin-inline: auto;
+  width: 60px;
+  aspect-ratio: 1 / 1;
+}
+
+.top-about-item-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}

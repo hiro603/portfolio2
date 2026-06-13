@@ -1,0 +1,35 @@
+@use "../foundation" as f;
+
+.c-breadcrumb {
+  padding-block: var(--space-sm);
+  font-size: 0.875rem;
+  color: var(--color-text-base);
+}
+
+.c-breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:not(:last-child)::after {
+    content: "/";
+    opacity: 0.5;
+  }
+}
+
+.c-breadcrumb-item-link {
+    transition: opacity var(--transition-base);
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }

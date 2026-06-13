@@ -1,0 +1,82 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > top-flow
+------------------------------
+*/
+.top-flow {
+  background-color: var(--color-gray-light);
+}
+
+.top-flow-title {
+}
+
+.top-flow-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include f.mq() {
+    margin-top: 60px;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.top-flow-item {
+  text-align: center;
+  background-color: var(--color-white);
+  width: 210px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  padding-block: 36px;
+
+  @include f.mq() {
+    &:not(:last-child)::before {
+      content: "";
+      height: 20px;
+      aspect-ratio: cos(50deg);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      background: var(--color-gray-light);
+      position: absolute;
+      top: 47%;
+      right: -13px;
+      z-index: 2;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      height: 30px;
+      aspect-ratio: cos(50deg);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      background: var(--color-white);
+      position: absolute;
+      top: 40%;
+      right: -18px;
+      z-index: 1;
+    }
+  }
+}
+
+.top-flow-item-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  display: block;
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-family-en);
+}
+
+.top-flow-item-text {
+  display: block;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1;
+}

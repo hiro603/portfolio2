@@ -1,0 +1,45 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+.manivisual {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("../../../../assets/img/top/mv.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.manivisual-text {
+  position: absolute;
+  font-weight: 300;
+  font-size: 3rem;
+  top: 50%;
+  left: 20px;
+  font-family: var(--font-family-en);
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  text-transform: uppercase;
+
+  span {
+    color: var(--color-orange);
+    font-weight: 800;
+  }
+
+  @include f.mq() {
+    top: 350px;
+    left: 65px;
+    font-size: 6rem;
+  }
+}

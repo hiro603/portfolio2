@@ -1,0 +1,31 @@
+@use "../foundation" as f;
+
+/*!
+component > logo
+------------------------------
+*/
+.c-site-logo {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.2em;
+    color: inherit;
+    transition: opacity var(--transition-base);
+
+    @media (any-hover: hover) {
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    &-main {
+      font-family: var(--font-family-en);
+      font-size: clamp(1.5rem, 2vw, 2.25rem);
+      letter-spacing: 0.08em;
+      line-height: 1;
+    }
+
+    &-sub {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+    }
+}

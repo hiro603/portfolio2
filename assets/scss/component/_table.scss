@@ -1,0 +1,27 @@
+@use "../foundation" as f;
+
+.c-table {
+  overflow-x: auto;
+}
+
+.c-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.c-table th,
+.c-table td {
+  padding: 1rem;
+
+  border-bottom: 1px solid #ddd;
+
+  text-align: left;
+}
+
+.c-table th {
+  width: 30%;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}

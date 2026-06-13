@@ -1,0 +1,74 @@
+@use "../../foundation" as f;
+
+/*!
+page > about > about-company
+------------------------------
+*/
+.detail-flow {
+  @include f.mq() {
+    background-color: var(--color-gray);
+  }
+}
+
+.detail-flow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @include f.mq() {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.detail-flow-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border-radius: 6px;
+
+  @include f.mq() {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+  }
+}
+
+.detail-flow-item--url {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: var(--color-white);
+    mask-image: url(../../../../assets/img/detail/external-link.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.detail-flow-item-img {
+  width: 24px;
+
+  @include f.mq() {
+    display: none;
+  }
+}
+
+.detail-flow-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-flow-item-title {
+  line-height: 1;
+  font-weight: bold;
+}

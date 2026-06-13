@@ -1,0 +1,40 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > top-skill
+------------------------------
+*/
+.top-skill {
+}
+
+.top-skill-title {
+}
+
+.top-skill-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include f.mq() {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+  }
+}
+
+.top-skill-item {
+  background-color: var(--color-gray-light);
+  border-radius: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.top-skill-item-text {
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-family: var(--font-family-en);
+}

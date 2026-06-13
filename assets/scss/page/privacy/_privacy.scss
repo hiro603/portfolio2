@@ -1,0 +1,75 @@
+@use "../../foundation" as f;
+
+
+/*!
+page > privacy > privacy
+------------------------------
+*/
+.privacy {
+  margin-top: 80px;
+
+  @include f.mq() {
+    margin-top: 120px;
+  }
+}
+
+.privacy-content {
+  border-bottom: 1px solid var(--color-border);
+  padding: 24px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.privacy-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+  &--large {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  @include f.mq() {
+    font-size: clamp(16px, 2.4vw, 20px);
+
+    &--large {
+      font-size: clamp(20px, 3.125vw, 28px);
+    }
+  }
+}
+
+.privacy-text {
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.privacy-list {
+  margin-top: 12px;
+}
+
+.privacy-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    width: 4px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-font-base);
+    border-radius: 50%;
+  }
+}
+
+.privacy-item-text {
+}
+
+.privacy-date {
+}
+
+.privacy-name {
+}

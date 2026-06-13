@@ -1,0 +1,31 @@
+@use "../../foundation" as f;
+
+
+/*!
+page > detail > detail-solution
+------------------------------
+*/
+.detail-solution {
+
+}
+
+.detail-solution-title {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--color-gray);
+    font-family: var(--font-family-en);
+}
+
+.detail-solution-list {
+    margin-top: 20px;
+}
+
+.detail-solution-item {
+    border-left: 3px solid #3b82f6; /* 青系 */
+  padding-left: 12px;
+  font-weight: bold;
+  line-height: 1.8;
+  margin-top: 16px;
+}
+

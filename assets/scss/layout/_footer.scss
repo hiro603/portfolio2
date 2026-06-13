@@ -1,0 +1,65 @@
+@use "../foundation" as f;
+
+/*!
+layout > footer
+------------------------------
+*/
+.footer {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // &--detail {
+  //     margin-top: 60px;
+  //     @include f.mq() {
+  //         margin-top: 80px;
+  //     }
+  // }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include f.mq() {
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+.footer-title {
+  font-family: var(--font-family-en);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: clamp(16px, 2.4vw, 24px);
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  display: block;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include f.mq() {
+    gap: 50px;
+  }
+}
+
+.footer-item {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+
+  @include f.mq() {
+    width: 40px;
+  }
+}

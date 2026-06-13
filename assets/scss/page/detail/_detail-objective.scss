@@ -1,0 +1,108 @@
+@use "../../foundation" as f;
+
+/*!
+page > detail > detail-objective
+------------------------------
+*/
+.detail-objective-content {
+  margin-top: 16px;
+  @include f.mq() {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50px;
+  }
+}
+
+.detail-objective-content-text {
+  line-height: 2;
+  margin-top: 16px;
+  font-size: 0.875rem;
+
+  @include f.mq() {
+    width: 350px;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.detail-objective-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin-top: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../../../../assets/img/detail/chevron-down.svg);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include f.mq() {
+      background-image: url(../../../../assets/img/detail/chevron-right.svg);
+    }
+  }
+
+  @include f.mq() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.detail-objective-before,
+.detail-objective-after {
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.detail-objective-before-title,
+.detail-objective-after-title {
+  font-weight: bold;
+}
+
+.detail-objective-before-list,
+.detail-objective-after-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.detail-objective-before {
+  background-color: var(--color-gray-light);
+}
+
+.detail-objective-after {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.detail-objective-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 0.875rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-font-base);
+    border-radius: 50%;
+  }
+}
+
+.detail-objective-after-item {
+  &::before {
+    background-color: var(--color-white);
+  }
+}

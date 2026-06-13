@@ -1,0 +1,82 @@
+// _color.scss
+// ===========================================
+// _tokens.scss  —  ポートフォリオ刷新用
+// アクセント: ネイビー / 方向性: 中立・ミニマル
+// 2層構成: primitive(素の値) → semantic(役割名)
+// HTML/component 側では semantic だけを使う
+// ===========================================
+
+:root {
+    // -------------------------------------------
+    // primitive（素の値・ここは直接使わない）
+    // -------------------------------------------
+  
+    // ニュートラル（無彩色ベース）
+    --color-white:      #ffffff;
+    --color-gray-50:    #fafaf8;  // わずかに温かみのある背景
+    --color-gray-100:   #f1f1ee;
+    --color-gray-200:   #e4e4e0;
+    --color-gray-400:   #9a9a96;
+    --color-gray-600:   #5c5c58;
+    --color-gray-900:   #1a1a1a;
+  
+    // ネイビー（アクセント・3段階）
+    --color-navy-700:   #1e3a5f;  // base
+    --color-navy-500:   #2f567f;  // ホバー・やや明るい
+    --color-navy-300:   #6f8aab;  // muted・補助線やキャプション
+  
+    // フォントファミリー
+    --font-sans-jp:     "Noto Sans JP", sans-serif;
+    --font-sans-en:     "Inter", sans-serif;
+  
+    // フォントウェイト
+    --fw-regular:       400;
+    --fw-medium:        500;
+    --fw-bold:          700;
+  
+    // -------------------------------------------
+    // semantic（役割名・こちらを使う）
+    // -------------------------------------------
+  
+    // テキスト
+    --color-text-base:    var(--color-gray-900);  // 本文
+    --color-text-muted:   var(--color-gray-600);  // 補助テキスト
+    --color-text-invert:  var(--color-white);     // 暗背景上の文字
+  
+    // 背景
+    --color-bg-base:      var(--color-gray-50);    // ページ全体
+    --color-bg-surface:   var(--color-white);      // カード・面
+    --color-bg-subtle:    var(--color-gray-100);   // セクション区切り
+  
+    // アクセント
+    --color-accent:        var(--color-navy-700);
+    --color-accent-hover:  var(--color-navy-500);
+    --color-accent-muted:  var(--color-navy-300);
+  
+    // ボーダー（色でなく余白主体だが、最小限用意）
+    --color-border:        var(--color-gray-200);
+  
+    // フォント
+    --font-base:          var(--font-sans-jp);
+    --font-accent:        var(--font-sans-en);  // 英字見出し・ラベル用
+  
+    // フォントサイズ（clamp でレスポンシブ）
+    --fs-display:  clamp(2.4rem, 5vw, 4rem);     // FV 大見出し
+    --fs-h2:       clamp(1.6rem, 3vw, 2.4rem);   // セクション見出し
+    --fs-h3:       clamp(1.2rem, 2vw, 1.5rem);   // カードタイトル
+    --fs-body:     1rem;                          // 本文
+    --fs-small:    0.875rem;                      // キャプション・タグ
+  
+    // 行間
+    --lh-tight:    1.3;   // 見出し
+    --lh-base:     1.8;   // 本文（読みやすさ重視）
+  
+    
+  
+    
+  
+    // 角丸・トランジション
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --transition:  0.25s ease;
+  }

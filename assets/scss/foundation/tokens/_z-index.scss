@@ -1,0 +1,9 @@
+// _z-index.scss
+:root {
+    --z-negative: -1;
+    --z-base: 1;
+    --z-header: 100;
+    --z-drawer: 200;
+    --z-modal: 300;
+    --z-loading: 999;
+}

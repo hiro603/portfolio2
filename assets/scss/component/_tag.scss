@@ -1,0 +1,20 @@
+@use "../foundation" as f;
+
+/*!
+component > entry-button
+------------------------------
+*/
+.tag-html {
+  background-color: rgb(255, 166, 0);
+  color: white;
+}
+
+.tag-css {
+  background-color: rgb(0, 119, 255);
+  color: white;
+}
+
+.tag-js {
+  background-color: rgb(0, 255, 153);
+  color: white;
+}

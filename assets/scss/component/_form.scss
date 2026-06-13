@@ -1,0 +1,32 @@
+@use "../foundation" as f;
+
+/*!
+component > form
+------------------------------
+*/
+.c-form-required {
+  background-color: red;
+  color: var(--color-white);
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.c-form-text {
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background-color: var(--color-gray-light);
+
+  &::placeholder {
+    color: var(--color-gray);
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-gray);
+  }
+}
+.c-form-textarea {
+  min-height: 200px;
+  field-sizing: content;
+}

@@ -1,0 +1,37 @@
+@use "../foundation" as f;
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container {
+  --gutter: var(--gutter-sm);
+  width: min(100% - (var(--gutter) * 2), var(--content-width-lg));
+  margin-inline: auto;
+
+  &--md { width: min(100% - (var(--gutter) * 2), var(--content-width-md)); }
+  &--sm { width: min(100% - (var(--gutter) * 2), var(--content-width-sm)); }
+
+  @media screen and (min-width: 768px) {
+    --gutter: var(--gutter-lg);
+  }
+}
+.l-container {
+  --gutter: var(--gutter-sm);
+  width: min(100% - (var(--gutter) * 2), var(--content-width-lg));
+  margin-inline: auto;
+ 
+  &--md {
+    width: min(100% - (var(--gutter) * 2), var(--content-width-md));
+  }
+ 
+  &--sm {
+    width: min(100% - (var(--gutter) * 2), var(--content-width-sm));
+  }
+ 
+  // タブレット以上はガターを広げる。
+  // 参照先を変えるだけで上の 3 つすべてに効く。
+  @include mq(md) {
+    --gutter: var(--gutter-lg);
+  }
+}

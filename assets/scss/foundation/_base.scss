@@ -1,0 +1,21 @@
+@use "./tokens" as t;
+/*!
+foundation > base
+------------------------------
+*/
+
+html {
+    font-size: var(--font-size-root);
+}
+
+body {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    font-family: var(--font-family-base);
+    color: var(--color-text-base);
+    letter-spacing: var(--letter-spacing-base);
+
+    @include m.mq() {
+        font-size: 1.125rem;
+    }
+}
