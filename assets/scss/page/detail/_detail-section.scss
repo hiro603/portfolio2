@@ -1,0 +1,67 @@
+@use "../../foundation" as f;
+
+/*!
+page > detail > section
+------------------------------
+*/
+.p-detail-body {
+  background-color: var(--color-bg-base);
+}
+
+.p-detail-body__inner {
+  padding-block: var(--space-xl);
+  max-width: var(--content-width-md);
+  margin-inline: auto;
+}
+
+.p-detail-section {
+  & + & { margin-top: 3.5rem; }
+}
+
+.p-detail-section__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.p-detail-section__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  margin: 0.4rem 0 1rem;
+}
+
+.p-detail-section__text {
+  line-height: var(--lh-base);
+  color: var(--color-text-base);
+
+  & + & { margin-top: 1rem; }
+}
+
+.p-detail-section__figure {
+  margin-top: 1.5rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-surface);
+  aspect-ratio: 16 / 10;
+
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+
+.p-detail-section__cols {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+
+  @include f.mq() {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.p-detail-body__inner > .c-button {
+  margin-top: 2.5rem;
+}

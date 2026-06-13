@@ -1,0 +1,37 @@
+@use "../../foundation" as f;
+
+/*!
+page > detail > nav
+------------------------------
+*/
+.p-detail-nav {
+  background-color: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+}
+
+.p-detail-nav__inner {
+  padding-block: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.p-detail-nav__link {
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  color: var(--color-accent);
+  transition: opacity 0.25s ease;
+
+  @media (any-hover: hover) {
+    &:hover { opacity: 0.7; }
+  }
+}
+
+.p-detail-nav__back {
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: var(--fs-small);
+}
