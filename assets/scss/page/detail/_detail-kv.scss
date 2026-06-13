@@ -50,6 +50,10 @@ page > detail > kv
   border-color: var(--color-border-invert);
 }
 
+.p-detail-kv .c-breadcrumb {
+  color: var(--color-text-invert);
+}
+
 .p-detail-kv__shot {
   margin-top: 2.5rem;
   border-radius: var(--radius-md);
