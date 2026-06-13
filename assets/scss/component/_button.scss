@@ -1,31 +1,31 @@
 @use "../foundation" as f;
 
+/*!
+component > button
+------------------------------
+*/
 .c-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   min-width: 12.5rem;
-  padding: 1rem 2rem;
-
-  border-radius: var(--radius-round);
-
-  background-color: var(--color-main);
-  color: #fff;
-
-  font-size: var(--font-size-base);
-  font-weight: 700;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  font-family: var(--font-display);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
   line-height: 1;
-
-  transition:
-    background-color var(--transition-base),
-    opacity var(--transition-base),
-    transform var(--transition-base);
+  transition: transform 0.25s ease, opacity 0.25s ease;
 
   @media (any-hover: hover) {
-    &:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-    }
+    &:hover { opacity: 0.92; transform: translateY(-2px); }
   }
+}
+
+// 緑面の上に置く反転ボタン（紙地ボタン＋緑文字）
+.c-button--on-accent {
+  background-color: var(--color-paper);
+  color: var(--color-accent);
 }
