@@ -1,20 +1,22 @@
 @use "../foundation" as f;
 
 /*!
-component > entry-button
+component > tag
 ------------------------------
 */
-.tag-html {
-  background-color: rgb(255, 166, 0);
-  color: white;
+.c-tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
 }
 
-.tag-css {
-  background-color: rgb(0, 119, 255);
-  color: white;
-}
-
-.tag-js {
-  background-color: rgb(0, 255, 153);
-  color: white;
+.c-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }

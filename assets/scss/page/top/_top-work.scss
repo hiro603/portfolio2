@@ -1,93 +1,58 @@
 @use "../../foundation" as f;
 
 /*!
-page > top > top-work
+page > top > works
 ------------------------------
 */
-.top-work {
+.p-works {
+  background-color: var(--color-bg-base);
 }
 
-.top-work-title {
+.p-works__inner {
+  padding-block: var(--space-xl);
 }
 
-.top-work-list {
-  margin-top: 40px;
+.p-works__grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 
   @include f.mq() {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-top: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
   }
 }
 
-.top-work-item {
-  background-color: var(--color-gray-light);
-  border-radius: 10px;
-  transition: scale 0.3s;
+.p-works__list {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.p-works__row-link {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  grid-template-areas:
+    "no title view"
+    "no cat   view";
+  align-items: center;
+  column-gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  transition: padding-left 0.25s ease;
+
+  @include f.mq() {
+    grid-template-columns: 2.5rem 1fr 1fr auto;
+    grid-template-areas: "no title cat view";
+  }
 
   @media (any-hover: hover) {
-    &:hover {
-      scale: 1.03;
-    }
-  }
-  img {
-    border-radius: 10px;
-    aspect-ratio: 357 / 238;
+    &:hover { padding-left: 0.5rem; }
   }
 }
 
-.top-work-item-img {
-  imd {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.top-work-item-content {
-  padding: 20px;
-
-  @include f.mq() {
-    padding: 16px;
-  }
-}
-
-.top-work-item-title {
-  font-size: 1.375rem;
-  font-weight: 500;
-
-  @include f.mq() {
-  }
-}
-
-.top-work-item-category {
-  font-size: 0.9375rem;
-}
-
-.top-work-item-description-link {
-  display: flex;
-  gap: 10px;
-}
-
-.top-work-item-description-link-item {
-  font-size: 0.9375rem;
-  font-family: var(--font-family-en);
-}
-
-.top-work-item-tags {
-  font-size: 0.9375rem;
-}
-
-.top-work-item-tag {
-  font-size: 0.8125rem;
-  border-radius: 6px;
-  padding: 2px 6px;
-}
-
-.top-work-item-button {
-  display: flex;
-  justify-content: flex-end;
-}
+.p-works__row-no { grid-area: no; color: var(--color-accent); font-weight: var(--fw-bold); }
+.p-works__row-title { grid-area: title; font-weight: var(--fw-bold); }
+.p-works__row-cat { grid-area: cat; color: var(--color-text-muted); font-size: var(--fs-small); }
+.p-works__row-view { grid-area: view; color: var(--color-accent); font-size: var(--fs-small); }
