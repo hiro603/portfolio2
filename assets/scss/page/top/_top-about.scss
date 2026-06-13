@@ -1,44 +1,50 @@
 @use "../../foundation" as f;
 
 /*!
-page > top > top-about
+page > top > about
 ------------------------------
 */
-.top-about {
-  background-color: var(--color-gray-light);
+.p-about {
+  background-color: var(--color-bg-ink);
+  color: var(--color-text-invert);
 }
 
-.top-about-title {
-}
-
-.top-about-list {
-  margin-top: 40px;
+.p-about__inner {
+  padding-block: var(--space-xl);
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 2rem;
 
   @include f.mq() {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-top: 60px;
+    grid-template-columns: 280px 1fr;
+    gap: 3.5rem;
+    align-items: center;
   }
 }
 
-.top-about-item {
-  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 40px;
+.p-about__photo {
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  background-color: var(--color-ink-700);
+  aspect-ratio: 4 / 5;
+  max-width: 280px;
+
+  img { width: 100%; height: 100%; object-fit: cover; }
 }
 
-.top-about-item-img {
-  display: block;
-  margin-inline: auto;
-  width: 60px;
-  aspect-ratio: 1 / 1;
+.p-about__body .c-section-head__label { color: var(--color-accent-muted); }
+
+.p-about__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-tight);
+  margin: 0.75rem 0 1.25rem;
+
+  em { font-style: italic; font-weight: var(--fw-medium); color: var(--color-accent-muted); }
 }
 
-.top-about-item-text {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 20px;
+.p-about__text {
+  line-height: var(--lh-base);
+  color: rgba(247, 245, 240, 0.78);
+  max-width: 46ch;
 }
