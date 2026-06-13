@@ -1,8 +1,6 @@
 @use "../foundation" as f;
 
-.c-table {
-  overflow-x: auto;
-}
+.c-table { width: 100%; }
 
 .c-table table {
   width: 100%;
@@ -11,17 +9,18 @@
 
 .c-table th,
 .c-table td {
-  padding: 1rem;
-
-  border-bottom: 1px solid #ddd;
-
+  padding: 0.9rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
   text-align: left;
+  line-height: var(--lh-base);
+  vertical-align: top;
 }
 
 .c-table th {
-  width: 30%;
-
-  font-weight: 700;
-
+  width: 32%;
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
   white-space: nowrap;
 }
