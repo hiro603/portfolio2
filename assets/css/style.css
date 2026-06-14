@@ -375,6 +375,7 @@ component > button
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5em;
   min-width: 12.5rem;
   padding: 0.9rem 2rem;
   border-radius: 999px;
@@ -386,10 +387,18 @@ component > button
   line-height: 1;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
+.c-button::after {
+  content: "→";
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
 @media (any-hover: hover) {
   .c-button:hover {
     opacity: 0.92;
     transform: translateY(-2px);
+  }
+  .c-button:hover::after {
+    transform: translateX(3px);
   }
 }
 
