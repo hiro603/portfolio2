@@ -1591,7 +1591,7 @@ page > service > service-fv
 ------------------------------
 */
 .service-fv {
-  background-image: url(../../../assets/img/service/service-fv.webp);
+  background-image: url(../img/service/service-fv.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1806,7 +1806,7 @@ page > service > service-cta
 ------------------------------
 */
 .l-cta {
-  background-image: url(../../../assets/img/service/service-cta.webp);
+  background-image: url(../img/service/service-cta.webp);
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -1855,8 +1855,8 @@ page > service > service-cta
   display: block;
   width: 30px;
   height: 30px;
-  -webkit-mask-image: url(../../../assets/img/service/icon-mail.png);
-          mask-image: url(../../../assets/img/service/icon-mail.png);
+  -webkit-mask-image: url(../img/service/icon-mail.png);
+          mask-image: url(../img/service/icon-mail.png);
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -1872,8 +1872,8 @@ page > service > service-cta
   display: inline-block;
   width: 30px;
   height: 30px;
-  -webkit-mask-image: url(../../../assets/img/service/chevron-right.svg);
-          mask-image: url(../../../assets/img/service/chevron-right.svg);
+  -webkit-mask-image: url(../img/service/chevron-right.svg);
+          mask-image: url(../img/service/chevron-right.svg);
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -1996,7 +1996,7 @@ page > news > news-archive
   display: block;
   width: 30px;
   aspect-ratio: 1/1;
-  background-image: url(../../../assets/img/news/icon_right.svg);
+  background-image: url(../img/news/icon_right.svg);
   background-size: cover;
   background-position: center;
 }
@@ -2026,7 +2026,7 @@ page > news > news-archive
   display: block;
   width: 40px;
   aspect-ratio: 1/1;
-  background-image: url(../../../assets/img/news/icon_mail.svg);
+  background-image: url(../img/news/icon_mail.svg);
   background-size: cover;
   background-position: center;
 }
@@ -2055,8 +2055,8 @@ page > news > news-archive
   content: "";
   width: 30px;
   aspect-ratio: 1/1;
-  -webkit-mask-image: url(../../../assets/img/news/icon_right.svg);
-          mask-image: url(../../../assets/img/news/icon_right.svg);
+  -webkit-mask-image: url(../img/news/icon_right.svg);
+          mask-image: url(../img/news/icon_right.svg);
   background-color: var(--color-white);
   -webkit-mask-size: cover;
           mask-size: cover;
@@ -2192,7 +2192,7 @@ page > news > news-detail
   left: 0;
   width: 32px;
   aspect-ratio: 1/1;
-  background-image: url("../../../../assets/img/news/icon_left.svg");
+  background-image: url("../img/news/icon_left.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2212,7 +2212,7 @@ page > news > news-detail
           transform: translateY(-50%);
   width: 32px;
   aspect-ratio: 1/1;
-  background-image: url("../../../../assets/img/news/icon_right.svg");
+  background-image: url("../img/news/icon_right.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2318,7 +2318,7 @@ page > recruit > recruit-kv
 ------------------------------
 */
 .recruit-fv {
-  background-image: url(../../../assets/img/recruit/fv.webp);
+  background-image: url(../img/recruit/fv.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2760,7 +2760,7 @@ page > contact > contact-fv
 ------------------------------
 */
 .contact-fv {
-  background-image: url(../../../assets/img/service/service-fv.webp);
+  background-image: url(../img/service/service-fv.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2827,7 +2827,7 @@ page > works > works-list
 ------------------------------
 */
 .works-fv {
-  background-image: url(../../../assets/img/works/works-fv.webp);
+  background-image: url(../img/works/works-fv.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2974,8 +2974,8 @@ page > works > works-detail
     height: 30px;
     background-color: var(--color-white);
     opacity: 0.5;
-    -webkit-mask-image: url("../../../../assets/img/works/chevron-right.svg");
-            mask-image: url("../../../../assets/img/works/chevron-right.svg");
+    -webkit-mask-image: url("../img/works/chevron-right.svg");
+            mask-image: url("../img/works/chevron-right.svg");
     -webkit-mask-size: contain;
             mask-size: contain;
     -webkit-mask-repeat: no-repeat;
@@ -3039,8 +3039,8 @@ page > works > works-detail
   width: 30px;
   height: 30px;
   background-color: var(--color-white);
-  -webkit-mask-image: url("../../../../assets/img/works/chevron-right.svg");
-          mask-image: url("../../../../assets/img/works/chevron-right.svg");
+  -webkit-mask-image: url("../img/works/chevron-right.svg");
+          mask-image: url("../img/works/chevron-right.svg");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
