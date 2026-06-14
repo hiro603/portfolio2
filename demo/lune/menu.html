@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>LUNE HAIR SALON</title>
+        <meta name="description" content="カット・カラー・パーマ・トリートメントのメニューと料金案内。" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="./assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+         <script src="assets/js/vendor/gsap.min.js" defer></script>
+         <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <p class="l-header-logo">
+                <a href="index.html" class="c-site-logo c-site-logo-center">
+                    <span class="c-site-logo-main">LUNE</span>
+                    <span class="c-site-logo-sub">HAIR SALON</span>
+                </a>
+            </p><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <div class="l-header-menu-head">
+                    <a href="index.html" class="c-site-logo">
+                        <span class="c-site-logo-main">LUNE</span>
+                        <span class="c-site-logo-sub">HAIR SALON</span>
+                    </a>
+                    <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                        <span class="l-menu-line-text">CLOSE</span>
+                        <span class="l-menu-line-wrap">
+                            <span class="l-menu-line js-hamburger-line"></span>
+                            <span class="l-menu-line js-hamburger-line"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="about.html" class="l-header-menu-nav-link u-text-hover">ABOUT</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="style.html" class="l-header-menu-nav-link u-text-hover">STYLE</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="menu.html" class="l-header-menu-nav-link u-text-hover">MENU</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="news.html" class="l-header-menu-nav-link u-text-hover">NEWS</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="contact.html" class="l-header-menu-nav-link u-text-hover">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="l-header-menu-content">
+                        <h2 class="l-header-menu-content-title">LUNE HAIR SALON</h2>
+
+                        <p class="l-header-menu-content-address">
+                            <span>〒150-0001</span>
+                            <span>東京都渋谷区渋谷1-1-1</span>
+                            <span>渋谷マンション111</span>
+                        </p>
+
+                        <ul class="l-header-menu-content-contact-list">
+                            <li class="l-header-menu-content-contact-item">TEL:03-1234-5678</li>
+                            <li class="l-header-menu-content-contact-item">OPEN:10:00-20:00 / CLOSE TUE</li>
+                        </ul>
+
+                        <ul class="l-header-menu-sns-list">
+                            <li class="l-header-menu-sns-item">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src='./assets/img/icon_insta.svg' width='24' height='24' alt='Instagram' decoding='async' />
+                                </a>
+                            </li>
+                            <li class="l-header-menu-sns-item">
+                                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer">
+                                    <img src='./assets/img/icon_line.svg' width='24' height='24' alt='LINE' decoding='async' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / -->
+                    <div class="l-header-menu-bg js-header-menu-bg">
+                        <img src='./assets/img/menu.webp' width='1600' height='2133' alt='' decoding='async' />
+                    </div>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <span class="l-menu-line js-hamburger-line"></span>
+                <span class="l-menu-line js-hamburger-line"></span>
+            </button>
+        </header><!-- /.l-header -->
+        <main>
+            <section class="c-page-fv c-page-fv--menu">
+                <div class="c-page-fv-content">
+                    <div class="c-page-fv-title-wrap">
+                        <span class="c-page-fv-title">MENU</span>
+                        <h1 class="c-page-fv-title-ja">メニュー</h1>
+                    </div>
+
+                    <p class="c-page-fv-text">
+                        <span>一人ひとりの「なりたい」を大切に、</span>
+                        <span>似合うスタイルをご提案します。</span>
+                    </p>
+            </section>
+
+            <section class="menu-list l-container u-ptb">
+                <div class="menu-list-content">
+                    <article class="menu-list-item menu-list-item--cut" id="cut">
+                        <h2 class="menu-list-item__title">CUT</h2>
+                        <dl class="c-definition-list">
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">カット</dt>
+                                <dd class="c-definition-item-desc">¥5,500</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">前髪カット</dt>
+                                <dd class="c-definition-item-desc">¥1,100</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">
+                                    <span>メンテナンスカット</span>
+                                    <span>(3週間以内)</span>
+                                </dt>
+                                <dd class="c-definition-item-desc">¥4,400~</dd>
+                            </div><!-- / -->
+                        </dl>
+                    </article>
+    
+                    <article class="menu-list-item menu-list-item--color" id="color">
+                        <h2 class="menu-list-item__title">COLOR</h2>
+                        <dl class="c-definition-list">
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">ワンカラー</dt>
+                                <dd class="c-definition-item-desc">¥7,700~</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">イルミナカラー</dt>
+                                <dd class="c-definition-item-desc">¥9,900~</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">ブリーチ（全頭）</dt>
+                                <dd class="c-definition-item-desc">¥11,000~</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">ハイライト／ローライト</dt>
+                                <dd class="c-definition-item-desc">¥6,600~</dd>
+                            </div><!-- / -->
+                        </dl>
+                    </article>
+    
+                    <article class="menu-list-item menu-list-item--perm" id="perm">
+                        <h2 class="menu-list-item__title">PERM</h2>
+                        <dl class="c-definition-list">
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">デジタルバーマ</dt>
+                                <dd class="c-definition-item-desc">¥8,800~</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">エアリーパーマ</dt>
+                                <dd class="c-definition-item-desc">¥13,200~</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">カット込み</dt>
+                                <dd class="c-definition-item-desc">¥9,900~</dd>
+                            </div><!-- / -->
+                        </dl>
+                    </article>
+    
+                    <article class="menu-list-item menu-list-item--treatment" id="treatment">
+                        <h2 class="menu-list-item__title">TREATMENT</h2>
+                        <dl class="c-definition-list">
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">クイックトリートメント</dt>
+                                <dd class="c-definition-item-desc">¥2,200</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">TOKIOトリートメント</dt>
+                                <dd class="c-definition-item-desc">¥4,400</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">髪質改善トリートメント</dt>
+                                <dd class="c-definition-item-desc">¥6,600</dd>
+                            </div><!-- / -->
+                        </dl>
+                    </article>
+    
+                    <article class="menu-list-item menu-list-item--other" id="other">
+                        <h2 class="menu-list-item__title">OTHER</h2>
+                        <dl class="c-definition-list">
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">ヘッドスパ（30min）</dt>
+                                <dd class="c-definition-item-desc">¥4,400</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">ヘッドスパ（45min）</dt>
+                                <dd class="c-definition-item-desc">¥6,600</dd>
+                            </div><!-- / -->
+    
+                            <div class="c-definition-item c-definition-item--style">
+                                <dt class="c-definition-item-term c-definition-item-term--style">シャンプー・プロー</dt>
+                                <dd class="c-definition-item-desc">¥3,300</dd>
+                            </div><!-- / -->
+                        </dl>
+                    </article>
+                </div>
+
+                    <div class="menu-list-content-btn">
+                        <a href="contact.html" class="c-button--large">RESERVE
+                            <svg class="c-button--arrow" viewBox="0 0 150 10">
+                                <path d="M0 5H150" />
+                                <path d="M140 1L150 5L140 9" />
+                              </svg>
+                        </a>
+                    </div><!-- / -->
+    
+                    <p class="menu-list-content-text">※すべて税込価格です。</p>
+                <!-- </div> -->
+            </section>
+
+        </main>
+
+        <footer class="l-footer l-container">
+            <div class="l-footer-content l-container">
+                <div class="l-footer-content-brand">
+                        <div class="c-site-logo">
+                            <a href="#" class="c-site-logo">
+                                <span class="c-site-logo-main">LUNE HAIR SALON</span>
+                                <span class="c-site-logo-sub">HAIR SALON</span>
+                            </a>
+                        </div><!-- / -->
+                    <p class="l-footer-content-brand-text">
+                        <span>その人らしさを、デザインする。</span>
+                        <span>髪からはじまる、美しい日常を。</span>
+                    </p>
+                </div><!-- / -->
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">MENU</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#cut" class="l-footer-content-nav-link">CUT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#color" class="l-footer-content-nav-link">COLOR</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#perm" class="l-footer-content-nav-link">PERM</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#treatment" class="l-footer-content-nav-link">TREATMENT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">HEAD SPA</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">SET</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">OTHER</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">SALON</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="about.html" class="l-footer-content-nav-link">CONCEPT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="stylist.html" class="l-footer-content-nav-link">STYLIST</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="style.html" class="l-footer-content-nav-link">STYLE</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="#" class="l-footer-content-nav-link">BLOG</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="#" class="l-footer-content-nav-link">RECRUIT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="about.html" class="l-footer-content-nav-link">ACCESS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">INFO</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">RESERVATION</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">CONTACT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">F&Q</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">PRIVACY POLICY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- / -->
+                <div class="l-footer-bottom">
+                    <small class="l-footer-copyright">© LUNE ALL RIGHTS RESERVED</small><!-- /.footer-copyright -->
+                    <div class="l-footer-info">
+                        <ul class="l-footer-info-list">
+                            <li class="l-footer-info-item">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">INSTAGRAM</a>
+                            </li>
+                            <li class="l-footer-info-item">
+                                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">LINE</a>
+                            </li>
+                            <li class="l-footer-info-item">
+                                <a href="https://hotpepper.jp/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">HOT PEPPER</a>
+                            </li>
+                        </ul>
+                    </div><!-- / -->
+                </div>
+        </footer>
+    </body>
+</html>

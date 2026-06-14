@@ -1,0 +1,4 @@
+/**
+ * スタッフスライダー
+ */
+export const initializeAboutStaffSlider = () => {};
