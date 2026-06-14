@@ -36,6 +36,7 @@
         <script src="../assets/js/vendor/gsap.min.js" defer></script>
         <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
         <script type="module" src="../assets/js/main.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <meta name="robots" content="noindex" />
     </head>
@@ -115,6 +116,8 @@
                         </div>
 
                         <input class="c-form__gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="g-recaptcha c-form__recaptcha" data-sitekey="6LdwWx4tAAAAANrcNNd8c2bm-n5h7jmK10t1pacg"></div>
 
                         <button class="c-button c-form__submit" type="submit">送信する</button>
                     </form>
