@@ -78,12 +78,8 @@
                     <h1 class="p-contact-page__title">お問い合わせ</h1>
                     <p class="p-contact-page__lead">Webサイトの制作・リニューアルのご相談、お見積もりなど、お気軽にどうぞ。「何から相談すればいいか分からない」段階でも大丈夫です。やりたいことや今のお悩みを、そのまま聞かせてください。2〜3営業日以内にご返信します。</p>
 
-                    <!--
-                      送信先（action）は formrun の「コード設置型フォーム」のURLに差し替えてください。
-                      例: action="https://form.run/api/v1/r/xxxxxxxx"
-                      各入力の name 属性が formrun 側の項目名になります。
-                    -->
-                    <form class="c-form" action="" method="post">
+                    <form class="c-form" action="https://formspree.io/f/mykalyqn" method="post">
+                        <input type="hidden" name="_subject" value="webhiro.com お問い合わせ">
                         <div class="c-form__row">
                             <label class="c-form__label" for="name">お名前 <span class="c-form__required">必須</span></label>
                             <input class="c-form__input" type="text" id="name" name="お名前" autocomplete="name" required placeholder="山田 太郎">
@@ -91,7 +87,7 @@
 
                         <div class="c-form__row">
                             <label class="c-form__label" for="email">メールアドレス <span class="c-form__required">必須</span></label>
-                            <input class="c-form__input" type="email" id="email" name="メールアドレス" autocomplete="email" required placeholder="you@example.com">
+                            <input class="c-form__input" type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
                         </div>
 
                         <div class="c-form__row">
