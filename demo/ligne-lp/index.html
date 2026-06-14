@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIGNE — handmade accessory</title>
+    <meta name="format-detection" content="telephone=no, email=no" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- script -->
+    <script type="module" src="./assets/js/main.js"></script>
+
+    <!-- noindex -->
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <img
+        class="header__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_05.png"
+        width="103"
+        height="41"
+        alt=""
+        style="
+          top: 30px;
+          left: 150px;
+          width: 170px;
+          opacity: 0.85;
+          transform: rotate(-3deg);
+        "
+      />
+      <img
+        class="header__deco"
+        src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_02.png"
+        width="35"
+        height="60"
+        alt=""
+        style="top: 46px; left: 250px; width: 70px; opacity: 0.9"
+      />
+      <img
+        class="header__deco"
+        src="./assets/img/icon/01_blob_gradient/01_blob_gradient_06.png"
+        width="133"
+        height="117"
+        alt=""
+        style="top: -50px; right: 90px; width: 300px; opacity: 0.5; z-index: 1"
+      />
+      <nav class="header__nav" aria-label="メニュー">
+        <a href="#" class="logo" aria-label="LIGNE home">
+          <span class="logo__mark"
+            >LIGNE
+            <svg
+              class="logo__sun"
+              viewBox="0 0 52 28"
+              fill="none"
+              stroke="#caa24a"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M26 26 A14 14 0 0 1 26 8" />
+              <line x1="26" y1="2" x2="26" y2="9" />
+              <line x1="12" y1="8" x2="16" y2="13" />
+              <line x1="40" y1="8" x2="36" y2="13" />
+              <line x1="6" y1="22" x2="13" y2="20" />
+              <line x1="46" y1="22" x2="39" y2="20" />
+            </svg>
+          </span>
+          <span class="logo__sub">HANDMADE ACCESSORY</span>
+        </a>
+        <div class="header__nav-links">
+          <a href="#" class="header__nav-link header__nav-link--active">HOME</a>
+          <a href="#craft" class="header__nav-link">ABOUT</a>
+          <a href="#arrivals" class="header__nav-link">SHOP</a>
+          <a href="#contact" class="header__nav-link">CONTACT</a>
+        </div>
+        <button
+          class="hamburger"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="menu-dialog"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <dialog class="menu-dialog" id="menu-dialog" aria-label="メニュー">
+      <button class="menu-dialog__close" aria-label="メニューを閉じる">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        >
+          <line x1="5" y1="5" x2="19" y2="19" />
+          <line x1="19" y1="5" x2="5" y2="19" />
+        </svg>
+      </button>
+      <div class="menu-dialog__logo">
+        <span class="logo__mark">LIGNE</span>
+        <span class="logo__sub">HANDMADE ACCESSORY</span>
+      </div>
+      <nav class="menu-dialog__nav" aria-label="メニュー">
+        <a href="#" class="menu-dialog__nav-link">HOME</a>
+        <a href="#craft" class="menu-dialog__nav-link">ABOUT</a>
+        <a href="#arrivals" class="menu-dialog__nav-link">SHOP</a>
+      </nav>
+      <div class="menu-dialog__foot">
+        <a href="#" aria-label="Instagram"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle
+              cx="17.2"
+              cy="6.8"
+              r="1.1"
+              fill="currentColor"
+              stroke="none"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LINE"
+          ><svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 3C6.8 3 2.6 6.4 2.6 10.6c0 3.8 3.4 7 8 7.5.3 0 .7.1.8.4.1.3 0 .8 0 1l-.1 1c-.1.3-.2 1.1 1 .6 1.2-.5 6.4-3.8 8.7-6.5 1.6-1.7 2.4-3.5 2.4-5.5C23.4 6.4 19.2 3 12 3z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="Mail"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M3.5 6.5L12 13l8.5-6.5" /></svg
+        ></a>
+      </div>
+    </dialog>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_06.png"
+        width="77"
+        height="44"
+        alt=""
+        style="top: 60px; left: -10px; width: 130px; opacity: 0.9"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_02.png"
+        width="98"
+        height="26"
+        alt=""
+        style="top: 150px; left: 90px; width: 150px; opacity: 0.85"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/04_arrows_stars/04_arrows_stars_09.png"
+        width="45"
+        height="49"
+        alt=""
+        style="top: 330px; left: 30px; width: 46px; opacity: 0.8"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/04_arrows_stars/04_arrows_stars_07.png"
+        width="41"
+        height="66"
+        alt=""
+        style="top: 380px; left: 14px; width: 40px; opacity: 0.9"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/01_blob_gradient/01_blob_gradient_10.png"
+        width="69"
+        height="70"
+        alt=""
+        style="top: 300px; right: -80px; width: 210px; opacity: 0.55"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_01.png"
+        width="123"
+        height="26"
+        alt=""
+        style="bottom: 60px; left: 48%; width: 200px; opacity: 0.9; z-index: 6"
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_02.png"
+        width="98"
+        height="26"
+        alt=""
+        style="
+          bottom: 30px;
+          right: 120px;
+          width: 150px;
+          opacity: 0.85;
+          z-index: 6;
+        "
+      />
+      <img
+        class="hero__deco"
+        src="./assets/img/icon/03_outline_shapes/03_outline_shapes_03.png"
+        width="80"
+        height="74"
+        alt=""
+        style="top: 80px; right: 40%; width: 60px; opacity: 0.6"
+      />
+
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__script">
+            Playful<span class="hero__script-line"
+              ><span style="position: relative; display: inline-block"
+                >Sparkle<img
+                  class="hero__deco"
+                  src="./assets/img/icon/06_handwritten/sparkle_star.png"
+                  width="41"
+                  height="66"
+                  alt=""
+                  style="
+                    top: -40px;
+                    right: -64px;
+                    width: 80px;
+                    z-index: 6;
+                    opacity: 0.95;
+                  " /></span
+            ></span>
+          </h1>
+          <div class="hero__title">
+            Everyday<span class="hero__title-dot">.</span>
+          </div>
+          <p class="hero__lead">
+            わたしらしさを、もっと自由に。<br />遊び心のある輝きで、<br />毎日がちょっと特別になる。
+          </p>
+          <a href="#arrivals" class="btn btn--pink"
+            >SHOP NOW
+            <span class="btn__arrow"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" /></svg
+            ></span>
+          </a>
+        </div>
+        <div class="hero__img-col">
+          <div class="hero__photo">
+            <img
+              src="./assets/img/items/item.webp"
+              width="640"
+              height="426"
+              alt="ピアスを着けた女性のポートレート"
+            />
+          </div>
+          <div class="stamp">
+            <svg viewBox="0 0 150 150">
+              <defs>
+                <path
+                  id="circlepath"
+                  d="M75,75 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"
+                />
+              </defs>
+              <circle
+                cx="75"
+                cy="75"
+                r="68"
+                fill="none"
+                stroke="#cfc7bb"
+                stroke-width="1"
+              />
+              <circle
+                cx="75"
+                cy="75"
+                r="45"
+                fill="none"
+                stroke="#cfc7bb"
+                stroke-width="1"
+              />
+              <text
+                font-family="Jost"
+                font-size="9.5"
+                letter-spacing="3"
+                fill="#7a746d"
+              >
+                <textPath href="#circlepath" startOffset="0%">
+                  · MADE FOR YOU · MADE FOR YOU
+                </textPath>
+              </text>
+            </svg>
+            <div class="stamp__center">
+              Handmade<br />with <span class="stamp__heart">♥</span><br /><small
+                >love</small
+              >
+            </div>
+          </div>
+          <div class="hero__scroll-down">
+            <span class="hero__scroll-text">SCROLL DOWN</span>
+            <div class="hero__scroll-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="c-notice">※本サイトはポートフォリオ用の架空案件です。</p>
+    <!-- /.notice -->
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section class="arrivals" id="arrivals">
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_01.png"
+        width="68"
+        height="65"
+        alt=""
+        style="top: 40px; left: 40px; width: 120px; opacity: 0.85"
+      />
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_03.png"
+        width="109"
+        height="38"
+        alt=""
+        style="top: 30px; left: 200px; width: 120px; opacity: 0.8"
+      />
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/04_arrows_stars/04_arrows_stars_06.png"
+        width="71"
+        height="41"
+        alt=""
+        style="top: 10px; left: 300px; width: 60px; opacity: 0.7"
+      />
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_03.png"
+        width="109"
+        height="38"
+        alt=""
+        style="
+          top: 70px;
+          right: 200px;
+          width: 90px;
+          opacity: 0.7;
+          transform: rotate(8deg);
+        "
+      />
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/01_blob_gradient/01_blob_gradient_03.png"
+        width="75"
+        height="90"
+        alt=""
+        style="bottom: 40px; right: -90px; width: 230px; opacity: 0.4"
+      />
+      <img
+        class="arrivals__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_02.png"
+        width="98"
+        height="26"
+        alt=""
+        style="bottom: 120px; right: -30px; width: 150px; opacity: 0.7"
+      />
+
+      <div class="arrivals__head-row">
+        <div class="section-head">
+          <h2 class="section-head__title">New Arrivals</h2>
+          <div class="section-head__jp">新着商品</div>
+        </div>
+        <a href="#" class="btn btn--mint arrivals__view-all"
+          >VIEW ALL
+          <span class="btn__arrow"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="4" y1="12" x2="19" y2="12" />
+              <polyline points="13 6 19 12 13 18" /></svg
+          ></span>
+        </a>
+      </div>
+
+      <div class="arrivals__products">
+        <article class="product">
+          <span class="product__tag">NEW</span>
+          <div class="product__photo">
+            <img
+              class="product__blob"
+              src="./assets/img/icon/03_outline_shapes/03_outline_shapes_09.png"
+              width="67"
+              height="60"
+              alt=""
+            />
+            <img
+              class="product__img"
+              src="./assets/img/items/item.webp"
+              width="640"
+              height="426"
+              alt="Bubble Drops"
+            />
+          </div>
+          <h3 class="product__name">Bubble Drops</h3>
+          <div class="product__price">¥3,200 <small>(税込)</small></div>
+        </article>
+        <article class="product">
+          <span class="product__tag">NEW</span>
+          <div class="product__photo">
+            <img
+              class="product__blob"
+              src="./assets/img/icon/03_outline_shapes/03_outline_shapes_10.png"
+              width="68"
+              height="62"
+              alt=""
+            />
+            <img
+              class="product__img"
+              src="./assets/img/items/item2.webp"
+              width="568"
+              height="426"
+              alt="Petal Hoop"
+            />
+          </div>
+          <h3 class="product__name">Petal Hoop</h3>
+          <div class="product__price">¥2,800 <small>(税込)</small></div>
+        </article>
+        <article class="product">
+          <span class="product__tag">NEW</span>
+          <div class="product__photo">
+            <img
+              class="product__blob"
+              src="./assets/img/icon/03_outline_shapes/03_outline_shapes_12.png"
+              width="59"
+              height="66"
+              alt=""
+            />
+            <img
+              class="product__img"
+              src="./assets/img/items/item3.webp"
+              width="640"
+              height="427"
+              alt="Colorful Veil"
+            />
+          </div>
+          <h3 class="product__name">Colorful Veil</h3>
+          <div class="product__price">¥3,500 <small>(税込)</small></div>
+        </article>
+        <article class="product">
+          <span class="product__tag">NEW</span>
+          <div class="product__photo">
+            <img
+              class="product__blob"
+              src="./assets/img/icon/03_outline_shapes/03_outline_shapes_11.png"
+              width="61"
+              height="65"
+              alt=""
+            />
+            <img
+              class="product__img"
+              src="./assets/img/items/item4.webp"
+              width="659"
+              height="426"
+              alt="Wave Line"
+            />
+          </div>
+          <h3 class="product__name">Wave Line</h3>
+          <div class="product__price">¥2,600 <small>(税込)</small></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CRAFTSMANSHIP ============ -->
+    <section class="craft" id="craft">
+      <img
+        class="craft__deco"
+        src="./assets/img/icon/04_arrows_stars/04_arrows_stars_07.png"
+        width="41"
+        height="66"
+        alt=""
+        style="top: 30px; left: 240px; width: 50px; opacity: 0.85"
+      />
+      <img
+        class="craft__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_01.png"
+        width="123"
+        height="26"
+        alt=""
+        style="top: 130px; left: 60px; width: 150px; opacity: 0.7"
+      />
+      <img
+        class="craft__deco"
+        src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_03.png"
+        width="68"
+        height="65"
+        alt=""
+        style="bottom: 80px; left: -40px; width: 120px; opacity: 0.6"
+      />
+
+      <div class="craft__grid">
+        <div class="craft__copy" style="position: relative">
+          <div class="craft__head-accent">
+            <img
+              src="./assets/img/items/item5.webp"
+              width="642"
+              height="427"
+              alt="アクセント写真"
+            />
+          </div>
+          <h2 class="craft__title">Our<br />Craftsmanship</h2>
+          <div class="craft__jp">こだわり</div>
+          <p class="craft__lead">
+            ひとつひとつ心を込めて、手作業でつくっています。<br />素材選びからデザイン、仕上げまで、<br />「ときめき」が続くアクセサリーを。
+          </p>
+          <div class="craft__features">
+            <div class="craft__feature">
+              <div class="craft__feature-icon">
+                <img
+                  class="craft__feature-icon-bg"
+                  src="./assets/img/icon/03_outline_shapes/03_outline_shapes_09.png"
+                  width="67"
+                  height="60"
+                  alt=""
+                />
+                <svg
+                  class="craft__feature-icon-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#e88aac"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 9l3-4h8l3 4-7 10z" />
+                  <path d="M5 9h14M9.5 5 8 9l4 10 4-10-1.5-4" />
+                </svg>
+              </div>
+              <h3 class="craft__feature-title">こだわりの素材</h3>
+              <p>アレルギーに配慮した<br />高品質な素材を使用。</p>
+            </div>
+            <div class="craft__feature">
+              <div class="craft__feature-icon">
+                <img
+                  class="craft__feature-icon-bg"
+                  src="./assets/img/icon/03_outline_shapes/03_outline_shapes_12.png"
+                  width="59"
+                  height="66"
+                  alt=""
+                />
+                <svg
+                  class="craft__feature-icon-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#a78fd6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M8 11V5.5a1.3 1.3 0 0 1 2.6 0V10m0-.5V4.3a1.3 1.3 0 0 1 2.6 0V10m0-.5V5.2a1.3 1.3 0 0 1 2.6 0V13c0 4-2.2 7-6 7-2.6 0-4-1.3-5.4-3.8l-1.4-2.6a1.3 1.3 0 0 1 2.2-1.3L8 13"
+                  />
+                </svg>
+              </div>
+              <h4 class="craft__feature-title">すべてハンドメイド</h4>
+              <p>
+                ひとつとして同じものはない、<br />あなただけのアクセサリー。
+              </p>
+            </div>
+            <div class="craft__feature">
+              <div class="craft__feature-icon">
+                <img
+                  class="craft__feature-icon-bg"
+                  src="./assets/img/icon/03_outline_shapes/03_outline_shapes_10.png"
+                  width="68"
+                  height="62"
+                  alt=""
+                />
+                <svg
+                  class="craft__feature-icon-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#eab94e"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 20S4 15 4 9.2A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 8 2.2C20 15 12 20 12 20z"
+                  />
+                </svg>
+              </div>
+              <h4 class="craft__feature-title">ときめくデザイン</h4>
+              <p>日常に彩りを添える、<br />遊び心あるデザイン。</p>
+            </div>
+          </div>
+          <a href="#craft" class="btn btn--yellow"
+            >ABOUT US
+            <span class="btn__arrow"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" /></svg
+            ></span>
+          </a>
+        </div>
+
+        <div class="craft__cluster">
+          <img
+            class="craft__deco"
+            src="./assets/img/icon/01_blob_gradient/01_blob_gradient_09.png"
+            width="71"
+            height="70"
+            alt=""
+            style="top: -20px; left: 80px; width: 240px; opacity: 0.6"
+          />
+          <img
+            class="craft__deco"
+            src="./assets/img/icon/01_blob_gradient/01_blob_gradient_02.png"
+            width="98"
+            height="90"
+            alt=""
+            style="top: -30px; right: 30px; width: 140px; opacity: 0.6"
+          />
+          <img
+            class="craft__deco"
+            src="./assets/img/icon/01_blob_gradient/01_blob_gradient_04.png"
+            width="86"
+            height="131"
+            alt=""
+            style="bottom: 80px; left: -30px; width: 120px; opacity: 0.6"
+          />
+          <img
+            class="craft__deco"
+            src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_02.png"
+            width="35"
+            height="60"
+            alt=""
+            style="top: 150px; left: 30px; width: 80px; opacity: 0.7"
+          />
+          <div class="craft__cluster-img craft__cluster-img--1">
+            <img
+              src="./assets/img/items/item5.webp"
+              width="642"
+              height="427"
+              alt="着用イメージ"
+            />
+          </div>
+          <div class="craft__cluster-img craft__cluster-img--2">
+            <img
+              src="./assets/img/items/item6.webp"
+              width="640"
+              height="427"
+              alt="制作風景"
+            />
+          </div>
+          <div class="craft__cluster-img craft__cluster-img--3">
+            <img
+              src="./assets/img/items/item2.webp"
+              width="568"
+              height="426"
+              alt="商品ディスプレイ"
+            />
+          </div>
+          <img
+            class="craft__madelove"
+            src="./assets/img/icon/06_handwritten/06_handwritten_10.png"
+            width="44"
+            height="64"
+            alt="made with love"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_01.png"
+        width="123"
+        height="26"
+        alt=""
+        style="top: 50px; left: 30px; width: 150px; opacity: 0.6"
+      />
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_08.png"
+        width="49"
+        height="58"
+        alt=""
+        style="top: 120px; left: 120px; width: 120px; opacity: 0.55"
+      />
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_10.png"
+        width="66"
+        height="60"
+        alt=""
+        style="bottom: 30px; right: 120px; width: 120px; opacity: 0.6"
+      />
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_05.png"
+        width="32"
+        height="62"
+        alt=""
+        style="top: 90px; left: 46%; width: 90px; opacity: 0.6"
+      />
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/06_handwritten/06_handwritten_02.png"
+        width="98"
+        height="26"
+        alt=""
+        style="bottom: 80px; left: 18%; width: 130px; opacity: 0.5"
+      />
+      <img
+        class="contact__deco"
+        src="./assets/img/icon/04_arrows_stars/04_arrows_stars_08.png"
+        width="50"
+        height="61"
+        alt=""
+        style="top: 60px; right: 40%; width: 70px; opacity: 0.6"
+      />
+
+      <div class="contact__inner">
+        <div class="contact__head">
+          <svg
+            class="contact__mail-icon"
+            viewBox="0 0 48 38"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <rect x="2" y="2" width="44" height="34" rx="3" />
+            <path d="M3 5l21 16L45 5" />
+          </svg>
+          <div>
+            <div class="contact__jp">お問い合わせ</div>
+            <h2 class="contact__title">
+              Contact<span style="color: #7fb8ac">.</span>
+            </h2>
+          </div>
+        </div>
+        <p class="contact__lead">
+          商品についてのご質問や、オーダーのご相談など、<br />お気軽にお問い合わせください。
+        </p>
+        <a href="#" class="contact__form-btn"
+          >CONTACT FORM
+          <span class="btn__arrow"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="4" y1="12" x2="19" y2="12" />
+              <polyline points="13 6 19 12 13 18" /></svg
+          ></span>
+        </a>
+      </div>
+      <div class="contact__illustration">
+        <img
+          src="./assets/img/items/item3.webp"
+          width="640"
+          height="427"
+          alt="ラインアート（女性）"
+        />
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <a href="#" class="logo" aria-label="LIGNE home">
+          <span class="logo__mark"
+            >LIGNE
+            <svg
+              class="logo__sun"
+              viewBox="0 0 52 28"
+              fill="none"
+              stroke="#caa24a"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M26 26 A14 14 0 0 1 26 8" />
+              <line x1="26" y1="2" x2="26" y2="9" />
+              <line x1="12" y1="8" x2="16" y2="13" />
+              <line x1="40" y1="8" x2="36" y2="13" />
+              <line x1="6" y1="22" x2="13" y2="20" />
+              <line x1="46" y1="22" x2="39" y2="20" />
+            </svg>
+          </span>
+          <span class="logo__sub">HANDMADE ACCESSORY</span>
+        </a>
+        <div class="footer__links">
+          <a href="#craft">ABOUT</a><a href="#arrivals">SHOP</a
+          ><a href="#">PRIVACY POLICY</a><a href="#">TERMS</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.2"
+                cy="6.8"
+                r="1.1"
+                fill="currentColor"
+                stroke="none"
+              /></svg
+          ></a>
+          <a href="#" class="footer__social-link" aria-label="LINE"
+            ><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 3C6.8 3 2.6 6.4 2.6 10.6c0 3.8 3.4 7 8 7.5.3 0 .7.1.8.4.1.3 0 .8 0 1l-.1 1c-.1.3-.2 1.1 1 .6 1.2-.5 6.4-3.8 8.7-6.5 1.6-1.7 2.4-3.5 2.4-5.5C23.4 6.4 19.2 3 12 3z"
+              /></svg
+          ></a>
+          <a href="#" class="footer__social-link" aria-label="Mail"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3.5 6.5L12 13l8.5-6.5" /></svg
+          ></a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        © 2024 LIGNE handmade accessory All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

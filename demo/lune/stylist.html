@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>LUNE HAIR SALON</title>
+        <meta name="description" content="LUNEのスタイリストYUIのプロフィールとメッセージ。" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="./assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+         <script src="assets/js/vendor/gsap.min.js" defer></script>
+         <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <p class="l-header-logo">
+                <a href="index.html" class="c-site-logo c-site-logo-center">
+                    <span class="c-site-logo-main">LUNE</span>
+                    <span class="c-site-logo-sub">HAIR SALON</span>
+                </a>
+            </p><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <div class="l-header-menu-head">
+                    <a href="index.html" class="c-site-logo">
+                        <span class="c-site-logo-main">LUNE</span>
+                        <span class="c-site-logo-sub">HAIR SALON</span>
+                    </a>
+                    <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                        <span class="l-menu-line-text">CLOSE</span>
+                        <span class="l-menu-line-wrap">
+                            <span class="l-menu-line js-hamburger-line"></span>
+                            <span class="l-menu-line js-hamburger-line"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="about.html" class="l-header-menu-nav-link u-text-hover">ABOUT</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="style.html" class="l-header-menu-nav-link u-text-hover">STYLE</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="menu.html" class="l-header-menu-nav-link u-text-hover">MENU</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="news.html" class="l-header-menu-nav-link u-text-hover">NEWS</a>
+                        </li>
+
+                        <li class="l-header-menu-nav-item js-header-menu-nav-item">
+                            <a href="contact.html" class="l-header-menu-nav-link u-text-hover">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="l-header-menu-content">
+                        <h2 class="l-header-menu-content-title">LUNE HAIR SALON</h2>
+
+                        <p class="l-header-menu-content-address">
+                            <span>〒150-0001</span>
+                            <span>東京都渋谷区渋谷1-1-1</span>
+                            <span>渋谷マンション111</span>
+                        </p>
+
+                        <ul class="l-header-menu-content-contact-list">
+                            <li class="l-header-menu-content-contact-item">TEL:03-1234-5678</li>
+                            <li class="l-header-menu-content-contact-item">OPEN:10:00-20:00 / CLOSE TUE</li>
+                        </ul>
+
+                        <ul class="l-header-menu-sns-list">
+                            <li class="l-header-menu-sns-item">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src='./assets/img/icon_insta.svg' width='24' height='24' alt='Instagram' loading='lazy' decoding='async' />
+                                </a>
+                            </li>
+                            <li class="l-header-menu-sns-item">
+                                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer">
+                                    <img src='./assets/img/icon_line.svg' width='24' height='24' alt='LINE' loading='lazy' decoding='async' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / -->
+                    <div class="l-header-menu-bg js-header-menu-bg">
+                        <img src='./assets/img/menu.webp' width='1600' height='2133' alt='' loading='lazy' decoding='async' />
+                    </div>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <span class="l-menu-line js-hamburger-line"></span>
+                <span class="l-menu-line js-hamburger-line"></span>
+            </button>
+        </header><!-- /.l-header -->
+        <main>
+            <section class="c-page-fv c-page-fv--stylist">
+                <div class="c-page-fv-content c-page-fv-content--stylist">
+                    <div class="c-page-fv-title-wrap">
+                        <span class="c-page-fv-title">stylist</span>
+                        <h1 class="c-page-fv-title-ja">スタイリスト</h1>
+                    </div>
+
+                    <p class="c-page-fv-text">
+                        <span>一人ひとりの魅力を引き出す、</span>
+                        <span>丁寧なカウンセリングと、</span>
+                        <span>繊細なデザインを提案。</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="stylist-profile u-ptb l-container">
+                <div class="c-section-title">
+                    <span class="c-section-title-en c-section-title-en--small">profile</span>
+                    <h2 class="c-section-title-ja c-section-title-ja--large">プロフィール</h2>
+                </div><!-- / -->
+
+                <dl class="c-definition-list">
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">name</dt>
+                        <dd class="c-definition-item-desc">YUI</dd>
+                    </div><!-- / -->
+
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">position</dt>
+                        <dd class="c-definition-item-desc">top stylist</dd>
+                    </div><!-- / -->
+
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">experience</dt>
+                        <dd class="c-definition-item-desc">10 years</dd>
+                    </div><!-- / -->
+
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">specialty</dt>
+                        <dd class="c-definition-item-desc">ボブ / ショート / 透明感カラー</dd>
+                    </div><!-- / -->
+
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">birthday</dt>
+                        <dd class="c-definition-item-desc">1992/06/12</dd>
+                    </div>
+
+                    <div class="c-definition-item c-definition-item--style">
+                        <dt class="c-definition-item-term c-definition-item-term--style">instagram</dt>
+                        <dd class="c-definition-item-desc c-definition-item-desc--instagram">@lune_yui</dd>
+                    </div>
+                </dl>
+
+                <div class="stylist-profile-img">
+                    <img src="./assets/img/stylist/stylist.webp" alt="スタイリストプロフィール画像" width="1000" height="1000">
+                </div><!-- / -->
+            </section>
+
+            <section class="stylist-message u-ptb">
+                <div class="stylist-message-inner l-container">
+                    <div class="c-section-title">
+                        <span class="c-section-title-en c-section-title-en--small">MESSAGE</span>
+                        <h2 class="c-section-title-ja c-section-title-ja--large">メッセージ</h2>
+                    </div><!-- / -->
+    
+                    <div class="stylist-text">
+                        <p class="stylist-text--1">
+                            <span>髪は、その人らしさを映す大切なもの。</span>
+                            <span>毎日のスタイリングが楽しくなるような、</span>
+                            <span>扱いやすくて、ちょっと新しい自分になれるスタイルを</span>
+                            <span>一緒に見つけていきたいと思っています。</span>
+                        </p>
+    
+                        <p class="stylist-text--2">
+                            <span>ライフスタイルやファッションに寄り添いながら、</span>
+                            <span>その人にしかない魅力を引き出します。</span>
+                        </p>
+                    </div><!-- / -->
+    
+                    <div class="stylist-profile-img">
+                        <img src="./assets/img/top/top-concept.webp" alt="スタイリストプロフィール画像" width="1000" height="1000">
+                    </div><!-- / -->
+                </div>
+            </section>
+
+            <section class="stylist-styles u-ptb l-container">
+                <div class="stylist-styles-head">
+                    <div class="stylist-styles-title">
+                        <span class="c-section-title-en c-section-title-en--small">STYLES</span>
+                        <h2 class="c-section-title-ja c-section-title-ja--large">得意なスタイル</h2>
+                    </div>
+
+                    <div class="stylist-styles-btn">
+                        <a href="#" class="c-button">VIEW ALL</a>
+                    </div>
+                </div>
+
+                <ul class="stylist-styles-list">
+                    <li class="stylist-styles-item">
+                        <a href="style-short.html" class="stylist-styles-item-link">
+                            <div class="stylist-styles-item-img">
+                                <img src='./assets/img/style/style3.webp' width='1000' height='1000' alt='スタイリスト得意なスタイル画像' loading='lazy' decoding='async' />
+                            </div>
+    
+                            <div class="stylist-styles-item-content">
+                                <span class="stylist-styles-item-category">short</span>
+                                <p class="stylist-styles-item-title">soft short</p>
+                            </div>
+                        </a>
+                    </li>
+
+                        <li class="stylist-styles-item">
+                            <a href="style-medium.html" class="stylist-styles-item-link">
+                                <div class="stylist-styles-item-img">
+                                    <img src='./assets/img/style/style2.webp' width='1000' height='1000' alt='スタイリスト得意なスタイル画像' loading='lazy' decoding='async' />
+                                </div>
+
+                                <div class="stylist-styles-item-content">
+                                    <span class="stylist-styles-item-category">medium</span>
+                                        <p class="stylist-styles-item-title">layered medium</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="stylist-styles-item">
+                            <a href="style-bob.html" class="stylist-styles-item-link">
+                                <div class="stylist-styles-item-img">
+                                    <img src='./assets/img/style/style7.webp' width='1000' height='1000' alt='スタイリスト得意なスタイル画像' loading='lazy' decoding='async' />
+                                </div>
+
+                                <div class="stylist-styles-item-content">
+                                    <span class="stylist-styles-item-category">bob</span>
+                                    <p class="stylist-styles-item-title">sheer bob</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="stylist-styles-item">
+                            <a href="style-hilight.html" class="stylist-styles-item-link">
+                                <div class="stylist-styles-item-img">
+                                    <img src='./assets/img/style/style11.webp' width='1000' height='1000' alt='スタイリスト得意なスタイル画像' loading='lazy' decoding='async' />
+                                </div>
+
+                                <div class="stylist-styles-item-content">
+                                    <span class="stylist-styles-item-category">color</span>
+                                    <p class="stylist-styles-item-title">beige brown</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+            </section>
+        </main>
+        <footer class="l-footer l-container">
+            <div class="l-footer-content l-container">
+                <div class="l-footer-content-brand">
+                        <div class="c-site-logo">
+                            <a href="#" class="c-site-logo">
+                                <span class="c-site-logo-main">LUNE HAIR SALON</span>
+                                <span class="c-site-logo-sub">HAIR SALON</span>
+                            </a>
+                        </div><!-- / -->
+                    <p class="l-footer-content-brand-text">
+                        <span>その人らしさを、デザインする。</span>
+                        <span>髪からはじまる、美しい日常を。</span>
+                    </p>
+                </div><!-- / -->
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">MENU</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#cut" class="l-footer-content-nav-link">CUT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#color" class="l-footer-content-nav-link">COLOR</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#perm" class="l-footer-content-nav-link">PERM</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#treatment" class="l-footer-content-nav-link">TREATMENT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">HEAD SPA</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">SET</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="menu.html#other" class="l-footer-content-nav-link">OTHER</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">SALON</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="about.html" class="l-footer-content-nav-link">CONCEPT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="stylist.html" class="l-footer-content-nav-link">STYLIST</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="style.html" class="l-footer-content-nav-link">STYLE</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="#" class="l-footer-content-nav-link">BLOG</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="#" class="l-footer-content-nav-link">RECRUIT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="about.html" class="l-footer-content-nav-link">ACCESS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-footer-content-nav">
+                    <div class="l-footer-content-nav-title">
+                        <h3 class="l-footer-content-nav-title-en">INFO</h3>
+                    </div>
+                    <ul class="l-footer-content-nav-list">
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">RESERVATION</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">CONTACT</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">F&Q</a>
+                        </li>
+
+                        <li class="l-footer-content-nav-item">
+                            <a href="contact.html" class="l-footer-content-nav-link">PRIVACY POLICY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- / -->
+                <div class="l-footer-bottom">
+                    <small class="l-footer-copyright">© LUNE ALL RIGHTS RESERVED</small><!-- /.footer-copyright -->
+                    <div class="l-footer-info">
+                        <ul class="l-footer-info-list">
+                            <li class="l-footer-info-item">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">INSTAGRAM</a>
+                            </li>
+                            <li class="l-footer-info-item">
+                                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">LINE</a>
+                            </li>
+                            <li class="l-footer-info-item">
+                                <a href="https://hotpepper.jp/" target="_blank" rel="noopener noreferrer" class="l-footer-info-link">HOT PEPPER</a>
+                            </li>
+                        </ul>
+                    </div><!-- / -->
+                </div>
+        </footer>
+    </body>
+</html>
