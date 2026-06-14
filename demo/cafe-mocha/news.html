@@ -32,7 +32,7 @@
     <body>
         <header class="l-header js-header">
             <div class="header-logo">
-                <a href="#">
+                <a href="index.html">
                     <img src='assets/img/logo.svg' width='122' height='52' alt='cafe MOCHA' decoding='async' />
                 </a>
             </div><!-- /.header-logo -->
@@ -43,38 +43,37 @@
                 <nav class="l-header-menu-nav">
                     <ul class="l-header-menu-nav-list">
                         <li class="l-header-menu-nav-item">
-                            <a href="#" class="l-header-menu-nav-link">Home</a>
+                            <a href="index.html" class="l-header-menu-nav-link">Home</a>
                         </li>
                         <li class="l-header-menu-nav-item">
-                            <a href="#" class="l-header-menu-nav-link">About</a>
+                            <a href="about.html" class="l-header-menu-nav-link">About</a>
                         </li>
                         <li class="l-header-menu-nav-item l-accordion js-accordion">
                             <a href="menu.html" class="l-header-menu-nav-link l-header-menu-nav-link--pc">Menu</a>
-
-                            <button class="l-header-menu-nav-link l-accordion-trigger l-header-menu-nav-link--sp js-accordion-trigger" type="button">Menu</button>
+                            <button class="l-header-menu-nav-link l-accordion-trigger js-accordion-trigger l-header-menu-nav-link--sp" type="button">Menu</button>
                             <ul class="l-accordion-list js-accordion-list">
                                 <li class="l-accordion-item">
-                                    <a href="#">コーヒー</a>
+                                    <a href="menu.html#coffee">コーヒー</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">スイーツ</a>
+                                    <a href="menu.html#dessert">スイーツ</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">フード</a>
+                                    <a href="menu.html#food">フード</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">ドリンク</a>
+                                    <a href="menu.html#drink">ドリンク</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="l-header-menu-nav-item">
-                            <a href="#" class="l-header-menu-nav-link">News</a>
+                            <a href="news.html" class="l-header-menu-nav-link">News</a>
                         </li>
                         <li class="l-header-menu-nav-item">
-                            <a href="#" class="l-header-menu-nav-link">Access</a>
+                            <a href="info.html" class="l-header-menu-nav-link">Info</a>
                         </li>
                         <li class="l-header-menu-nav-item">
-                            <a href="#" class="l-header-menu-nav-link l-header-menu-nav-link--reserve">Reserve</a>
+                            <a href="contact.html" class="l-header-menu-nav-link l-header-menu-nav-link--reserve">Reserve</a>
                         </li>
                     </ul>
                     <ul class="l-header-menu-contact-list">
@@ -91,21 +90,257 @@
                 <img src='assets/img/open-button.svg' width='24' height='24' alt='メニューを開く' decoding='async' />
             </button>
         </header>
-        <main></main>
-        <footer class="l-footer">
-            <div class="l-container">
-                <ul class="l-footer-legal-list">
-                    <li class="l-footer-legal-item">
-                        <a href="#" class="l-footer-legal-link">Privacy Policy</a>
-                    </li>
-                    <li class="l-footer-legal-item">
-                        <a href="#" class="l-footer-legal-link">Terms of Use</a>
-                    </li>
-                </ul>
-                <small class="l-footer-copyright">
-                    <span>Copyright © 2026 Cafe Mocha. All rights reserved.</span>
-                </small>
+        <main>
+            <section class="c-page-fv">
+                <div class="l-container">
+                    <div class="c-page-fv-content">
+                        <div class="c-page-fv-title-wrap">
+                            <span class="c-page-fv-title-en">News</span>
+                            <h1 class="c-page-fv-title-ja">ニュース</h1>
+                        </div>
+                        
+                        <ul class="c-breadcrumb-list">
+                            <li class="c-breadcrumb-item">
+                                <a href="index.html" class="c-breadcrumb-link">HOME</a>
+                            </li>
+                            <li class="c-breadcrumb-item">
+                                <span class="c-breadcrumb-link c-breadcrumb-link--current">NEWS</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.l-container -->
+            </section>
+
+            <div class="c-message u-pt l-container">
+                <p class="c-message-text">
+                    <span>cafe Mochaの最新のお知らせや、</span>
+                    <span>季節のおすすめ、イベント情報などをお届けします。</span>
+                </p>
+            </div><!-- / -->
+
+            <div class="news-container l-container u-pt">
+                <div class="news-archive">
+                    <article class="c-menu-item">
+                        <a href="#" class="c-menu-item-link">
+                            <div class="c-menu-item-wrap c-menu-item-wrap--news">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/news/news.webp' width='600' height='400' alt='レモンチーズケーキ' decoding='async' />
+                                </div><!-- / -->
+                                <div class="c-menu-item-content c-menu-item-content--news">
+                                    <div class="c-date">
+                                        <time datetime="2026-05-08">2026.05.08</time>
+                                        <span class="c-tag">新メニュー</span>
+                                    </div>
+                                    <h2 class="c-menu-item-title">初夏限定のレモンチーズケーキが登場。</h2>
+                                    <p class="c-menu-item-text">
+                                        <span>爽やかな瀬戸内レモンを使った、初夏限定のチーズケーキが登場しました。</span>
+                                        <span>ぜひご賞味ください。</span>
+                                    </p>
+                                    <div class="news-item-btn">
+                                        <span class="news-item-btn-text">READ MORE</span>
+                                    </div><!-- / -->
+                                </div><!-- / -->
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="c-menu-item">
+                        <a href="#" class="c-menu-item-link">
+                            <div class="c-menu-item-wrap c-menu-item-wrap--news">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/news/news4.webp' width='600' height='400' alt='レモンチーズケーキ' decoding='async' />
+                                </div><!-- / -->
+                                <div class="c-menu-item-content c-menu-item-content--news">
+                                    <div class="c-date">
+                                        <time datetime="2026-05-08">2026.05.01</time>
+                                        <span class="c-tag">季節のおすすめ</span>
+                                    </div>
+                                    <h2 class="c-menu-item-title">自家製レモネードはじまりました</h2>
+                                    <p class="c-menu-item-text">
+                                        <span>国産レモンを使った自家製レモネード。</span>
+                                        <span>すっきりとした爽やかな味わいをお楽しみください。</span>
+                                    </p>
+                                    <div class="news-item-btn">
+                                        <span class="news-item-btn-text">READ MORE</span>
+                                    </div><!-- / -->
+                                </div><!-- / -->
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="c-menu-item">
+                        <a href="#" class="c-menu-item-link">
+                            <div class="c-menu-item-wrap c-menu-item-wrap--news">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/news/news3.webp' width='600' height='400' alt='レモンチーズケーキ' decoding='async' />
+                                </div><!-- / -->
+                                <div class="c-menu-item-content c-menu-item-content--news">
+                                    <div class="c-date">
+                                        <time datetime="2026-05-08">2026.04.20</time>
+                                        <span class="c-tag">お知らせ</span>
+                                    </div>
+                                    <h2 class="c-menu-item-title">ゴールデンウィークの営業について</h2>
+                                    <p class="c-menu-item-text">
+                                        <span>ゴールデンウィークの期間中も、通常通りいたします。</span>
+                                        <span>皆様のご来店を心よりお待ちしております。</span>
+                                    </p>
+                                    <div class="news-item-btn">
+                                        <span class="news-item-btn-text">READ MORE</span>
+                                    </div><!-- / -->
+                                </div><!-- / -->
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="c-menu-item">
+                        <a href="#" class="c-menu-item-link">
+                            <div class="c-menu-item-wrap c-menu-item-wrap--news">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/news/news2.webp' width='600' height='400' alt='レモンチーズケーキ' decoding='async' />
+                                </div><!-- / -->
+                                <div class="c-menu-item-content c-menu-item-content--news">
+                                    <div class="c-date">
+                                        <time datetime="2026-05-08">2026.04.05</time>
+                                        <span class="c-tag">コーヒー</span>
+                                    </div>
+                                    <h2 class="c-menu-item-title">新しいコーヒー豆が仲間入りしました</h2>
+                                    <p class="c-menu-item-text">
+                                        <span>エチオピア産のシングルオリジン「イルガチェフェ」を</span>
+                                        <span>新たにご用意しました。華やかな香りをお楽しみください。</span>
+                                    </p>
+                                    <div class="news-item-btn">
+                                        <span class="news-item-btn-text">READ MORE</span>
+                                    </div><!-- / -->
+                                </div><!-- / -->
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="c-menu-item">
+                        <a href="#" class="c-menu-item-link">
+                            <div class="c-menu-item-wrap c-menu-item-wrap--news">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/news/news3.webp' width='600' height='400' alt='レモンチーズケーキ' decoding='async' />
+                                </div><!-- / -->
+                                <div class="c-menu-item-content c-menu-item-content--news">
+                                    <div class="c-date">
+                                        <time datetime="2026-05-08">2026.03.15</time>
+                                        <span class="c-tag">お知らせ</span>
+                                    </div>
+                                    <h2 class="c-menu-item-title">店舗の一部を模様替えしました</h2>
+                                    <p class="c-menu-item-text">
+                                        <span>グリーンを増やし、より落ち着ける空間に。</span>
+                                        <span>ゆったりとした時間をお過ごしください。</span>
+                                    </p>
+                                    <div class="news-item-btn">
+                                        <span class="news-item-btn-text">READ MORE</span>
+                                    </div><!-- / -->
+                                </div><!-- / -->
+                            </div>
+                        </a>
+                    </article>
+                </div><!-- / -->
+    
+                <aside class="news-sidebar">
+                    <div class="news-sidebar-content--category">
+                        <h2 class="c-title-en">CATEGORY</h2>
+                        <ul class="news-sidebar-list">
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">すべてのお知らせ</a>
+                                <span class="c-news-item-count">32</span>
+                            </li>
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">お知らせ</a>
+                                <span class="c-news-item-count">12</span>
+                            </li>
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">新メニュー</a>
+                                <span class="c-news-item-count">8</span>
+                            </li>
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">季節のおすすめ</a>
+                                <span class="c-news-item-count">6</span>
+                            </li>
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">イベント</a>
+                                <span class="c-news-item-count">4</span>
+                            </li>
+                            <li class="c-news-item">
+                                <a href="#" class="c-news-item-link">コーヒー</a>
+                                <span class="c-news-item-count">2</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="news-sidebar-content--archive">
+                        <h2 class="c-title-en">ARCHIVE</h2>
+
+                        <div class="news-sidebar-content-item">
+                            <h3 class="c-news-item-title">2026年</h3>
+                            <ul class="news-sidebar-list">
+                                <li class="c-news-item c-news-item--archive">
+                                    <a href="#" class="c-news-item-link">5月 (2)</a>
+                                </li>
+                                <li class="c-news-item c-news-item--archive">
+                                    <a href="#" class="c-news-item-link">4月 (3)</a>
+                                </li>
+                                <li class="c-news-item c-news-item--archive">
+                                    <a href="#" class="c-news-item-link">3月 (2)</a>
+                                </li>
+                                <li class="c-news-item c-news-item--archive">
+                                    <a href="#" class="c-news-item-link">2月 (1)</a>
+                                </li>
+                                <li class="c-news-item c-news-item--archive">
+                                    <a href="#" class="c-news-item-link">1月 (2)</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="news-sidebar-content-item">
+                        <h3 class="c-news-item-title">2025年</h3>
+
+                        <ul class="news-sidebar-list">
+                            <li class="c-news-item c-news-item--archive">
+                                <a href="#" class="c-news-item-link">12月 (2)</a>
+                            </li>
+                            <li class="c-news-item c-news-item--archive">
+                                <a href="#" class="c-news-item-link">11月 (3)</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </aside>
             </div>
-        </footer>
-    </body>
+
+
+    <div class="c-cta">
+        <div class="c-cta-img">
+            <img src='./assets/img/about-detail2.webp' width='1400' height='933' alt='店内の様子' decoding='async' />
+        </div><!-- /.c-cta-img -->
+        <div class="c-cta-content">
+            <h2 class="c-cta-title">日常の中の特別なひととき。</h2><!-- /.c-cta-title -->
+            <p class="c-cta-text">
+                <span>季節のメニューやイベント情報など、</span>
+                <span>カフェMochaの最新情報をお届けします。</span>
+                <span>これからも、どうぞお楽しみに。</span>
+            </p><!-- / -->
+        </div><!-- /.c-cta-content -->
+    </div><!-- /.c-cta -->
+</main>
+<footer class="l-footer">
+<div class="l-container">
+    <ul class="l-footer-legal-list">
+        <li class="l-footer-legal-item">
+            <a href="privacy.html" class="l-footer-legal-link">Privacy Policy</a>
+        </li>
+        <li class="l-footer-legal-item">
+            <a href="#" class="l-footer-legal-link">Terms of Use</a>
+        </li>
+    </ul>
+    <small class="l-footer-copyright">
+        <span>Copyright © 2026 Cafe Mocha. All rights reserved.</span>
+    </small>
+</div>
+</footer>
+</body>
 </html>

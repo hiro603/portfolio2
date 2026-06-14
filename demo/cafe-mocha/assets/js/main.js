@@ -1,7 +1,7 @@
 import { initializeHamburgerMenu } from "./component/hamburger-menu.js";
 import { initializeHeaderBackgroundToggle } from "./component/header-background-toggle.js";
 import { initializeMenuSlider } from "./slider/menu-slider.js";
-import { initializeAboutStaffSlider } from "./slider/staff-slider.js";
+import { initializeInfoSnsSlider } from "./slider/info-sns-slider.js";
 import { initializeAccordionMenu } from "./component/accordion-menu.js";
 // import { initializeFormValidation } from "./form/form-validation.js";
 
@@ -9,6 +9,7 @@ import { initializeAccordionMenu } from "./component/accordion-menu.js";
 initializeHamburgerMenu();
 initializeHeaderBackgroundToggle();
 initializeMenuSlider();
-initializeAboutStaffSlider();
+initializeInfoSnsSlider();
 initializeAccordionMenu();
+
 // initializeFormValidation();
