@@ -1,0 +1,55 @@
+@use "../../foundation" as f;
+
+/*!
+page > contact
+------------------------------
+*/
+.p-contact-page {
+  background-color: var(--color-bg-base);
+}
+
+.p-contact-page__inner {
+  padding-block: 7rem var(--space-xl);
+  max-width: var(--content-width-md);
+  margin-inline: auto;
+
+  @include f.mq() {
+    padding-block: 9rem var(--space-xl);
+  }
+}
+
+.p-contact-page__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.p-contact-page__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-tight);
+  margin: 0.5rem 0 0.75rem;
+}
+
+.p-contact-page__lead {
+  line-height: var(--lh-base);
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 52ch;
+}
+
+.p-contact-page__alt {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+
+  a {
+    color: var(--color-accent);
+  }
+}
