@@ -6,10 +6,10 @@
         "category": "necklace",
         "price": 6800,
         "colors": ["pink", "mint", "lavender"],
-        "thumbnail": "/assets/img/images/Petal_Necklace2.webp",
+        "thumbnail": "assets/img/images/Petal_Necklace2.webp",
         "images": [
-          "/assets/img/images/Petal_Necklace.webp",
-          "/assets/img/images/Petal_Necklace3.webp"
+          "assets/img/images/Petal_Necklace.webp",
+          "assets/img/images/Petal_Necklace3.webp"
         ],
         "description": "花びらをモチーフにした繊細なネックレス。デコルテを美しく彩ります。",
         "inStock": true
@@ -20,10 +20,10 @@
         "category": "necklace",
         "price": 7800,
         "colors": ["yellow", "pink"],
-        "thumbnail": "/assets/img/images/Lumiere_Necklace2.webp",
+        "thumbnail": "assets/img/images/Lumiere_Necklace2.webp",
         "images": [
-          "/assets/img/images/Lumiere_Necklace.webp",
-          "/assets/img/images/Lumiere_Necklace3.webp"
+          "assets/img/images/Lumiere_Necklace.webp",
+          "assets/img/images/Lumiere_Necklace3.webp"
         ],
         "description": "光をまとうような透明感のあるネックレス。シンプルながら存在感のあるデザイン。",
         "inStock": true
@@ -34,10 +34,10 @@
         "category": "necklace",
         "price": 5800,
         "colors": ["blue", "lavender"],
-        "thumbnail": "/assets/img/images/Brume_Necklace2.webp",
+        "thumbnail": "assets/img/images/Brume_Necklace2.webp",
         "images": [
-          "/assets/img/images/Brume_Necklace.webp",
-          "/assets/img/images/Brume_Necklace3.webp"
+          "assets/img/images/Brume_Necklace.webp",
+          "assets/img/images/Brume_Necklace3.webp"
         ],
         "description": "霧のようにやわらかな印象のネックレス。重ね付けにもおすすめです。",
         "inStock": true
@@ -48,10 +48,10 @@
         "category": "ring",
         "price": 4800,
         "colors": ["pink", "mint", "lavender"],
-        "thumbnail": "/assets/img/images/Petal_Ring2.webp",
+        "thumbnail": "assets/img/images/Petal_Ring2.webp",
         "images": [
-          "/assets/img/images/Petal_Ring.webp",
-          "/assets/img/images/Petal_Ring3.webp"
+          "assets/img/images/Petal_Ring.webp",
+          "assets/img/images/Petal_Ring3.webp"
         ],
         "description": "花びらをモチーフにした繊細なリング。日常に溶け込むシンプルなデザイン。",
         "inStock": true
@@ -62,10 +62,10 @@
         "category": "ring",
         "price": 5400,
         "colors": ["yellow", "pink"],
-        "thumbnail": "/assets/img/images/éclat_Ring2.webp",
+        "thumbnail": "assets/img/images/éclat_Ring2.webp",
         "images": [
-          "/assets/img/images/éclat_Ring.webp",
-          "/assets/img/images/éclat_Ring3.webp"
+          "assets/img/images/éclat_Ring.webp",
+          "assets/img/images/éclat_Ring3.webp"
         ],
         "description": "輝きをまとったリング。指先に上品なアクセントを添えます。",
         "inStock": true
@@ -76,10 +76,10 @@
         "category": "ring",
         "price": 4200,
         "colors": ["mint", "blue"],
-        "thumbnail": "/assets/img/images/Doux_Ring2.webp",
+        "thumbnail": "assets/img/images/Doux_Ring2.webp",
         "images": [
-          "/assets/img/images/Doux_Ring.webp",
-          "/assets/img/images/Doux_Ring3.webp"
+          "assets/img/images/Doux_Ring.webp",
+          "assets/img/images/Doux_Ring3.webp"
         ],
         "description": "やわらかな曲線が美しいリング。毎日つけたくなるシンプルさが魅力。",
         "inStock": true
@@ -90,10 +90,10 @@
         "category": "earring",
         "price": 5200,
         "colors": ["pink", "lavender"],
-        "thumbnail": "/assets/img/images/Fleur_Earring2.webp",
+        "thumbnail": "assets/img/images/Fleur_Earring2.webp",
         "images": [
-          "/assets/img/images/Fleur_Earring.webp",
-          "/assets/img/images/Fleur_Earring3.webp"
+          "assets/img/images/Fleur_Earring.webp",
+          "assets/img/images/Fleur_Earring3.webp"
         ],
         "description": "花をモチーフにした揺れるイヤリング。顔まわりを華やかに演出します。",
         "inStock": true
@@ -104,10 +104,10 @@
         "category": "earring",
         "price": 4600,
         "colors": ["mint", "blue"],
-        "thumbnail": "/assets/img/images/Rosée_Earring2.webp",
+        "thumbnail": "assets/img/images/Rosée_Earring2.webp",
         "images": [
-          "/assets/img/images/Rosée_Earring.webp",
-          "/assets/img/images/Rosée_Earring3.webp"
+          "assets/img/images/Rosée_Earring.webp",
+          "assets/img/images/Rosée_Earring3.webp"
         ],
         "description": "朝露をイメージした透明感のあるイヤリング。清楚な印象を与えます。",
         "inStock": true
@@ -118,10 +118,10 @@
         "category": "earring",
         "price": 4800,
         "colors": ["yellow", "pink"],
-        "thumbnail": "/assets/img/images/Nuage_Earring2.webp",
+        "thumbnail": "assets/img/images/Nuage_Earring2.webp",
         "images": [
-          "/assets/img/images/Nuage_Earring.webp",
-          "/assets/img/images/Nuage_Earring3.webp"
+          "assets/img/images/Nuage_Earring.webp",
+          "assets/img/images/Nuage_Earring3.webp"
         ],
         "description": "雲のようにふわりと軽いイヤリング。長時間つけても疲れないデザイン。",
         "inStock": true
@@ -132,10 +132,10 @@
         "category": "bracelet",
         "price": 5600,
         "colors": ["pink", "mint"],
-        "thumbnail": "/assets/img/images/Petal_Bracelet2.webp",
+        "thumbnail": "assets/img/images/Petal_Bracelet2.webp",
         "images": [
-          "/assets/img/images/Petal_Bracelet.webp",
-          "/assets/img/images/Petal_Bracelet3.webp"
+          "assets/img/images/Petal_Bracelet.webp",
+          "assets/img/images/Petal_Bracelet3.webp"
         ],
         "description": "花びらモチーフのブレスレット。手首をやさしく飾ります。",
         "inStock": true
@@ -146,10 +146,10 @@
         "category": "bracelet",
         "price": 6200,
         "colors": ["yellow", "lavender"],
-        "thumbnail": "/assets/img/images/Lumiere_Bracelet2.webp",
+        "thumbnail": "assets/img/images/Lumiere_Bracelet2.webp",
         "images": [
-          "/assets/img/images/Lumiere_Bracelet.webp",
-          "/assets/img/images/Lumiere_Bracelet3.webp"
+          "assets/img/images/Lumiere_Bracelet.webp",
+          "assets/img/images/Lumiere_Bracelet3.webp"
         ],
         "description": "光を受けてきらめくブレスレット。シンプルなコーデのアクセントに。",
         "inStock": true
@@ -160,10 +160,10 @@
         "category": "bracelet",
         "price": 5000,
         "colors": ["blue", "mint"],
-        "thumbnail": "/assets/img/images/Doux_Bracelet2.webp",
+        "thumbnail": "assets/img/images/Doux_Bracelet2.webp",
         "images": [
-          "/assets/img/images/Doux_Bracelet.webp",
-          "/assets/img/images/Doux_Bracelet3.webp"
+          "assets/img/images/Doux_Bracelet.webp",
+          "assets/img/images/Doux_Bracelet3.webp"
         ],
         "description": "やわらかな曲線が手首に自然になじむブレスレット。重ね付けにもおすすめ。",
         "inStock": true
