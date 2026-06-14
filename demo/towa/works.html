@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>東和精密テック株式会社</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="assets/img/fwebclip.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/vendor/splide-core.min.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+        <script src="./assets/js/vendor/splide.min.js" defer></script>
+        <script src="./assets/js/vendor/gsap.min.js" defer></script>
+        <script src="./assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="./assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <p class="l-header-logo">
+                <a href="index.html" class="l-header-logo-white">東和精密テック</a>
+                <a href="index.html" class="l-header-logo-black">東和精密テック</a>
+
+            </p><!-- /.header-logo -->
+
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close-button js-header-menu-close-button" aria-label="メニューを閉じる">
+                    <img src='assets/img/hamburger-close.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+
+                    <nav class="l-header-menu-nav">
+                        <ul class="l-header-menu-list">
+                            <li class="l-header-menu-item">
+                                <a href="index.html" class="l-header-menu-link u-text-hover">
+                                    <span class="l-header-menu-text-en">TOP</span>
+                                    <span class="l-header-menu-text-ja">トップ</span>
+                                </a>
+                            </li>
+                                <li class="l-header-menu-item">
+                                    <a href="service.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">SERVICE</span>
+                                        <span class="l-header-menu-text-ja">事業内容</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="works.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">WORKS</span>
+                                        <span class="l-header-menu-text-ja">実積</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="recruit.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">RECRUIT</span>
+                                        <span class="l-header-menu-text-ja">採用情報</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="contact.html" class="l-header-menu-link l-header-menu-link--contact">
+                                        <span class="l-header-menu-text-en">CONTACT</span>
+                                        <span class="l-header-menu-text-ja">お問い合わせ</span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </nav>
+                </dialog>
+
+                <button class="l-header-menu-open-button js-header-menu-open-button" aria-label="メニューを開く">
+                    <img src='assets/img/hamburger-open.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+                </button>
+        </header>
+        <main>
+            <div class="works-fv js-header-trigger">
+                <div class="works-fv-content">
+                    <div class="works-fv-title-wrap">
+                        <span class="works-fv-title-en">WORKS</span>
+                        <h1 class="works-fv-title-ja">実績紹介</h1>
+                    </div>
+                    <p class="works-fv-text">
+                        <span>多彩な業界の製品づくりを支えてきた、</span>
+                        <span>私たちの加工実績の一部をご紹介します。</span>
+                    </p>
+                </div>
+            </div><!-- / -->
+
+            <p class="u-notice">※本サイトはポートフォリオ用の架空案件です。</p>
+
+            <section class="works-detail">
+                <ul class="works-detail-category l-container">
+                    <li class="works-detail-category-item">
+                        <a href="#">ALL</a>
+                    </li>
+                    <li class="works-detail-category-item">
+                        <a href="#precision-sheet-metal-processing">精密板金加工</a>
+                    </li>
+                    <li class="works-detail-category-item">
+                        <a href="#machine-processing">機械加工</a>
+                    </li>
+                    <li class="works-detail-category-item">
+                        <a href="#enclosure-manufacturing">筐体製作</a>
+                    </li>
+                    <li class="works-detail-category-item">
+                        <a href="#">試作品・製品開発</a>
+                    </li>
+                    <li class="works-detail-category-item">
+                        <a href="#">その他</a>
+                    </li>
+                </ul><!-- /.works-detail-list -->
+
+                <div class="works-detail-list l-container u-ptb">
+                    <article class="works-detail-item" id="precision-sheet-metal-processing">
+                        <a href="works/control-box.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">精密板金加工</span>
+                                    <h2 class="works-detail-content-name">制御盤ボックス</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>薄板の精密加工から溶接、表面処理まで</span>
+                                    <span>一貫した制御盤ボックス。</span>
+                                </p>
+                        </a>
+                    </article>
+
+                    <article class="works-detail-item">
+                        <a href="works/cover.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works4.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">精密板金加工</span>
+                                    <h2 class="works-detail-content-name">カバー・パネル</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>デザイン性と機能性を両立した外装部品。</span>
+                                    <span>多様な表面処理にも対応。</span>
+                                </p>
+                                </div>
+                        </a>
+                    </article>
+
+                    <article class="works-detail-item" id="machine-processing">
+                        <a href="works/jig-base-frame.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works2.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">機械加工</span>
+                                    <h2 class="works-detail-content-name">治具ベースプレート</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>高精度な平面度・直角度を要求される</span>
+                                    <span>治具部品を安定した品質で製作。</span>
+                                </p>
+                                </div>
+                        </a>
+                    </article>
+
+                    <article class="works-detail-item">
+                        <a href="works/aluminum-machined-parts.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works5.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">機械加工</span>
+                                    <h2 class="works-detail-content-name">アルミ機械加工部品</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>アルミ材の切削加工を得意とし、試作から</span>
+                                    <span>量産まで高い精度で対応。。</span>
+                                </p>
+                                </div>
+                        </a>
+                    </article>
+
+                    <article class="works-detail-item" id="enclosure-manufacturing">
+                        <a href="works/equipment-frame.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works3.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">筐体製作</span>
+                                    <h2 class="works-detail-content-name">装置フレーム</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>強度と軽量化を両立した装置フレーム。</span>
+                                    <span>用途に応じた最適な構造を提案。</span>
+                                </p>
+                                </div>
+                        </a>
+                    </article>
+                    
+                    <article class="works-detail-item">
+                        <a href="works/unit-case.html">
+                            <div class="works-detail-img">
+                                <img src='assets/img/works/works6.webp' width='800' height='533' alt='精密板金加工' decoding='async' />
+                            </div><!-- / -->
+                            <div class="works-detail-content">
+                                <div class="works-detail-content-title">
+                                    <span class="works-detail-content-category">筐体製作</span>
+                                    <h2 class="works-detail-content-name">ユニットケース</h2>
+                                </div><!-- / -->
+                                <p class="works-detail-content-text">
+                                    <span>電気機器向けのユニットケース。</span>
+                                    <span>組立性、放熱性を考慮した設計。</span>
+                                </p>
+                                </div>
+                        </a>
+                    </article>
+                    <div class="works-detail-btn">
+                        <a href="service.html" class="works-detail-btn-link">VIEW MORE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-cta u-ptb">
+                <div class="l-cta-content l-container">
+                    <h2 class="l-cta-title">金属加工に関するご相談はこちら</h2>
+                    <p class="l-cta-text">
+                        <span>試作・小ロット・量産まで、</span>
+                        <span>お客様の課題に合わせて柔軟に対応します。</span>
+                    </p>
+                    <div class="l-cta-btn">
+                        <a href="contact.html" class="c-button l-cta-btn-link">お問い合わせフォームへ</a>
+                    </div><!-- /.service-cta-btn -->
+                </div>
+            </section>
+        </main>
+    <footer class="l-footer">
+        <div class="l-footer-content l-container">
+            <div class="l-footer-company">
+                <h2 class="l-footer-company-name">東和精密テック株式会社</h2>
+                <p class="l-footer-company-address">
+                    <span>〒000-0000</span>
+                    <span>東京都千代田区神田鍛冶町0-00-0</span>
+                </p>
+                <p class="l-footer-company-tel">
+                    <span>TEL：03-1234-5678</span>
+                    <span>FAX：03-1234-5678</span>
+                </p>
+            </div><!-- /.l-footer-company -->
+
+            <div class="l-footer-map">
+                <a href="https://maps.app.goo.gl/MRfjE6yPaZKXLTt28" target="_blank">
+                    <img src='assets/img/map.jpeg' width='360' height='240' alt='地図' decoding='async' />
+                </a>
+            </div><!-- /.l-footer-map -->
+
+            <div class="l-footer-nav">
+                <ul class="l-footer-nav-list">
+                    <li class="l-footer-nav-item">
+                        <a href="index.html" class="u-text-hover">トップ</a>
+                    </li>
+                    <li class="l-footer-nav-item">
+                        <a href="service.html" class="u-text-hover">事業内容</a>
+                    </li>
+                    <li class="l-footer-nav-item">
+                        <a href="works.html" class="u-text-hover">実積</a>
+                    </li>
+                    <li class="l-footer-nav-item">
+                        <a href="recruit.html" class="u-text-hover">採用情報</a>
+                    </li>
+                    <li class="l-footer-nav-item">
+                        <a href="contact.html" class="u-text-hover l-footer-nav--contact">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.l-footer-content -->
+
+        <small class="l-footer-copyright">©︎ 2026 Towa Seimitu Tech Co.,Ltd.</small><!-- /.l-footer-copyright -->
+    </footer>
+</body>
+</html>

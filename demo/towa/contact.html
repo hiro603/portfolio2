@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>東和精密テック株式会社</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="assets/img/favicon/webclip.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/vendor/splide-core.min.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+        <script src="./assets/js/vendor/splide.min.js" defer></script>
+        <script src="./assets/js/vendor/gsap.min.js" defer></script>
+        <script src="./assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="./assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <p class="l-header-logo">
+                <a href="" class="l-header-logo-white">東和精密テック</a>
+                <a href="#" class="l-header-logo-black">東和精密テック</a>
+
+            </p><!-- /.header-logo -->
+
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close-button js-header-menu-close-button" aria-label="メニューを閉じる">
+                    <img src='assets/img/hamburger-close.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+
+                    <nav class="l-header-menu-nav">
+                        <ul class="l-header-menu-list">
+                            <li class="l-header-menu-item">
+                                <a href="index.html" class="l-header-menu-link u-text-hover">
+                                    <span class="l-header-menu-text-en">TOP</span>
+                                    <span class="l-header-menu-text-ja">トップ</span>
+                                </a>
+                            </li>
+                                <li class="l-header-menu-item">
+                                    <a href="service.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">SERVICE</span>
+                                        <span class="l-header-menu-text-ja">事業内容</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="works.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">WORKS</span>
+                                        <span class="l-header-menu-text-ja">実積</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="recruit.html" class="l-header-menu-link u-text-hover">
+                                        <span class="l-header-menu-text-en">RECRUIT</span>
+                                        <span class="l-header-menu-text-ja">採用情報</span>
+                                    </a>
+                                </li>
+
+                                <li class="l-header-menu-item">
+                                    <a href="#" class="l-header-menu-link l-header-menu-link--contact">
+                                        <span class="l-header-menu-text-en">CONTACT</span>
+                                        <span class="l-header-menu-text-ja">お問い合わせ</span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </nav>
+                </dialog>
+
+                <button class="l-header-menu-open-button js-header-menu-open-button" aria-label="メニューを開く">
+                    <img src='assets/img/hamburger-open.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+                </button>
+        </header>
+        <main>
+            <div class="contact-fv js-header-trigger">
+                <div class="contact-fv-content">
+                    <div class="contact-fv-title-wrap">
+                        <span class="contact-fv-title-en">CONTACT</span>
+                        <h1 class="contact-fv-text-ja">お問い合わせ</h1>
+                    </div>
+                <p class="contact-fv-text">
+                    <span>金属加工に関するご相談・お問い合わせは、</span>
+                    <span>下記フォームよりお気軽にお問い合わせください。</span>
+                </p>
+                </div><!-- /.service-fv-content -->
+            </div><!-- / -->
+            
+            <p class="c-notice contact-notice">※本サイトはポートフォリオ用の架空案件です。</p><!-- / -->
+            
+            <section class="contact-introduction l-container u-ptb">
+                <h2 class="contact-introduction-heading">
+                    <span>精密板金加工・機械加工・溶接組立に関する、</span>
+                    <span>ご相談・お見積もり依頼を承っております。</span>
+                </h2>
+                <p class="contact-introduction-text">
+                    <span>試作・小ロット・量産まで、</span>
+                    <span>お気軽にお問い合わせください。</span>
+                </p>
+            </section>
+
+            <section class="contact-form l-container u-pb">
+                <form class="top-contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Do not fill this out:
+                              <input name="bot-field">
+                            </label>
+                          </p>
+
+                        <div class="top-contact-form-item">
+                            <label for="name" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">お名前</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <input type="text" name="name" id="name" class="c-form-text js-name-field" placeholder="お名前を入力してください" required/>
+                        </div>
+                        <div class="top-contact-form-item">
+                            <label for="email" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">メールアドレス</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <input type="email" name="email" id="email" class="c-form-text js-email-field" placeholder="メールアドレスを入力してください" required/>
+                        </div>
+                        <div class="top-contact-form-item">
+                            <label for="message" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">お問合せ内容</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <textarea name="message" id="message" class="c-form-text c-form-textarea" placeholder="メッセージを入力してください" required></textarea>
+                            <p class="error js-error"></p>
+                        </div>
+
+                        <fieldset class="top-contact-form-item--privacy">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox-input" name="agree" id="agree" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                  <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する
+                                </span>
+                              </label>
+                          </fieldset>
+
+                        <div class="top-contact-form-button">
+                            <button type="submit" class="contact-form-button-link js-submit-button">送信する</button>
+                        </div>
+                    </form>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <div class="l-footer-content l-container">
+                <div class="l-footer-company">
+                    <h2 class="l-footer-company-name">東和精密テック株式会社</h2>
+                    <p class="l-footer-company-address">
+                        <span>〒000-0000</span>
+                        <span>東京都千代田区神田鍛冶町0-00-0</span>
+                    </p>
+                    <p class="l-footer-company-tel">
+                        <span>TEL：03-1234-5678</span>
+                        <span>FAX：03-1234-5678</span>
+                    </p>
+                </div><!-- /.l-footer-company -->
+
+                <div class="l-footer-map">
+                    <a href="https://maps.app.goo.gl/MRfjE6yPaZKXLTt28" target="_blank">
+                        <img src='assets/img/map.jpeg' width='360' height='240' alt='地図' decoding='async' />
+                    </a>
+                </div><!-- /.l-footer-map -->
+
+                <div class="l-footer-nav">
+                    <ul class="l-footer-nav-list">
+                        <li class="l-footer-nav-item">
+                            <a href="index.html" class="u-text-hover">トップ</a>
+                        </li>
+                        <li class="l-footer-nav-item">
+                            <a href="service.html" class="u-text-hover">事業内容</a>
+                        </li>
+                        <li class="l-footer-nav-item">
+                            <a href="works.html" class="u-text-hover">実積</a>
+                        </li>
+                        <li class="l-footer-nav-item">
+                            <a href="recruit.html" class="u-text-hover">採用情報</a>
+                        </li>
+                        <li class="l-footer-nav-item">
+                            <a href="contact.html" class="u-text-hover l-footer-nav--contact">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.l-footer-content -->
+
+            <small class="l-footer-copyright">©︎ 2026 Towa Seimitu Tech Co.,Ltd.</small><!-- /.l-footer-copyright -->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Cafe Mocha</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/vendor/splide-core.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+         <script src="assets/js/vendor/gsap.min.js" defer></script>
+         <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+         <script src="assets/js/vendor/splide.min.js" defer></script>
+        <script type="module" src="assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <div class="header-logo">
+                <a href="#">
+                    <img src='assets/img/logo.svg' width='122' height='52' alt='cafe MOCHA' decoding='async' />
+                </a>
+            </div><!-- /.header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close-button js-header-menu-close-button" aria-label="メニューを閉じる">
+                    <img src='assets/img/close-button.svg' width='48' height='48' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="#" class="l-header-menu-nav-link">Home</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="about.html" class="l-header-menu-nav-link">About</a>
+                        </li>
+                        <li class="l-header-menu-nav-item l-accordion js-accordion">
+                            <a href="menu.html" class="l-header-menu-nav-link l-header-menu-nav-link--pc">Menu</a>
+
+                            <button class="l-header-menu-nav-link l-accordion-trigger l-header-menu-nav-link--sp js-accordion-trigger" type="button">Menu</button>
+                            <ul class="l-accordion-list js-accordion-list">
+                                <li class="l-accordion-item">
+                                    <a href="#">コーヒー</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">スイーツ</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">フード</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">ドリンク</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="news.html" class="l-header-menu-nav-link">News</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="access.html" class="l-header-menu-nav-link">Access</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="contact.html" class="l-header-menu-nav-link l-header-menu-nav-link--reserve">Reserve</a>
+                        </li>
+                    </ul>
+                    <ul class="l-header-menu-contact-list">
+                        <li class="l-header-menu-contact-item">
+                            <a href="https://www.instagram.com/" class="l-header-menu-contact-link">Instagram</a>
+                        </li>
+                        <li class="l-header-menu-contact-item">
+                            <a href="https://www.google.com/" class="l-header-menu-contact-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </dialog><!-- /.header-menu -->
+            <button class="l-header-menu-open-button js-header-menu-open-button" aria-label="メニューを開く">
+                <img src='assets/img/open-button.svg' width='24' height='24' alt='メニューを開く' decoding='async' />
+            </button>
+        </header>
+        <main>
+            <div class="top-fv">
+                <div class="top-fv-content l-container-s">
+                    <div class="top-fv-title">
+                        <span>やさしい光がさす、</span>
+                        <span>居心地のよい時間。</span>
+                    </div><!-- /.top-fv-title -->
+                    <div class="top-fv-text">
+                        <span>こだわりのコーヒーと手作りのスイーツで、</span>
+                        <span>日常の中に、ほっと一息つける時間を。</span>
+                    </div><!-- /.top-fv-text -->
+                    <div class="top-fv-btn">
+                        <a href="about.html" class="c-button c-button--white">About Us</a>
+                    </div><!-- /.top-fv-btn -->
+                </div>
+            </div><!-- /.top-fv -->
+
+            <section class="top-about l-container u-ptb">
+                <div class="top-about-wrap">
+                    <div class="top-about-wrap-img">
+                        <img src='assets/img/about.webp' width='1200' height='800' alt='about' decoding='async' />
+                    </div><!-- / -->
+                    <div class="top-about-wrap-content">
+                        <div class="c-title-wrap">
+                            <h2 class="c-title-en c-title-en--primary">About</h2>
+                            <p class="c-title-ja">
+                                <span>毎日をちょっと</span>
+                                <span>特別にする場所</span>
+                            </p>
+                        </div>
+                        <p class="top-about-wrap-content-text">
+                            <span>Cafe Mocha（カフェモカ）は、</span>
+                            <span>町の小さな路地にあるカフェです。</span>
+                            <span>心を込めて淹れるコーヒーと、素材に</span>
+                            <span>こだわったスイーツを落ち着いた空間で</span>
+                            <span>ゆっくりお楽しみください。</span>
+                        </p>
+                        <div class="top-about-wrap-content-btn">
+                            <a href="#" class="c-button c-button--transparent">View More</a>
+                        </div>
+                    </div>
+                </div><!-- / -->
+            </section>
+
+            <section class="top-menu u-pb">
+                <div class="c-title-wrap  l-container">
+                    <h2 class="c-title-en c-title-en--primary">Menu</h2>
+                </div>
+                <div class="top-menu-slider js-top-menu-slider splide">
+                    <div class="top-menu-list splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="top-menu-item">
+                                <div class="top-menu-item-img">
+                                    <img src='assets/img/menu.webp' width='1200' height='800' alt='カフェラテ' decoding='async' />
+                                </div>
+                                <h3 class="top-menu-item-title">Cafe Latte</h3><!-- / -->
+                                <div class="top-menu-item-text">
+                                    <span class="top-menu-item-text-name">カフェラテ</span>
+                                    <span class="top-menu-item-text-price">¥550</span>
+                                </div>
+                            </div><!-- / -->
+                          </li>
+                          <li class="splide__slide">
+                            <div class="top-menu-item">
+                            <div class="top-menu-item-img">
+                                <img src='assets/img/menu2.webp' width='1200' height='800' alt='カフェラテ' decoding='async' />
+                            </div>
+                            <h3 class="top-menu-item-title">Baked Cheese Cake</h3><!-- / -->
+                            <div class="top-menu-item-text">
+                                <span class="top-menu-item-text-name">ベイクドチーズケーキ</span>
+                                <span class="top-menu-item-text-price">¥600</span>
+                            </div>
+                        </div><!-- / -->
+                    </li>
+                          <li class="splide__slide">
+                            <div class="top-menu-item">
+                            <div class="top-menu-item-img">
+                                <img src='assets/img/menu3.webp' width='1200' height='800' alt='カフェラテ' decoding='async' />
+                            </div>
+                            <h3 class="top-menu-item-title">Pudding</h3><!-- / -->
+                            <div class="top-menu-item-text">
+                                <span class="top-menu-item-text-name">なめらかプリン</span>
+                                <span class="top-menu-item-text-price">¥500</span>
+                            </div>
+                        </div><!-- / -->
+                    </li>
+                    <li class="splide__slide"><div class="top-menu-item">
+                        <div class="top-menu-item-img">
+                            <img src='assets/img/menu4.webp' width='1200' height='800' alt='カフェラテ' decoding='async' />
+                        </div>
+                        <h3 class="top-menu-item-title">Seasonal Lemonade</h3><!-- / -->
+                        <div class="top-menu-item-text">
+                            <span class="top-menu-item-text-name">自家製レモネード</span>
+                            <span class="top-menu-item-text-price">¥550</span>
+                        </div>
+                    </div><!-- / -->
+                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-menu-btn">
+                    <a href="#" class="c-button c-button--primary c-button--center">View More</a>
+                </div>
+            </section>
+
+            <section class="top-news u-ptb">
+                <div class="top-news-content l-container-s">
+                    <h2 class="c-title-en c-title-en--primary">News</h2><!-- / -->
+                    
+                    <div class="top-news-list">
+                        <article class="c-news-item">
+                            <a href="#" class="c-news-item-link">
+                                <time class="c-news-item-date" datetime="2026-05-08">2026.05.08</time>
+                                <h2 class="c-news-item-title">季節限定メニューが始まりました。</h2><!-- / -->
+                            </a>
+                        </article>
+                        <article class="c-news-item">
+                            <a href="#" class="c-news-item-link">
+                                <time class="c-news-item-date" datetime="2026-05-08">2026.04.18</time>
+                                <h2 class="c-news-item-title">ゴールデンウィークの営業について。</h2><!-- / -->
+                            </a>
+                        </article>
+                        <article class="c-news-item">
+                            <a href="#" class="c-news-item-link">
+                                <time class="c-news-item-date" datetime="2026-05-08">2026.03.29</time>
+                                <h2 class="c-news-item-title">新しいスイーツを追加しました。</h2><!-- / -->
+                            </a>
+                        </article>
+                    </div>
+                    <div class="top-news-btn">
+                        <a href="#" class="c-button c-button--transparent c-button--center">View All News</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="top-info u-ptb">
+                <div class="top-info-wrap l-container">
+                    <section class="top-info-section">
+                        <h2 class="c-title-en c-title-en--primary">Access</h2>
+                        <p class="top-info-section-address">
+                            <span>〒000-0000</span>
+                            <span>東京都世田谷区代沢3丁目</span>
+                            <span>Open 10:00 - 18:00</span>
+                            <span>Closed Wednesday</span>
+                            <span>Parking Available</span>
+                        </p>
+                        <div class="top-info-section-btn">
+                            <a href="#" class="c-button c-button--transparent c-button--center">Google Map</a>
+                        </div>
+                    </section>
+    
+                    <section class="top-info-section">
+                        <h2 class="c-title-en c-title-en--primary">Instagram</h2>
+                        <div class="top-info-section-img">
+                            <ul class="top-info-section-img-list">
+                                <li class="top-info-section-img-section">
+                                    <img src='assets/img/menu.webp' width='1200' height='800' alt='instagram1' decoding='async' />
+                                </li>
+                                <li class="top-info-section-img-section">
+                                    <img src='assets/img/menu2.webp' width='1200' height='800' alt='instagram2' decoding='async' />
+                                </li>
+                                <li class="top-info-section-img-section">
+                                    <img src='assets/img/menu3.webp' width='1200' height='800' alt='instagram3' decoding='async' />
+                                </li>
+                                <li class="top-info-section-img-section">
+                                    <img src='assets/img/menu4.webp' width='1200' height='800' alt='instagram4' decoding='async' />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-info-section-btn">
+                            <a href="#" class="c-button c-button--transparent c-button--center">Follow Us</a>
+                        </div>
+                    </section>
+    
+                <section class="top-info-section">
+                    <h2 class="c-title-en c-title-en--primary">Reserve</h2>
+                    <p class="top-info-section-text">
+                        <span>ご予約はお電話または</span>
+                        <span>WEB予約にて承っております。</span>
+                    </p>
+                    <div class="top-info-section-btn">
+                        <a href="contact.html" class="c-button c-button--primary c-button--center">Reserve</a>
+                    </div>
+                </section>
+                </div>
+        </section>
+        </main>
+        <footer class="l-footer">
+            <div class="l-container">
+                <ul class="l-footer-legal-list">
+                    <li class="l-footer-legal-item">
+                        <a href="privacy.html" class="l-footer-legal-link">Privacy Policy</a>
+                    </li>
+                    <li class="l-footer-legal-item">
+                        <a href="#" class="l-footer-legal-link">Terms of Use</a>
+                    </li>
+                </ul>
+                <small class="l-footer-copyright">
+                    <span>Copyright © 2026 Cafe Mocha. All rights reserved.</span>
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>
