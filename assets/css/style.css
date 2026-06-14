@@ -1583,8 +1583,14 @@ page > detail > section
 
 .p-detail-body__inner {
   padding-block: var(--space-xl);
+  padding-inline: var(--gutter-sm);
   max-width: var(--content-width-md);
   margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-detail-body__inner {
+    padding-inline: var(--gutter-lg);
+  }
 }
 
 .p-detail-section + .p-detail-section {
