@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Cafe Mocha</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/vendor/splide-core.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+         <script src="assets/js/vendor/gsap.min.js" defer></script>
+         <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+         <script src="assets/js/vendor/splide.min.js" defer></script>
+        <script type="module" src="assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src='assets/img/logo.svg' width='122' height='52' alt='cafe MOCHA' decoding='async' />
+                </a>
+            </div><!-- /.header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close-button js-header-menu-close-button" aria-label="メニューを閉じる">
+                    <img src='assets/img/close-button.svg' width='48' height='48' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="index.html" class="l-header-menu-nav-link">Home</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="about.html" class="l-header-menu-nav-link">About</a>
+                        </li>
+                        <li class="l-header-menu-nav-item l-accordion js-accordion">
+                            <a href="menu.html" class="l-header-menu-nav-link l-header-menu-nav-link--pc">Menu</a>
+                            <button class="l-header-menu-nav-link l-header-menu-nav-link--sp l-accordion-trigger js-accordion-trigger" type="button">Menu</button>
+                            <ul class="l-accordion-list js-accordion-list">
+                                <li class="l-accordion-item">
+                                    <a href="#">コーヒー</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">スイーツ</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">フード</a>
+                                </li>
+                                <li class="l-accordion-item">
+                                    <a href="#">ドリンク</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="news.html" class="l-header-menu-nav-link">News</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="access.html" class="l-header-menu-nav-link">Access</a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="contact.html" class="l-header-menu-nav-link l-header-menu-nav-link--reserve">Reserve</a>
+                        </li>
+                    </ul>
+                    <ul class="l-header-menu-contact-list">
+                        <li class="l-header-menu-contact-item">
+                            <a href="https://www.instagram.com/" class="l-header-menu-contact-link">Instagram</a>
+                        </li>
+                        <li class="l-header-menu-contact-item">
+                            <a href="https://www.google.com/" class="l-header-menu-contact-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </dialog><!-- /.header-menu -->
+            <button class="l-header-menu-open-button js-header-menu-open-button" aria-label="メニューを開く">
+                <img src='assets/img/open-button.svg' width='24' height='24' alt='メニューを開く' decoding='async' />
+            </button>
+        </header>
+        <main>
+            <section class="c-page-fv about-fv">
+                <div class="l-container">
+                    <div class="c-page-fv-content">
+                        <div class="c-page-fv-title-wrap">
+                            <span class="c-page-fv-title-en">About Us</span>
+                            <h1 class="c-page-fv-title-ja">私たちについて</h1>
+                        </div>
+                        
+                        <ul class="c-breadcrumb-list">
+                            <li class="c-breadcrumb-item">
+                                <a href="index.html" class="c-breadcrumb-link">HOME</a>
+                            </li>
+                            <li class="c-breadcrumb-item">
+                                <span class="c-breadcrumb-link c-breadcrumb-link--current">ABOUT</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.l-container -->
+            </section>
+
+            <section class="about-detail l-container u-ptb">
+                <div class="about-detail-content">
+                    <h2 class="about-detail-title">日常に、やさしい時間を。</h2>
+                    <p class="about-detail-text">
+                        <span>Cafe Mocha（カフェモカ）は、町の小さな路地にあるカフェです。</span>
+                        <span>こだわりのコーヒーと手作りのスイーツを通して、</span>
+                        <span>日々の暮らしにそっと寄り添うような時間をお届けしたいと考えています。</span>
+                        <span>本の温もりや緑に囲まれた心地よい空間で、</span>
+                        <span>どうぞゆっくりお過ごしください。</span>
+                    </p>
+                </div><!-- /.about-detail-content -->
+
+                <div class="about-detail-img">
+                    <img src='./assets/img/about-detail.webp' width='1400' height='933' alt='店舗の外観' decoding='async' />
+                </div>
+            </section>
+
+            <section class="about-philosophy u-ptb">
+                <div class="l-container">
+                    <div class="c-title-section-wrap c-title-section-wrap--center">
+                        <span class="c-title-section-en">Our Philosophy</span>
+                        <h2 class="c-title-section-ja">私たちの想い</h2>
+                    </div><!-- /.about-philosophy-wrap -->
+    
+                    <div class="about-philosophy-list">
+                        <section class="about-philosophy-item">
+                            <div class="about-philosophy-item-img">
+                                <img src='assets/img/icon_coffee.svg' width='32' height='32' alt='コーヒーマーク' decoding='async' />
+                            </div><!-- / -->
+                            <div class="about-philosophy-item-content">
+                                <h3 class="about-philosophy-item-title">こだわりの一杯を</h3>
+                                <p class="about-philosophy-item-text">
+                                    <span>世界中から厳選した豆を、丁寧にハンドドリップ。</span>
+                                    <span>香りや味わいの違いを楽しんでいただけるよう、</span>
+                                    <span>一杯ずつ心を込めてお淹れしています。</span>
+                                </p>
+                            </div><!-- / -->
+                        </section>
+    
+                        <section class="about-philosophy-item">
+                            <div class="about-philosophy-item-img">
+                                <img src='assets/img/icon_leaf.svg' width='32' height='32' alt='リーフマーク' decoding='async' />
+                            </div><!-- / -->
+                            <div class="about-philosophy-item-content">
+                                <h3 class="about-philosophy-item-title">やさしい素材を</h3>
+                                <p class="about-philosophy-item-text">
+                                    <span>スイーツやお食事には、できるだけ自然で安心できる。</span>
+                                    <span>素材を使用しています。季節の恵みを大切に、</span>
+                                    <span>体にも心にもやさしいメニューをお届けします。</span>
+                                </p>
+                            </div><!-- / -->
+                        </section>
+    
+                        <section class="about-philosophy-item">
+                            <div class="about-philosophy-item-img">
+                                <img src='assets/img/icon_chair.svg' width='32' height='32' alt='チェアマーク' decoding='async' />
+                            </div><!-- / -->
+                            <div class="about-philosophy-item-content">
+                                <h3 class="about-philosophy-item-title">心地よい空間を</h3>
+                                <p class="about-philosophy-item-text">
+                                    <span>木のぬくもりや緑を感じる落ち着いた空間で、</span>
+                                    <span>おひとりでも、大切な人とでも、思い思いの</span>
+                                    <span>時間をお過ごしいただけます。</span>
+                                </p>
+                            </div><!-- / -->
+                        </div><!-- /.l-container-l -->
+                    </section>
+
+                    <section class="about-info l-container u-ptb">
+                        <div class="about-info-content">
+                            <div class="c-title-section-wrap">
+                                <span class="c-title-section-en">Shop Info</span>
+                                <h2 class="c-title-section-ja">店舗情報</h2>
+                            </div>
+
+                            <dl class="about-info-list">
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">店名</dt>
+                                    <dd class="about-info-item-text">Cafe Mocha</dd>
+                                </div>
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">住所</dt>
+                                    <dd class="about-info-item-text">〒000-0000 東京都世田谷区代沢3丁目</dd>
+                                </div>
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">営業時間</dt>
+                                    <dd class="about-info-item-text">10:00 - 18:00</dd>
+                                </div>
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">定休日</dt>
+                                    <dd class="about-info-item-text">水曜日 (祝日の場合は翌日)</dd>
+                                </div>
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">席数</dt>
+                                    <dd class="about-info-item-text">28席</dd>
+                                </div>
+                                <div class="about-info-item">
+                                    <dt class="about-info-item-title">電話番号</dt>
+                                    <dd class="about-info-item-text">03-1234-5678</dd>
+                                </div>
+                            </dl>
+                            <div class="about-info-btn">
+                                <a href="access.html" class="c-button c-button--transparent">ACCESS PAGE</a>
+                            </div>
+                        </div><!-- /.about-info-content -->
+                        <div class="about-info-img">
+                            <img src='/assets/img/about-detail2.webp' width='1400' height='933' alt='店内の様子' decoding='async' />
+                        </div>
+                    </section>
+        </main>
+        <footer class="l-footer">
+            <div class="l-container">
+                <ul class="l-footer-legal-list">
+                    <li class="l-footer-legal-item">
+                        <a href="privacy.html" class="l-footer-legal-link">Privacy Policy</a>
+                    </li>
+                    <li class="l-footer-legal-item">
+                        <a href="#" class="l-footer-legal-link">Terms of Use</a>
+                    </li>
+                </ul>
+                <small class="l-footer-copyright">
+                    <span>Copyright © 2026 Cafe Mocha. All rights reserved.</span>
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>
