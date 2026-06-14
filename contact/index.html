@@ -78,9 +78,8 @@
                     <h1 class="p-contact-page__title">お問い合わせ</h1>
                     <p class="p-contact-page__lead">Webサイトの制作・リニューアルのご相談、お見積もりなど、お気軽にどうぞ。「何から相談すればいいか分からない」段階でも大丈夫です。やりたいことや今のお悩みを、そのまま聞かせてください。2〜3営業日以内にご返信します。</p>
 
-                    <form class="c-form" action="https://formspree.io/f/mykalyqn" method="post">
-                        <input type="hidden" name="_subject" value="webhiro.com お問い合わせ">
-                        <input type="hidden" name="_next" value="https://webhiro.com/contact/thanks/">
+                    <form class="c-form" name="contact" method="post" action="/contact/thanks/" data-netlify="true" netlify-honeypot="_gotcha">
+                        <input type="hidden" name="form-name" value="contact">
                         <div class="c-form__row">
                             <label class="c-form__label" for="name">お名前 <span class="c-form__required">必須</span></label>
                             <input class="c-form__input" type="text" id="name" name="お名前" autocomplete="name" required placeholder="山田 太郎">
