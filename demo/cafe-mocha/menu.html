@@ -49,20 +49,19 @@
                             <a href="about.html" class="l-header-menu-nav-link">About</a>
                         </li>
                         <li class="l-header-menu-nav-item l-accordion js-accordion">
-                            <a href="menu.html" class="l-header-menu-nav-link l-header-menu-nav-link--pc">Menu</a>
-                            <button class="l-header-menu-nav-link l-accordion-trigger l-header-menu-nav-link--sp js-accordion-trigger" type="button">Menu</button>
+                            <button class="l-header-menu-nav-link l-accordion-trigger js-accordion-trigger" type="button">Menu</button>
                             <ul class="l-accordion-list js-accordion-list">
                                 <li class="l-accordion-item">
-                                    <a href="#">コーヒー</a>
+                                    <a href="menu.html#coffee">コーヒー</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">スイーツ</a>
+                                    <a href="menu.html#dessert">スイーツ</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">フード</a>
+                                    <a href="menu.html#food">フード</a>
                                 </li>
                                 <li class="l-accordion-item">
-                                    <a href="#">ドリンク</a>
+                                    <a href="menu.html#drink">ドリンク</a>
                                 </li>
                             </ul>
                         </li>
@@ -70,7 +69,7 @@
                             <a href="news.html" class="l-header-menu-nav-link">News</a>
                         </li>
                         <li class="l-header-menu-nav-item">
-                            <a href="access.html" class="l-header-menu-nav-link">Access</a>
+                                <a href="info.html" class="l-header-menu-nav-link">Info</a>
                         </li>
                         <li class="l-header-menu-nav-item">
                             <a href="contact.html" class="l-header-menu-nav-link l-header-menu-nav-link--reserve">Reserve</a>
@@ -91,7 +90,7 @@
             </button>
         </header>
         <main>
-            <section class="c-page-fv about-fv">
+            <section class="c-page-fv">
                 <div class="l-container">
                     <div class="c-page-fv-content">
                         <div class="c-page-fv-title-wrap">
@@ -110,38 +109,257 @@
                     </div>
                 </div><!-- /.l-container -->
             </section>
-            <div class="c-message u-ptb">
-                <div class="l-container">
-                    <p class="c-message-text">
-                        <span>こだわりのコーヒーや手作りのスイーツ、</span>
-                        <span>季節の食材を使ったフードをご用意しています。</span>
-                    </p>
-                </div>
-            </div><!-- /.c-message -->
+
+            <div class="c-message u-pt l-container">
+                <p class="c-message-text">
+                    <span>こだわりのコーヒーや手作りのスイーツ、</span>
+                    <span>季節の食材を使用したフードをご用意しています。</span>
+                </p>
+            </div><!-- / -->
 
             <section class="menu-feature l-container u-ptb">
-                <div class="menu-feature-list">
-                    <div class="menu-feature-title-wrap">
+                <div class="menu-feature-content">
+                    <h2 class="menu-feature-title-wrap">
                         <span class="menu-feature-title-en">Drinks</span>
-                        <h2 class="menu-feature-title-ja">ドリンク</h2>
-                    </div><!-- / -->
-                    
-                    <section class="menu-feature-item">
-                        <div class="menu-feature-item-img">
-                            <img src='' width='' height='' alt='' decoding='async' />
-                        </div>
-                        <div class="menu-feature-item-content">
-                            <h3 class="menu-feature-item-title">ブレンドコーヒー</h3>
-                        </div>
-                    </section>
-                </div><!-- / -->
+                        <span class="menu-feature-title-ja">ドリンク</span>
+                    </h2>
+
+                    <ul class="menu-feature-list">
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap" id="coffee">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">ブレンドコーヒー</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>バランスのとれた、やさしい味わいの</span>
+                                        <span>オリジナルブレンド。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥550</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu2.webp' width='600' height='400' alt='アイスコーヒー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">アイスコーヒー</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>すっきりとした味わいのアイスコーヒー。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥600</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                <img src='assets/img/menu/menu3.webp' width='600' height='400' alt='カフェラテ' decoding='async' />
+                            </div>
+                            <div class="c-menu-item-content">
+                                <h3 class="c-menu-item-title">カフェラテ</h3>
+                                <p class="c-menu-item-text">
+                                    <span>エスプレッソとミルクのまろやかな</span>
+                                    <span>ハーモニー。</span>
+                                </p>
+                                <p class="c-menu-item-price">¥650</p>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap" id="drink">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu4.webp' width='600' height='400' alt='アールグレイティー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">アールグレイティー</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>華やかな香りのアールグレイ。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥600</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu5.webp' width='600' height='400' alt='自家製レモネード' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">自家製レモネード</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>国産レモンを使った自家製シロップの</span>
+                                        <span>レモネード。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥650</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-feature-content" id="food">
+                    <h2 class="menu-feature-title-wrap">
+                        <span class="menu-feature-title-en">Food</span>
+                        <span class="menu-feature-title-ja">フード</span>
+                    </h2>
+
+                    <ul class="menu-feature-list">
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu6.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">自家製野菜のカレー</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>たっぷりの野菜を使った、やさしい</span>
+                                        <span>味わいの自家製カレー。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥1,200</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                <img src='assets/img/menu/menu7.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                            </div>
+                            <div class="c-menu-item-content">
+                                <h3 class="c-menu-item-title">ハムとチーズのホットサンド</h3>
+                                <p class="c-menu-item-text">
+                                    <span>香ばしく焼き上げたハムとチーズの</span>
+                                    <span>ホットサンド。</span>
+                                </p>
+                                <p class="c-menu-item-price">¥900</p>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu8.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">グリーンサラダ</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>新鮮な野菜をシンプルなドレッシングで。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥700</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu-item">
+                            <div class="c-menu-item-wrap">
+                                <div class="c-menu-item-img">
+                                    <img src='assets/img/menu/menu9.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                                </div>
+                                <div class="c-menu-item-content">
+                                    <h3 class="c-menu-item-title">本日のスープ</h3>
+                                    <p class="c-menu-item-text">
+                                        <span>季節の食材を使った日替わりスープ。</span>
+                                    </p>
+                                    <p class="c-menu-item-price">¥500</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="menu-feature-item-note">
+                        <span>表示価格はすべて税込みです。</span>
+                        <span>グリーンサラダ、本日のスープはお料理と一緒にご提供いたします。</span>
+                    </p><!-- / -->
+                </div>
             </section>
+
+            <section class="menu-sweets u-ptb" id="dessert">
+                <div class="l-container">
+                <h2 class="menu-sweets-title-wrap">
+                    <span class="menu-sweets-title-en">Sweets</span>
+                    <span class="menu-sweets-title-ja">スイーツ</span>
+                </h2>
+
+                <ul class="menu-sweets-list">
+                    <li class="menu-sweets-item">
+                        <div class="menu-sweets-item-img">
+                            <img src='assets/img/menu/menu10.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                        </div>
+                        <div class="menu-sweets-item-content">
+                            <h3 class="menu-sweets-item-title">チーズケーキ</h3>
+                            <p class="menu-sweets-item-text">
+                                <span>しっとり濃厚なチーズケーキ。</span>
+                            </p>
+                            <p class="menu-sweets-item-price">¥650</p>
+                        </div>
+                    </li>
+
+                    <li class="menu-sweets-item">
+                        <div class="menu-sweets-item-img">
+                            <img src='assets/img/menu/menu11.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                        </div>
+                        <div class="menu-sweets-item-content">
+                            <h3 class="menu-sweets-item-title">ガトーショコラ</h3>
+                            <p class="menu-sweets-item-text">
+                                <span>カカオの風味豊かなガトーショコラ。</span>
+                            </p>
+                            <p class="menu-sweets-item-price">¥650</p>
+                        </div>
+                    </li>
+
+                    <li class="menu-sweets-item">
+                        <div class="menu-sweets-item-img">
+                            <img src='assets/img/menu/menu12.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                        </div>
+                        <div class="menu-sweets-item-content">
+                            <h3 class="menu-sweets-item-title">シフォンケーキ</h3>
+                            <p class="menu-sweets-item-text">
+                                <span>軽い口どけのシフォンケーキ。</span>
+                            </p>
+                            <p class="menu-sweets-item-price">¥600</p>
+                        </div>
+                    </li>
+
+                    <li class="menu-sweets-item">
+                        <div class="menu-sweets-item-img">
+                            <img src='assets/img/menu/menu13.webp' width='600' height='400' alt='ブレンドコーヒー' decoding='async' />
+                        </div>
+                        <div class="menu-sweets-item-content">
+                            <h3 class="menu-sweets-item-title">自家製プリン</h3>
+                            <p class="menu-sweets-item-text">
+                                <span>なめらかな食感の自家製プリン。</span>
+                            </p>
+                            <p class="menu-sweets-item-price">¥500</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="menu-sweets-item-note">ドリンクとセットでご注文いただくと、￥100引きになります。</p>
+                </div>
+            </section>
+
+                <div class="c-cta">
+                    <div class="c-cta-img">
+                        <img src='./assets/img/about-detail2.webp' width='1400' height='933' alt='店内の様子' decoding='async' />
+                    </div><!-- /.c-cta-img -->
+                    <div class="c-cta-content">
+                        <h2 class="c-cta-title">ゆったりとした時間をお過ごしください。</h2><!-- /.c-cta-title -->
+                        <p class="c-cta-text">
+                            <span>お一人でも、ご友人やご家族とでも、</span>
+                            <span>日常を忘れて、心解けるひとときをお過ごしください。</span>
+                        </p><!-- / -->
+                    </div><!-- /.c-cta-content -->
+                </div><!-- /.c-cta -->
         </main>
         <footer class="l-footer">
             <div class="l-container">
                 <ul class="l-footer-legal-list">
                     <li class="l-footer-legal-item">
-                        <a href="#" class="l-footer-legal-link">Privacy Policy</a>
+                        <a href="privacy.html" class="l-footer-legal-link">Privacy Policy</a>
                     </li>
                     <li class="l-footer-legal-item">
                         <a href="#" class="l-footer-legal-link">Terms of Use</a>
