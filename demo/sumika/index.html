@@ -1,0 +1,1471 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SUMIKA｜賃貸物件・お部屋探し</title>
+    <meta
+      name="description"
+      content="SUMIKAは20〜30代のライフスタイルに寄り添う賃貸物件を豊富に取り揃えたお部屋探しサービスです。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide-core.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- js -->
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5/dist/js/splide-extension-auto-scroll.min.js"
+      defer
+    ></script>
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- noindex -->
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <a class="c-site-logo" href="index.html"
+          ><span class="c-site-logo__main">SUMIKA</span></a
+        >
+
+        <dialog class="l-header__menu js-header-menu" aria-label="メニュー">
+          <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+            <button
+              class="l-header__menu-close js-header-menu-close"
+              type="button"
+              aria-label="メニューを閉じる"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg>
+            </button>
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="search.html">物件を探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="area.html">エリアから探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="conditions.html"
+                  >こだわり条件</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="guide.html"
+                  >はじめての方へ</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="faq.html">よくある質問</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="contact.html"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </dialog>
+
+        <div class="l-header__actions">
+          <button
+            class="l-header__action js-header-fav"
+            type="button"
+            aria-label="お気に入りリストを開く"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+              />
+            </svg>
+            <span>お気に入り</span>
+          </button>
+          <button
+            class="l-header__action js-header-history"
+            type="button"
+            aria-label="閲覧履歴を開く"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.4 2" />
+            </svg>
+            <span>閲覧履歴</span>
+          </button>
+          <button
+            class="l-header__menu-open js-header-menu-open"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="p-top-fv">
+        <div class="p-top-fv__collage">
+          <div class="p-top-fv__main">
+            <img
+              class="p-top-fv__main-img"
+              src="assets/img/room-02.png"
+              alt="明るいリビングのある部屋"
+              width="364"
+              height="236"
+            />
+            <div class="p-top-fv__overlay"></div>
+            <div class="p-top-fv__copy" data-reveal>
+              <h1 class="p-top-fv__copy-title">
+                自分らしい毎日を、<br />ここから。
+              </h1>
+              <p
+                class="p-top-fv__copy-text"
+                data-reveal
+                style="--reveal-delay: 0.18s"
+              >
+                理想の住まいがきっと見つかる<br />SUMIKAで、スマートなお部屋探し。
+              </p>
+            </div>
+          </div>
+          <div class="p-top-fv__collage-item">
+            <img
+              class="p-top-fv__collage-item-img"
+              src="assets/img/room-04.png"
+              alt="室内"
+              width="364"
+              height="236"
+            />
+          </div>
+          <div class="p-top-fv__collage-item">
+            <img
+              class="p-top-fv__collage-item-img"
+              src="assets/img/room-10.png"
+              alt="室内"
+              width="364"
+              height="236"
+            />
+          </div>
+          <div class="p-top-fv__collage-item">
+            <img
+              class="p-top-fv__collage-item-img"
+              src="assets/img/room-05.png"
+              alt="室内"
+              width="364"
+              height="236"
+            />
+          </div>
+          <div class="p-top-fv__collage-item">
+            <img
+              class="p-top-fv__collage-item-img"
+              src="assets/img/room-14.png"
+              alt="室内"
+              width="364"
+              height="236"
+            />
+          </div>
+        </div>
+
+        <div
+          class="p-top-fv__search l-container"
+          data-reveal
+          style="--reveal-delay: 0.32s"
+        >
+          <div class="p-top-fv__tools">
+            <form class="c-search-form" action="search/" role="search">
+              <div class="c-search-form__fields">
+                <div class="c-search-form__field">
+                  <label class="c-search-form__label" for="search-area"
+                    >エリア</label
+                  >
+                  <div class="c-search-form__value">
+                    <select
+                      class="c-search-form__select"
+                      id="search-area"
+                      name="area"
+                    >
+                      <option value="">選択してください</option>
+                      <option value="shibuya">渋谷区</option>
+                      <option value="meguro">目黒区</option>
+                      <option value="setagaya">世田谷区</option>
+                      <option value="shinjuku">新宿区</option>
+                      <option value="minato">港区</option>
+                      <option value="toshima">豊島区</option>
+                      <option value="nakano">中野区</option>
+                      <option value="suginami">杉並区</option>
+                    </select>
+                    <svg
+                      class="c-select-icon"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-search-form__field">
+                  <label class="c-search-form__label" for="search-line"
+                    >駅・路線</label
+                  >
+                  <div class="c-search-form__value">
+                    <select
+                      class="c-search-form__select"
+                      id="search-line"
+                      name="line"
+                    >
+                      <option value="">選択してください</option>
+                      <option value="yamanote">JR山手線</option>
+                      <option value="chuo">JR中央線</option>
+                      <option value="toyoko">東急東横線</option>
+                      <option value="denentoshi">東急田園都市線</option>
+                      <option value="inokashira">京王井の頭線</option>
+                      <option value="fukutoshin">東京メトロ副都心線</option>
+                      <option value="hibiya">東京メトロ日比谷線</option>
+                    </select>
+                    <svg
+                      class="c-select-icon"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-search-form__field">
+                  <label class="c-search-form__label" for="search-rent"
+                    >賃料</label
+                  >
+                  <div class="c-search-form__value">
+                    <select
+                      class="c-search-form__select"
+                      id="search-rent"
+                      name="rent"
+                    >
+                      <option value="">下限なし - 上限なし</option>
+                      <option value="60000">〜6万円</option>
+                      <option value="80000">〜8万円</option>
+                      <option value="100000">〜10万円</option>
+                      <option value="120000">〜12万円</option>
+                      <option value="150000">〜15万円</option>
+                      <option value="150001">15万円〜</option>
+                    </select>
+                    <svg
+                      class="c-select-icon"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-search-form__field">
+                  <label class="c-search-form__label" for="search-layout"
+                    >間取り</label
+                  >
+                  <div class="c-search-form__value">
+                    <select
+                      class="c-search-form__select"
+                      id="search-layout"
+                      name="layout"
+                    >
+                      <option value="">選択してください</option>
+                      <option value="1k">1K</option>
+                      <option value="1dk">1DK</option>
+                      <option value="1ldk">1LDK</option>
+                      <option value="2k">2K</option>
+                      <option value="2dk">2DK</option>
+                      <option value="2ldk">2LDK</option>
+                      <option value="3ldk">3LDK以上</option>
+                    </select>
+                    <svg
+                      class="c-select-icon"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <button class="c-button c-button--search" type="submit">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="M21 21l-4.3-4.3" /></svg
+                >検索する
+              </button>
+            </form>
+
+            <section class="p-top-amenities" aria-label="こだわり条件">
+              <p class="p-top-amenities__heading">こだわり条件</p>
+              <div class="p-top-amenities__grid">
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="ekichika"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="6" y="3" width="12" height="13" rx="2" />
+                      <path d="M6 11h12" />
+                      <circle cx="9" cy="13.5" r=".8" />
+                      <circle cx="15" cy="13.5" r=".8" />
+                      <path d="M8 21l2-3M16 21l-2-3" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">駅近</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="autolock"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="5" y="11" width="14" height="9" rx="2" />
+                      <path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">オートロック</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="soho"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="7" width="18" height="13" rx="2" />
+                      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">SOHO可</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="net"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M2 8.5a16 16 0 0 1 20 0" />
+                      <path d="M5 12a11 11 0 0 1 14 0" />
+                      <path d="M8.5 15.5a6 6 0 0 1 7 0" />
+                      <circle
+                        cx="12"
+                        cy="19"
+                        r="1"
+                        fill="currentColor"
+                        stroke="none"
+                      /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">ネット無料</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="bike"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="6" cy="17" r="3" />
+                      <circle cx="18" cy="17" r="3" />
+                      <path d="M6 17l4-7h5l2.5 7M9.5 10h3" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">駐輪場</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="bath"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                      <path d="M5 12V6a2 2 0 0 1 2-2 2 2 0 0 1 2 2" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">バストイレ別</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="kitchen"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="5" y="3" width="14" height="18" rx="2" />
+                      <circle cx="10" cy="8" r="1.4" />
+                      <circle cx="14" cy="8" r="1.4" />
+                      <path d="M5 12h14" /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">独立キッチン</span>
+                </button>
+                <button
+                  class="p-top-amenities__item js-amenity"
+                  type="button"
+                  data-amenity="pet"
+                  aria-pressed="false"
+                >
+                  <span class="p-top-amenities__icon"
+                    ><svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 21v-8" />
+                      <path
+                        d="M12 13c0-3.3 2.2-5.5 5.5-5.5 0 3.3-2.2 5.5-5.5 5.5z"
+                      />
+                      <path
+                        d="M12 15c0-3.3-2.2-5.5-5.5-5.5 0 3.3 2.2 5.5 5.5 5.5z"
+                      /></svg
+                  ></span>
+                  <span class="p-top-amenities__label">ペット可</span>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <p class="c-notice">※本サイトはポートフォリオ用の架空案件です。</p>
+
+      <section class="p-top-recommend">
+        <p class="c-eyebrow" data-reveal>RECOMMEND</p>
+        <div class="c-section-head" data-reveal style="--reveal-delay: 0.08s">
+          <div>
+            <h2 class="c-section-title">おすすめ物件</h2>
+          </div>
+          <a href="#" class="c-text-link"
+            >もっと見る<svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 6l6 6-6 6" /></svg
+          ></a>
+        </div>
+
+        <div class="p-top-recommend__grid">
+          <article
+            class="c-property js-property"
+            data-amenities="ekichika autolock net bath"
+            data-reveal
+            style="--reveal-delay: 0s"
+          >
+            <a
+              class="c-property__link"
+              href="property.html"
+              aria-label="中目黒駅 徒歩7分、賃料92,000円、1K — 物件詳細を見る"
+            ></a>
+            <div class="c-property__media">
+              <img
+                class="c-property__img"
+                src="assets/img/room-01.png"
+                alt="中目黒駅 徒歩7分の1K物件"
+                width="364"
+                height="236"
+              />
+              <span class="c-tag c-property__tag">1K</span>
+            </div>
+            <div class="c-property__body">
+              <div class="c-property__head">
+                <p class="c-property__station">中目黒駅 徒歩7分</p>
+                <button
+                  class="c-property__head-fav js-property-fav"
+                  type="button"
+                  aria-label="お気に入りに追加"
+                  aria-pressed="false"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="c-property__price-row">
+                <span class="c-property__price">¥92,000</span>
+                <span class="c-property__mgmt">管理費 ¥8,000</span>
+              </div>
+              <p class="c-property__addr">東京都目黒区上目黒1丁目</p>
+              <p class="c-property__meta">築2020年 / 25.12㎡</p>
+              <div class="c-property__amenities">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="6" y="3" width="12" height="13" rx="2" />
+                  <path d="M6 11h12" />
+                  <path d="M8 21l2-3M16 21l-2-3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="11" width="14" height="9" rx="2" />
+                  <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 9a14 14 0 0 1 18 0" />
+                  <path d="M6 12a9 9 0 0 1 12 0" />
+                  <circle
+                    cx="12"
+                    cy="16"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                  <path d="M5 12V6a2 2 0 0 1 4 0" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="c-property js-property"
+            data-amenities="ekichika autolock kitchen net pet bath"
+            data-reveal
+            style="--reveal-delay: 0.1s"
+          >
+            <a
+              class="c-property__link"
+              href="property.html"
+              aria-label="代々木上原駅 徒歩5分、賃料135,000円、1LDK — 物件詳細を見る"
+            ></a>
+            <div class="c-property__media">
+              <img
+                class="c-property__img"
+                src="assets/img/room-09.png"
+                alt="代々木上原駅 徒歩5分の1LDK物件"
+                width="364"
+                height="236"
+              />
+              <span class="c-tag c-property__tag">1LDK</span>
+            </div>
+            <div class="c-property__body">
+              <div class="c-property__head">
+                <p class="c-property__station">代々木上原駅 徒歩5分</p>
+                <button
+                  class="c-property__head-fav js-property-fav"
+                  type="button"
+                  aria-label="お気に入りに追加"
+                  aria-pressed="false"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="c-property__price-row">
+                <span class="c-property__price">¥135,000</span>
+                <span class="c-property__mgmt">管理費 ¥10,000</span>
+              </div>
+              <p class="c-property__addr">東京都渋谷区西原3丁目</p>
+              <p class="c-property__meta">築2019年 / 39.42㎡</p>
+              <div class="c-property__amenities">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="6" y="3" width="12" height="13" rx="2" />
+                  <path d="M6 11h12" />
+                  <path d="M8 21l2-3M16 21l-2-3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="11" width="14" height="9" rx="2" />
+                  <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 9a14 14 0 0 1 18 0" />
+                  <path d="M6 12a9 9 0 0 1 12 0" />
+                  <circle
+                    cx="12"
+                    cy="16"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                  <path d="M5 12V6a2 2 0 0 1 4 0" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="c-property js-property"
+            data-amenities="ekichika autolock kitchen bath bike soho"
+            data-reveal
+            style="--reveal-delay: 0.2s"
+          >
+            <a
+              class="c-property__link"
+              href="property.html"
+              aria-label="恵比寿駅 徒歩9分、賃料148,000円、1LDK — 物件詳細を見る"
+            ></a>
+            <div class="c-property__media">
+              <img
+                class="c-property__img"
+                src="assets/img/room-11.png"
+                alt="恵比寿駅 徒歩9分の1LDK物件"
+                width="364"
+                height="236"
+              />
+              <span class="c-tag c-property__tag">1LDK</span>
+            </div>
+            <div class="c-property__body">
+              <div class="c-property__head">
+                <p class="c-property__station">恵比寿駅 徒歩9分</p>
+                <button
+                  class="c-property__head-fav js-property-fav"
+                  type="button"
+                  aria-label="お気に入りに追加"
+                  aria-pressed="false"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="c-property__price-row">
+                <span class="c-property__price">¥148,000</span>
+                <span class="c-property__mgmt">管理費 ¥12,000</span>
+              </div>
+              <p class="c-property__addr">東京都渋谷区恵比寿1丁目</p>
+              <p class="c-property__meta">築2021年 / 40.15㎡</p>
+              <div class="c-property__amenities">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="6" y="3" width="12" height="13" rx="2" />
+                  <path d="M6 11h12" />
+                  <path d="M8 21l2-3M16 21l-2-3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="11" width="14" height="9" rx="2" />
+                  <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 9a14 14 0 0 1 18 0" />
+                  <path d="M6 12a9 9 0 0 1 12 0" />
+                  <circle
+                    cx="12"
+                    cy="16"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                  <path d="M5 12V6a2 2 0 0 1 4 0" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="c-property js-property"
+            data-amenities="bike net bath"
+            data-reveal
+            style="--reveal-delay: 0.3s"
+          >
+            <a
+              class="c-property__link"
+              href="property.html"
+              aria-label="池袋駅 徒歩10分、賃料78,000円、1K — 物件詳細を見る"
+            ></a>
+            <div class="c-property__media">
+              <img
+                class="c-property__img"
+                src="assets/img/room-03.png"
+                alt="池袋駅 徒歩10分の1K物件"
+                width="364"
+                height="236"
+              />
+              <span class="c-tag c-property__tag">1K</span>
+            </div>
+            <div class="c-property__body">
+              <div class="c-property__head">
+                <p class="c-property__station">池袋駅 徒歩10分</p>
+                <button
+                  class="c-property__head-fav js-property-fav"
+                  type="button"
+                  aria-label="お気に入りに追加"
+                  aria-pressed="false"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="c-property__price-row">
+                <span class="c-property__price">¥78,000</span>
+                <span class="c-property__mgmt">管理費 ¥7,000</span>
+              </div>
+              <p class="c-property__addr">東京都豊島区南池袋2丁目</p>
+              <p class="c-property__meta">築2018年 / 21.34㎡</p>
+              <div class="c-property__amenities">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="6" y="3" width="12" height="13" rx="2" />
+                  <path d="M6 11h12" />
+                  <path d="M8 21l2-3M16 21l-2-3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="11" width="14" height="9" rx="2" />
+                  <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 9a14 14 0 0 1 18 0" />
+                  <path d="M6 12a9 9 0 0 1 12 0" />
+                  <circle
+                    cx="12"
+                    cy="16"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                  <path d="M5 12V6a2 2 0 0 1 4 0" />
+                </svg>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="p-top-recommend__empty js-property-empty" hidden>
+          選択した条件に一致する物件は見つかりませんでした。
+        </p>
+
+        <div class="p-top-recommend__more">
+          <button class="c-button c-button--outline" type="button">
+            物件一覧を見る
+          </button>
+        </div>
+      </section>
+
+      <section class="p-top-about">
+        <img
+          class="p-top-about__img"
+          src="assets/img/room-09.png"
+          alt="くつろぎのあるリビング空間"
+          width="364"
+          height="236"
+          data-reveal
+        />
+        <div class="p-top-about__body">
+          <div
+            class="p-top-about__inner"
+            data-reveal
+            style="--reveal-delay: 0.12s"
+          >
+            <p class="c-eyebrow">ABOUT SUMIKA</p>
+            <h2 class="p-top-about__title">
+              住まい探しを、<br />もっとシンプルに。
+            </h2>
+            <p class="p-top-about__text">
+              SUMIKAは、20〜30代のライフスタイルに寄り添う賃貸物件を豊富に取り揃えたお部屋探しサービスです。デザイン性と機能性を兼ね備えた住まいで、あなたらしい毎日をサポートします。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-top-features" aria-label="SUMIKAの特長">
+        <div class="p-top-features__band" data-reveal>
+          <div class="p-top-features__badge">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 10.5L12 3l9 7.5" />
+              <path d="M5 9.5V21h14V9.5" />
+            </svg>
+          </div>
+          <div class="p-top-features__list">
+            <div class="p-top-features__item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 3l8 3v6c0 4.8-3.4 8-8 9.5C7.4 21 4 17.8 4 13V6z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+              <p class="p-top-features__name">安心の保証システム</p>
+
+            </div>
+            <div class="p-top-features__item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 13v-1a8 8 0 0 1 16 0v1" />
+                <rect x="3" y="13" width="4" height="6.5" rx="1.5" />
+                <rect x="17" y="13" width="4" height="6.5" rx="1.5" />
+                <path d="M20 19.5a4 4 0 0 1-4 3h-2" />
+              </svg>
+              <p class="p-top-features__name">専任スタッフサポート</p>
+
+            </div>
+            <div class="p-top-features__item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 10.5L12 3l9 7.5" />
+                <path d="M5 9.5V21h14V9.5" />
+                <path d="M10 21v-5h4v5" />
+              </svg>
+              <p class="p-top-features__name">豊富な物件数</p>
+
+            </div>
+            <div class="p-top-features__item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="5" y="3" width="14" height="18" rx="2" />
+                <path d="M9 8h6M9 12h6M9 16h4" />
+              </svg>
+              <p class="p-top-features__name">かんたん契約</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="p-top-lifestyle splide js-lifestyle-slider"
+        aria-label="暮らしのイメージ"
+        data-reveal
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-10.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-06.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-12.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-16.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-07.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-08.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-13.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="p-top-lifestyle-img"
+                src="assets/img/room-15.png"
+                alt=""
+                width="364"
+                height="236"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="l-cta">
+        <div class="l-cta__inner" data-reveal>
+          <div>
+            <p class="l-cta__title">新着物件をいち早くチェック</p>
+            <p class="l-cta__text">
+              会員登録すると、お気に入り登録や新着物件の通知が受け取れます。
+            </p>
+          </div>
+          <a class="c-button c-button--cta" href="contact.html"
+            >理想のお部屋探しを相談する</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__cols">
+          <div>
+            <div class="l-footer__brand">SUMIKA</div>
+            <p class="l-footer__tagline">理想の住まいに、きっと出会える。</p>
+            <div class="l-footer__sns">
+              <a
+                class="l-footer__sns-item"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.2"
+                    cy="6.8"
+                    r="1.1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4l16 16M20 4L4 20" /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://line.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+                >LINE</a
+              >
+            </div>
+          </div>
+          <nav aria-label="物件を探す">
+            <div class="l-footer__col-title">物件を探す</div>
+            <a class="l-footer__link" href="area.html">エリアから探す</a>
+            <a class="l-footer__link" href="search.html">駅・路線から探す</a>
+            <a class="l-footer__link" href="conditions.html"
+              >こだわり条件から探す</a
+            >
+          </nav>
+          <nav aria-label="はじめての方へ">
+            <div class="l-footer__col-title">はじめての方へ</div>
+            <a class="l-footer__link" href="guide.html#guide-flow"
+              >お部屋探しの流れ</a
+            >
+            <a class="l-footer__link" href="guide.html#guide-flow">契約の流れ</a>
+            <a class="l-footer__link" href="guide.html#guide-cost"
+              >初期費用について</a
+            >
+          </nav>
+          <nav aria-label="サポート">
+            <div class="l-footer__col-title">サポート</div>
+            <a class="l-footer__link" href="faq.html">よくある質問</a>
+            <a class="l-footer__link" href="contact.html">お問い合わせ</a>
+            <a class="l-footer__link" href="index.html">サイトマップ</a>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__legal">
+            <a href="#">運営会社</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+          <div class="l-footer__copy">© SUMIKA Co., Ltd.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

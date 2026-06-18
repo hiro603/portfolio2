@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>お問い合わせ｜SUMIKA</title>
+    <meta
+      name="description"
+      content="お部屋探しに関するご質問・ご相談はSUMIKAまでお気軽にお問い合わせください。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="icon" href="assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <a class="c-site-logo" href="index.html"
+          ><span class="c-site-logo__main">SUMIKA</span></a
+        >
+        <dialog class="l-header__menu js-header-menu" aria-label="メニュー">
+          <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+            <button
+              class="l-header__menu-close js-header-menu-close"
+              type="button"
+              aria-label="メニューを閉じる"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg>
+            </button>
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="search.html">物件を探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="area.html">エリアから探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="conditions.html"
+                  >こだわり条件</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="guide.html"
+                  >はじめての方へ</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="faq.html">よくある質問</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a
+                  class="l-header__nav-link is-current"
+                  href="contact.html"
+                  aria-current="page"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </dialog>
+        <div class="l-header__actions">
+          <button class="l-header__action js-header-fav" type="button" aria-label="お気に入りリストを開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+              />
+            </svg>
+            <span>お気に入り</span>
+          </button>
+          <button class="l-header__action js-header-history" type="button" aria-label="閲覧履歴を開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.4 2" />
+            </svg>
+            <span>閲覧履歴</span>
+          </button>
+          <button
+            class="l-header__menu-open js-header-menu-open"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="l-subpage-hero">
+        <div class="l-subpage-hero__inner">
+          <img
+            class="l-subpage-hero__img"
+            src="assets/img/hero/room4.jpg"
+            alt=""
+            width="1920"
+            height="1245"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="l-subpage-hero__frame">
+            <div class="l-subpage-hero__content">
+              <h1 class="l-subpage-hero__title">お問い合わせ</h1>
+              <p class="l-subpage-hero__lead">
+                ご質問やご相談など、お気軽にお問い合わせください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-contact-body">
+        <ol class="p-contact-breadcrumb" aria-label="パンくずリスト">
+          <li><a href="index.html">ホーム</a></li>
+          <li aria-current="page">お問い合わせ</li>
+        </ol>
+
+        <ol class="p-contact-step js-contact-step" aria-label="送信ステップ">
+          <li class="is-current" data-step="1"><span>1</span>入力</li>
+          <li data-step="2"><span>2</span>確認</li>
+          <li data-step="3"><span>3</span>完了</li>
+        </ol>
+
+        <div id="contact-step-input">
+          <p class="p-contact-intro">
+            下記フォームに必要事項をご入力のうえ、送信してください。<br />
+            内容を確認のうえ、担当者よりご連絡させていただきます。
+          </p>
+
+          <div class="p-contact-layout">
+            <div class="p-contact-side">
+              <section class="p-contact-panel">
+                <h2>お問い合わせの前に</h2>
+                <p>
+                  よくあるご質問をまとめています。お問い合わせの前にぜひご確認ください。
+                </p>
+                <a class="p-contact-panel__link" href="faq.html"
+                  >よくある質問はこちら<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </section>
+              <section class="p-contact-panel">
+                <h2>営業時間</h2>
+                <p>10:00 ～ 18:00（年末年始を除く）</p>
+              </section>
+              <section class="p-contact-panel">
+                <h2>対応エリア</h2>
+                <p>
+                  東京・神奈川・千葉・埼玉を中心に首都圏の物件を取り扱っております。
+                </p>
+                <img
+                  src="assets/img/room-02.png"
+                  alt=""
+                  width="300"
+                  height="180"
+                />
+              </section>
+            </div>
+
+            <form class="p-contact-form" action="#" method="post">
+              <div class="p-contact-row">
+                <label for="contact-type"
+                  >お問い合わせ種類 <span>必須</span></label
+                >
+                <div class="p-contact-field">
+                  <select id="contact-type" name="type" required>
+                    <option value="">選択してください</option>
+                    <option>物件に関するお問い合わせ</option>
+                    <option>来店予約</option>
+                    <option>その他</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label for="last-name">お名前 <span>必須</span></label>
+                <div class="p-contact-field p-contact-field--split">
+                  <input
+                    id="last-name"
+                    name="lastName"
+                    type="text"
+                    placeholder="姓"
+                    required
+                  />
+                  <input
+                    id="first-name"
+                    name="firstName"
+                    type="text"
+                    placeholder="名"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label for="last-name-kana">ふりがな <span>必須</span></label>
+                <div class="p-contact-field p-contact-field--split">
+                  <input
+                    id="last-name-kana"
+                    name="lastNameKana"
+                    type="text"
+                    placeholder="せい"
+                    required
+                  />
+                  <input
+                    id="first-name-kana"
+                    name="firstNameKana"
+                    type="text"
+                    placeholder="めい"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label for="email">メールアドレス <span>必須</span></label>
+                <div class="p-contact-field">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="例）sumika@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label for="tel">電話番号 <span>必須</span></label>
+                <div class="p-contact-field">
+                  <input
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    placeholder="例）090-1234-5678"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label>ご希望の連絡方法 <span>必須</span></label>
+                <div class="p-contact-field">
+                  <div class="p-contact-checks">
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="contactMethod"
+                        value="mail"
+                      />メール</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="contactMethod"
+                        value="tel"
+                      />電話</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="contactMethod"
+                        value="either"
+                      />どちらでも可</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="p-contact-row">
+                <label for="message">お問い合わせ内容 <span>必須</span></label>
+                <div class="p-contact-field">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="ご質問・ご相談内容をご入力ください。"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <p class="p-contact-note">
+                ご入力いただいた個人情報は、お問い合わせへの対応のみに利用し、<br />
+                その他の目的には利用いたしません。<a href="#"
+                  >プライバシーポリシー</a
+                >に同意のうえ、送信してください。
+              </p>
+              <button
+                class="c-button c-button--cta p-contact-submit"
+                type="submit"
+              >
+                入力内容を確認する
+              </button>
+            </form>
+          </div>
+
+          <section class="p-contact-quick">
+            <div class="p-contact-quick__body">
+              <h2>お急ぎの方はお電話やチャットでも受け付けています</h2>
+              <ul class="p-contact-quick__list">
+                <li>
+                  <div class="p-contact-quick__title">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 5h3l2 5-1.7 1.7a14 14 0 0 0 5 5L14 15l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 2 7.2 2 2 0 0 1 4 5z"
+                      /></svg
+                    >電話でのお問い合わせ
+                  </div>
+                  <p>スタッフが丁寧にご案内いたします。</p>
+                  <strong>0120-123-456</strong>
+                  <small>受付時間 11:00 ～ 18:00（年末年始を除く）</small>
+                </li>
+                <li>
+                  <div class="p-contact-quick__title">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M3 6h18v12H3z" />
+                      <path d="M3 7l9 7 9-7" /></svg
+                    >メールでのお問い合わせ
+                  </div>
+                  <p>24時間受け付けています。</p>
+                  <button type="button">
+                    メールを送る<svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 6l6 6-6 6" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <div class="p-contact-quick__title">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 5h16v11H7l-3 3z" /></svg
+                    >チャットでのお問い合わせ
+                  </div>
+                  <p>AIチャットが質問にお答えします。</p>
+                  <button type="button">
+                    チャットを開始する<svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 6l6 6-6 6" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="p-contact-quick__img"
+              src="assets/img/room-08.png"
+              alt=""
+              width="360"
+              height="280"
+            />
+          </section>
+        </div>
+
+        <!-- Step 2: 確認画面 -->
+        <div id="contact-step-confirm" hidden>
+          <p class="p-contact-intro">
+            入力内容をご確認ください。<br />
+            よろしければ「この内容で送信する」ボタンを押してください。
+          </p>
+          <dl class="p-contact-confirm-table js-contact-confirm-table" aria-live="polite"></dl>
+          <div class="p-contact-confirm-actions">
+            <button
+              class="c-button c-button--outline p-contact-back js-contact-back"
+              type="button"
+            >
+              入力に戻る
+            </button>
+            <button
+              class="c-button c-button--cta js-contact-send"
+              type="button"
+            >
+              この内容で送信する
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: 完了画面 -->
+        <div id="contact-step-complete" hidden>
+          <div class="p-contact-complete">
+            <div class="p-contact-complete__icon" aria-hidden="true">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            </div>
+            <h2 class="p-contact-complete__title">
+              お問い合わせを受け付けました
+            </h2>
+            <p class="p-contact-complete__text">
+              この度はお問い合わせいただきありがとうございます。<br />
+              内容を確認のうえ、担当者より順次ご連絡いたします。
+            </p>
+            <a class="c-button c-button--outline" href="index.html"
+              >トップページへ戻る</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="l-cta l-cta--bar">
+        <div class="l-cta__inner">
+          <p>会員登録すると、お気に入り登録や新着物件の通知が受け取れます。</p>
+          <a class="c-button c-button--cta" href="contact.html">
+            理想のお部屋探しを相談する
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__cols">
+          <div>
+            <div class="l-footer__brand">SUMIKA</div>
+            <p class="l-footer__tagline">理想の住まいに、きっと出会える。</p>
+            <div class="l-footer__sns">
+              <a
+                class="l-footer__sns-item"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.2"
+                    cy="6.8"
+                    r="1.1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4l16 16M20 4L4 20" /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://line.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+                >LINE</a
+              >
+            </div>
+          </div>
+          <nav aria-label="物件を探す">
+            <div class="l-footer__col-title">物件を探す</div>
+            <a class="l-footer__link" href="area.html">エリアから探す</a>
+            <a class="l-footer__link" href="search.html">駅・路線から探す</a>
+            <a class="l-footer__link" href="conditions.html"
+              >こだわり条件から探す</a
+            >
+          </nav>
+          <nav aria-label="はじめての方へ">
+            <div class="l-footer__col-title">はじめての方へ</div>
+            <a class="l-footer__link" href="guide.html#guide-flow"
+              >お部屋探しの流れ</a
+            >
+            <a class="l-footer__link" href="guide.html#guide-flow">契約の流れ</a>
+            <a class="l-footer__link" href="guide.html#guide-cost"
+              >初期費用について</a
+            >
+          </nav>
+          <nav aria-label="サポート">
+            <div class="l-footer__col-title">サポート</div>
+            <a class="l-footer__link" href="faq.html">よくある質問</a>
+            <a class="l-footer__link" href="contact.html">お問い合わせ</a>
+            <a class="l-footer__link" href="index.html">サイトマップ</a>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__legal">
+            <a href="#">運営会社</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+          <div class="l-footer__copy">© SUMIKA Co., Ltd.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+import { initializeHamburgerMenu } from "./component/hamburger-menu.js";
+import { initializeHeaderBackgroundToggle } from "./component/header-background-toggle.js";
+import { initializeHeaderPanels } from "./component/header-panels.js";
+import { initializeReveal } from "./component/reveal.js";
+import { initializeAmenityFilter } from "./component/amenity-filter.js";
+import { initializePropertyFav } from "./component/property-fav.js";
+import { initializeConditionsChip } from "./component/conditions-chip.js";
+import { initializeLifestyleSlider } from "./slider/lifestyle-slider.js";
+import { initializeSearchPage } from "./component/search-page.js";
+import { initializeFaqFilter } from "./component/faq-filter.js";
+import { initializeFormContact } from "./form/form-contact.js";
+
+initializeHamburgerMenu();
+initializeHeaderBackgroundToggle();
+initializeHeaderPanels();
+initializeReveal();
+initializeAmenityFilter();
+initializePropertyFav();
+initializeConditionsChip();
+initializeLifestyleSlider();
+initializeSearchPage();
+initializeFaqFilter();
+initializeFormContact();
