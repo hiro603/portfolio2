@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .map-label { font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Arial, sans-serif; }
+      .road-label { font-size: 10px; fill: #5c5540; }
+      .station-label { font-size: 11px; font-weight: 700; fill: #2d2d2d; }
+      .river-label { font-size: 10px; fill: #4a90a4; }
+      .block { fill: #ede9e0; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000033"/>
+    </filter>
+  </defs>
+
+  <!-- ベース（土地） -->
+  <rect width="800" height="500" fill="#f5f0e8"/>
+
+  <!-- 建物ブロック群（薄いベージュ） -->
+  <rect class="block" x="10"  y="10"  width="100" height="60"  rx="2"/>
+  <rect class="block" x="120" y="10"  width="80"  height="55"  rx="2"/>
+  <rect class="block" x="210" y="10"  width="60"  height="50"  rx="2"/>
+  <rect class="block" x="10"  y="90"  width="70"  height="50"  rx="2"/>
+  <rect class="block" x="90"  y="90"  width="90"  height="40"  rx="2"/>
+  <rect class="block" x="10"  y="160" width="50"  height="60"  rx="2"/>
+  <rect class="block" x="70"  y="155" width="80"  height="55"  rx="2"/>
+  <rect class="block" x="300" y="10"  width="120" height="50"  rx="2"/>
+  <rect class="block" x="430" y="10"  width="90"  height="55"  rx="2"/>
+  <rect class="block" x="530" y="10"  width="80"  height="60"  rx="2"/>
+  <rect class="block" x="620" y="10"  width="90"  height="50"  rx="2"/>
+  <rect class="block" x="720" y="10"  width="70"  height="60"  rx="2"/>
+  <rect class="block" x="620" y="75"  width="60"  height="45"  rx="2"/>
+  <rect class="block" x="690" y="75"  width="100" height="55"  rx="2"/>
+  <rect class="block" x="300" y="75"  width="80"  height="50"  rx="2"/>
+  <rect class="block" x="390" y="70"  width="55"  height="45"  rx="2"/>
+  <rect class="block" x="10"  y="370" width="90"  height="60"  rx="2"/>
+  <rect class="block" x="110" y="360" width="70"  height="70"  rx="2"/>
+  <rect class="block" x="190" y="375" width="80"  height="55"  rx="2"/>
+  <rect class="block" x="10"  y="450" width="120" height="40"  rx="2"/>
+  <rect class="block" x="280" y="365" width="80"  height="50"  rx="2"/>
+  <rect class="block" x="370" y="370" width="70"  height="60"  rx="2"/>
+  <rect class="block" x="450" y="360" width="90"  height="55"  rx="2"/>
+  <rect class="block" x="550" y="370" width="80"  height="50"  rx="2"/>
+  <rect class="block" x="640" y="365" width="90"  height="60"  rx="2"/>
+  <rect class="block" x="740" y="370" width="55"  height="55"  rx="2"/>
+  <rect class="block" x="280" y="430" width="100" height="55"  rx="2"/>
+  <rect class="block" x="640" y="440" width="150" height="50"  rx="2"/>
+
+  <!-- 公園エリア -->
+  <rect x="160" y="10"  width="50" height="50" rx="3" fill="#c8ddb4" opacity="0.9"/>
+  <rect x="630" y="75" width="55" height="46" rx="3" fill="#c8ddb4" opacity="0.9"/>
+  <rect x="280" y="420" width="95" height="68" rx="3" fill="#c8ddb4" opacity="0.9"/>
+
+  <!-- 細い路地 -->
+  <line x1="80"  y1="0"   x2="80"  y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="155" y1="0"   x2="155" y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="0"   y1="80"  x2="200" y2="80"  stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="580" y1="0"   x2="580" y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="640" y1="0"   x2="640" y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="720" y1="0"   x2="720" y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="535" y1="0"   x2="535" y2="140" stroke="#e8e2d6" stroke-width="5"/>
+  <line x1="0"   y1="70"  x2="800" y2="70"  stroke="#e8e2d6" stroke-width="5"/>
+
+  <!-- 路線（東急東横線・東京メトロ日比谷線） -->
+  <line x1="0" y1="195" x2="800" y2="195" stroke="#ccc4b8" stroke-width="20"/>
+  <line x1="0" y1="195" x2="800" y2="195" stroke="#f5f0e8" stroke-width="14"/>
+  <line x1="0" y1="192" x2="800" y2="192" stroke="#f4b942" stroke-width="4" stroke-dasharray="none"/>
+  <line x1="0" y1="198" x2="800" y2="198" stroke="#f4b942" stroke-width="4"/>
+
+  <!-- 主要道路（山手通り — 縦） -->
+  <line x1="430" y1="0"   x2="430" y2="500" stroke="#d8d0c4" stroke-width="22"/>
+  <line x1="430" y1="0"   x2="430" y2="500" stroke="#ffffff"  stroke-width="16"/>
+
+  <!-- 主要道路（横） -->
+  <line x1="0"   y1="220" x2="800" y2="220" stroke="#d8d0c4" stroke-width="20"/>
+  <line x1="0"   y1="220" x2="800" y2="220" stroke="#ffffff"  stroke-width="14"/>
+
+  <!-- 中程度の道路 -->
+  <line x1="250" y1="0"   x2="250" y2="500" stroke="#ddd6ca" stroke-width="12"/>
+  <line x1="250" y1="0"   x2="250" y2="500" stroke="#faf8f4"  stroke-width="8"/>
+  <line x1="610" y1="0"   x2="610" y2="500" stroke="#ddd6ca" stroke-width="12"/>
+  <line x1="610" y1="0"   x2="610" y2="500" stroke="#faf8f4"  stroke-width="8"/>
+  <line x1="0"   y1="140" x2="800" y2="140" stroke="#ddd6ca" stroke-width="12"/>
+  <line x1="0"   y1="140" x2="800" y2="140" stroke="#faf8f4"  stroke-width="8"/>
+  <line x1="0"   y1="340" x2="800" y2="340" stroke="#ddd6ca" stroke-width="12"/>
+  <line x1="0"   y1="340" x2="800" y2="340" stroke="#faf8f4"  stroke-width="8"/>
+
+  <!-- 斜め道路 -->
+  <line x1="100" y1="130" x2="430" y2="380" stroke="#ddd6ca" stroke-width="9"/>
+  <line x1="100" y1="130" x2="430" y2="380" stroke="#faf8f4"  stroke-width="6"/>
+
+  <!-- 目黒川（S字カーブ） -->
+  <path d="M0 310 C80 310 120 295 200 285 C280 275 310 265 400 268 C490 271 530 280 620 275 C710 270 760 265 800 262"
+        stroke="#a8d4e8" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <path d="M0 310 C80 310 120 295 200 285 C280 275 310 265 400 268 C490 271 530 280 620 275 C710 270 760 265 800 262"
+        stroke="#c2e3f0" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+  <!-- 駅ボックス -->
+  <rect x="362" y="183" width="96" height="24" rx="3" fill="#ffffff" stroke="#d4cabb" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="362" y="183" width="4"  height="24" rx="1" fill="#f4b942"/>
+
+  <!-- ピンマーカー -->
+  <g transform="translate(410, 240)">
+    <path d="M0 -28 C-14 -28 -22 -18 -22 -8 C-22 8 0 28 0 28 C0 28 22 8 22 -8 C22 -18 14 -28 0 -28 Z" fill="#ea4335" filter="url(#shadow)"/>
+    <circle cx="0" cy="-8" r="9" fill="#ffffff"/>
+    <circle cx="0" cy="-8" r="4" fill="#ea4335"/>
+  </g>
+
+  <!-- 道路ラベル -->
+  <g class="map-label">
+    <text class="station-label" x="368" y="199">中目黒駅</text>
+
+    <!-- 山手通り label (rotated) -->
+    <text class="road-label" transform="translate(436, 380) rotate(-90)">山手通り</text>
+
+    <!-- 目黒川 label -->
+    <text class="river-label" x="175" y="296">目 黒 川</text>
+    <text class="river-label" x="545" y="280">目 黒 川</text>
+
+    <!-- 主要交差点ラベル -->
+    <text class="road-label" x="8" y="216">目黒通り</text>
+
+    <!-- 公園ラベル -->
+    <text style="font-family: 'Noto Sans JP', Arial, sans-serif; font-size: 9px; fill: #5a7a4a;" x="165" y="38">氷川神社</text>
+  </g>
+
+  <!-- Google Map UI 風フッター -->
+  <rect x="0" y="480" width="800" height="20" fill="rgba(255,255,255,0.85)"/>
+  <text class="map-label" x="8" y="493" style="font-size: 9px; fill: #666;">地図データ ©2024 Google</text>
+
+  <!-- スケールバー -->
+  <g transform="translate(680, 462)">
+    <rect x="0" y="8" width="80" height="2" fill="#666"/>
+    <rect x="0" y="6" width="2" height="6" fill="#666"/>
+    <rect x="78" y="6" width="2" height="6" fill="#666"/>
+    <rect x="39" y="7" width="2" height="4" fill="#666"/>
+    <text class="map-label" style="font-size: 9px; fill: #555;" x="0" y="6">0</text>
+    <text class="map-label" style="font-size: 9px; fill: #555;" x="28" y="6">100m</text>
+    <text class="map-label" style="font-size: 9px; fill: #555;" x="64" y="6">200m</text>
+  </g>
+
+  <!-- ズームボタン（Google Map 風） -->
+  <g transform="translate(764, 20)" filter="url(#shadow)">
+    <rect width="28" height="28" rx="3" fill="#fff" stroke="#ddd" stroke-width="0.5"/>
+    <text class="map-label" x="14" y="20" text-anchor="middle" style="font-size:18px; fill: #555; font-weight: 300;">+</text>
+  </g>
+  <g transform="translate(764, 52)" filter="url(#shadow)">
+    <rect width="28" height="28" rx="3" fill="#fff" stroke="#ddd" stroke-width="0.5"/>
+    <text class="map-label" x="14" y="20" text-anchor="middle" style="font-size:18px; fill: #555; font-weight: 300;">−</text>
+  </g>
+</svg>

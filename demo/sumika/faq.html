@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>よくある質問｜SUMIKA</title>
+    <meta
+      name="description"
+      content="SUMIKAによく寄せられる質問をまとめました。お部屋探し・契約・入居サポートに関するFAQをご確認いただけます。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="icon" href="assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <a class="c-site-logo" href="index.html"
+          ><span class="c-site-logo__main">SUMIKA</span></a
+        >
+        <dialog class="l-header__menu js-header-menu" aria-label="メニュー">
+          <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+            <button
+              class="l-header__menu-close js-header-menu-close"
+              type="button"
+              aria-label="メニューを閉じる"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg>
+            </button>
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="search.html">物件を探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="area.html">エリアから探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="conditions.html"
+                  >こだわり条件</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="guide.html"
+                  >はじめての方へ</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a
+                  class="l-header__nav-link is-current"
+                  href="faq.html"
+                  aria-current="page"
+                  >よくある質問</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="contact.html"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </dialog>
+        <div class="l-header__actions">
+          <button class="l-header__action js-header-fav" type="button" aria-label="お気に入りリストを開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+              />
+            </svg>
+            <span>お気に入り</span>
+          </button>
+          <button class="l-header__action js-header-history" type="button" aria-label="閲覧履歴を開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.4 2" />
+            </svg>
+            <span>閲覧履歴</span>
+          </button>
+          <button
+            class="l-header__menu-open js-header-menu-open"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="l-subpage-hero">
+        <div class="l-subpage-hero__inner">
+          <img
+            class="l-subpage-hero__img"
+            src="assets/img/hero/room3.jpg"
+            alt=""
+            width="1920"
+            height="1245"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="l-subpage-hero__frame">
+            <div class="l-subpage-hero__content">
+              <h1 class="l-subpage-hero__title">よくある質問</h1>
+              <p class="l-subpage-hero__lead">
+                お客様からよくいただくご質問をまとめました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-faq-body">
+        <div class="p-faq-layout">
+          <nav class="p-faq-category" aria-label="質問カテゴリ">
+            <ul class="p-faq-category-list">
+              <li>
+                <a class="is-current" href="#" data-faq-filter="all" aria-current="true"
+                  >すべての質問</a
+                >
+              </li>
+              <li>
+                <a href="#" data-faq-filter="room-search"
+                  >お部屋探しについて<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" data-faq-filter="contract"
+                  >契約について<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" data-faq-filter="initial-cost"
+                  >初期費用について<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" data-faq-filter="support"
+                  >入居中のサポート<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" data-faq-filter="move-out"
+                  >退去・解約について<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" data-faq-filter="other"
+                  >その他<svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 6l6 6-6 6" /></svg
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="p-faq-main">
+            <form class="p-faq-search" action="#" method="get" role="search">
+              <label class="u-visually-hidden" for="faq-keyword"
+                >キーワードで検索する</label
+              >
+              <input
+                id="faq-keyword"
+                type="search"
+                name="q"
+                placeholder="キーワードで検索する（例：初期費用、保証人、ペット など）"
+              />
+            </form>
+            <p class="p-faq-result">全68件の質問があります</p>
+
+            <div class="p-faq-list">
+              <details class="p-faq-item" data-faq-category="room-search">
+                <summary>
+                  <span>Q.</span>内見はどのように予約すればよいですか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    物件詳細ページから内見希望日を第3希望まで選択のうえお問い合わせください。担当者と日程調整のうえ、対面内見を設定いたします。オンライン内見も可能ですので、お気軽にご相談ください。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="initial-cost">
+                <summary>
+                  <span>Q.</span>初期費用はどのくらいかかりますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    物件によって異なりますが、家賃の4〜6か月分が目安です。敷金・礼金・仲介手数料・保証会社利用料などを含めて、事前に明細をご案内します。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="contract">
+                <summary>
+                  <span>Q.</span>保証人がいなくても契約できますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    多くの物件で保証会社をご利用いただけます。保証人不要プランの有無は物件ごとに異なるため、スタッフまでお問い合わせください。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="room-search">
+                <summary>
+                  <span>Q.</span>ペットと一緒に住める物件はありますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    ございます。犬・猫の頭数や種類、敷金条件が物件ごとに異なるため、希望条件を伺ったうえで最適な物件をご紹介します。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="contract">
+                <summary>
+                  <span>Q.</span>契約から入居までの流れを教えてください。
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    申し込み、入居審査、重要事項説明、契約手続き、鍵渡しの順で進みます。通常は1〜2週間程度で入居可能です。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="contract">
+                <summary>
+                  <span>Q.</span>入居審査にはどのくらい時間がかかりますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    目安は2〜5営業日です。書類不備があると審査が延びるため、必要書類は事前にご確認ください。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="contract">
+                <summary>
+                  <span>Q.</span
+                  >家賃の支払い方法にはどのような種類がありますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    口座振替・振込・クレジットカード対応など、管理会社によって異なります。契約前に支払い条件を必ずご案内します。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="support">
+                <summary>
+                  <span>Q.</span
+                  >入居後に設備の不具合があった場合はどうすればいいですか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    管理会社または24時間サポート窓口へご連絡ください。緊急時の連絡先は契約時にお渡しする書類にも記載しています。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="move-out">
+                <summary>
+                  <span>Q.</span>退去の手続きはどのように行いますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    解約予告期間をご確認のうえ、管理会社へ書面または専用フォームで申請します。退去立会いの日程調整もあわせて行います。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="move-out">
+                <summary>
+                  <span>Q.</span
+                  >短期間の解約は可能ですか？違約金はかかりますか？
+                </summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    短期解約違約金の有無は契約条件によります。1年未満解約で違約金が発生する物件もあるため、契約前に必ず確認しましょう。
+                  </p>
+                </div>
+              </details>
+              <details class="p-faq-item" data-faq-category="other">
+                <summary><span>Q.</span>フリーレント物件とは何ですか？</summary>
+                <div class="p-faq-answer">
+                  <span>A.</span>
+                  <p>
+                    入居開始後の一定期間、家賃が無料になる物件です。共益費や短期解約条件が別途定められている場合があります。
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <section class="p-faq-contact">
+          <div class="p-faq-contact__body">
+            <h2 class="p-faq-contact__title">
+              ご不明な点がございましたら<br />お気軽にお問い合わせください
+            </h2>
+            <p class="p-faq-contact__text">
+              専任スタッフが丁寧にご回答いたします。<br />お電話・メール・チャットでご相談を受け付けております。
+            </p>
+            <div class="p-faq-contact__actions">
+              <button class="p-faq-contact__btn" type="button">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 5h3l2 5-1.7 1.7a14 14 0 0 0 5 5L14 15l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 2 7.2 2 2 0 0 1 4 5z"
+                  /></svg
+                >電話で相談する
+              </button>
+              <button class="p-faq-contact__btn" type="button">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 6h18v12H3z" />
+                  <path d="M3 7l9 7 9-7" /></svg
+                >メールで問い合わせる
+              </button>
+              <button class="p-faq-contact__btn" type="button">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 5h16v11H7l-3 3z" /></svg
+                >チャットで相談する
+              </button>
+            </div>
+          </div>
+          <img
+            class="p-faq-contact__img"
+            src="assets/img/room-08.png"
+            alt=""
+            width="420"
+            height="240"
+          />
+        </section>
+      </section>
+
+      <section class="l-cta l-cta--bar">
+        <div class="l-cta__inner">
+          <p>会員登録すると、お気に入り登録や新着物件の通知が受け取れます。</p>
+          <a class="c-button c-button--cta" href="contact.html">
+            無料で会員登録する
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__cols">
+          <div>
+            <div class="l-footer__brand">SUMIKA</div>
+            <p class="l-footer__tagline">理想の住まいに、きっと出会える。</p>
+            <div class="l-footer__sns">
+              <a
+                class="l-footer__sns-item"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.2"
+                    cy="6.8"
+                    r="1.1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4l16 16M20 4L4 20" /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://line.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+                >LINE</a
+              >
+            </div>
+          </div>
+          <nav aria-label="物件を探す">
+            <div class="l-footer__col-title">物件を探す</div>
+            <a class="l-footer__link" href="area.html">エリアから探す</a>
+            <a class="l-footer__link" href="search.html">駅・路線から探す</a>
+            <a class="l-footer__link" href="conditions.html"
+              >こだわり条件から探す</a
+            >
+          </nav>
+          <nav aria-label="はじめての方へ">
+            <div class="l-footer__col-title">はじめての方へ</div>
+            <a class="l-footer__link" href="guide.html#guide-flow"
+              >お部屋探しの流れ</a
+            >
+            <a class="l-footer__link" href="guide.html#guide-flow">契約の流れ</a>
+            <a class="l-footer__link" href="guide.html#guide-cost"
+              >初期費用について</a
+            >
+          </nav>
+          <nav aria-label="サポート">
+            <div class="l-footer__col-title">サポート</div>
+            <a class="l-footer__link" href="faq.html">よくある質問</a>
+            <a class="l-footer__link" href="contact.html">お問い合わせ</a>
+            <a class="l-footer__link" href="index.html">サイトマップ</a>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__legal">
+            <a href="#">運営会社</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+          <div class="l-footer__copy">© SUMIKA Co., Ltd.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

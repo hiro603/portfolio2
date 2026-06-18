@@ -1,0 +1,12 @@
+{
+  "name": "sumika",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass assets/scss/style.scss assets/css/style.css --style=compressed --no-source-map",
+    "dev": "sass assets/scss/style.scss assets/css/style.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

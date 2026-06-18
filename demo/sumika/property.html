@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>中目黒レジデンス｜SUMIKA</title>
+    <meta
+      name="description"
+      content="東急東横線・中目黒駅徒歩7分。築2020年、1K/25.12㎡。オートロック・宅配ボックス完備の築浅賃貸物件。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="icon" href="assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <a class="c-site-logo" href="index.html"
+          ><span class="c-site-logo__main">SUMIKA</span></a
+        >
+        <dialog class="l-header__menu js-header-menu" aria-label="メニュー">
+          <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+            <button
+              class="l-header__menu-close js-header-menu-close"
+              type="button"
+              aria-label="メニューを閉じる"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg>
+            </button>
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="search.html">物件を探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="area.html">エリアから探す</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="conditions.html"
+                  >こだわり条件</a
+                >
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="guide.html">はじめての方へ</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="faq.html">よくある質問</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="contact.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </dialog>
+        <div class="l-header__actions">
+          <button class="l-header__action js-header-fav" type="button" aria-label="お気に入りリストを開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+              />
+            </svg>
+            <span>お気に入り</span>
+          </button>
+          <button class="l-header__action js-header-history" type="button" aria-label="閲覧履歴を開く">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.4 2" />
+            </svg>
+            <span>閲覧履歴</span>
+          </button>
+          <button
+            class="l-header__menu-open js-header-menu-open"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main
+      data-property-track="true"
+      data-prop-img="assets/img/room-01.png"
+      data-prop-station="中目黒駅 徒歩7分"
+      data-prop-price="¥92,000"
+      data-prop-addr="東京都目黒区上目黒1丁目"
+      data-prop-tag="1K"
+    >
+      <!-- Breadcrumb -->
+      <div class="l-container">
+        <nav class="c-breadcrumb" aria-label="パンくずリスト">
+          <ol class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a class="c-breadcrumb__item-link" href="index.html">トップ</a>
+            </li>
+            <li class="c-breadcrumb__item">
+              <a class="c-breadcrumb__item-link" href="search.html">物件一覧</a>
+            </li>
+            <li class="c-breadcrumb__item">中目黒レジデンス</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Hero: gallery + info -->
+      <section class="p-property-hero" aria-label="物件詳細">
+        <div class="l-container p-property-hero__inner">
+
+          <!-- Gallery -->
+          <div class="p-property-gallery">
+            <figure class="p-property-gallery-main">
+              <img
+                src="assets/img/room-01.png"
+                alt="中目黒レジデンス リビング"
+                width="780"
+                height="520"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+            <ul class="p-property-gallery-thumbs" aria-label="その他の写真">
+              <li>
+                <img
+                  src="assets/img/room-08.png"
+                  alt="キッチン"
+                  width="190"
+                  height="127"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/room-10.png"
+                  alt="バスルーム"
+                  width="190"
+                  height="127"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/room-11.png"
+                  alt="洗面台"
+                  width="190"
+                  height="127"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/room-12.png"
+                  alt="玄関・廊下"
+                  width="190"
+                  height="127"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Info card -->
+          <aside class="p-property-info" aria-label="賃貸情報">
+            <div class="p-property-card">
+              <span class="c-tag p-property-layout-tag">1K</span>
+              <h1 class="p-property-name">中目黒レジデンス</h1>
+              <p class="p-property-spec">1K&nbsp;/&nbsp;25.12㎡&nbsp;/&nbsp;築2020年</p>
+              <p class="p-property-station-row">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3.4 2" />
+                </svg>
+                東急東横線 中目黒駅 徒歩7分
+              </p>
+
+              <div class="p-property-price__block">
+                <div class="p-property-price__row">
+                  <span class="p-property-price">¥92,000</span>
+                  <span class="p-property-price__unit">/月</span>
+                </div>
+                <p class="p-property-mgmt-fee">管理費 ¥8,000/月</p>
+              </div>
+
+              <hr class="p-property-divider" />
+
+              <div class="p-property-actions">
+                <button
+                  class="p-property-fav-btn js-property-fav"
+                  type="button"
+                  aria-pressed="false"
+                  aria-label="お気に入りに追加"
+                  data-prop-img="assets/img/room-01.png"
+                  data-prop-station="中目黒駅 徒歩7分"
+                  data-prop-price="¥92,000"
+                  data-prop-addr="東京都目黒区上目黒1丁目"
+                  data-prop-tag="1K"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"
+                    />
+                  </svg>
+                  <span>お気に入りに追加</span>
+                </button>
+                <a class="c-button c-button--cta" href="contact.html"
+                  >お問い合わせする</a
+                >
+                <a class="c-button c-button--outline" href="contact.html"
+                  >内見を予約する</a
+                >
+              </div>
+            </div>
+
+            <!-- おすすめポイント -->
+            <div class="p-property-points">
+              <p class="p-property-points__title">おすすめポイント</p>
+              <ul class="p-property-points__list">
+                <li class="p-property-points__item">
+                  <span class="p-property-points__icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3.4 2" />
+                    </svg>
+                  </span>
+                  <div class="p-property-points-body">
+                    <p class="p-property-points__name">中目黒駅まで徒歩7分</p>
+                    <p class="p-property-points__desc">
+                      渋谷・恵比寿・代官山など人気エリアへ直結
+                    </p>
+                  </div>
+                </li>
+                <li class="p-property-points__item">
+                  <span class="p-property-points__icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M3 9h18" />
+                      <path d="M9 21V9" />
+                    </svg>
+                  </span>
+                  <div class="p-property-points-body">
+                    <p class="p-property-points__name">2020年築の築浅物件</p>
+                    <p class="p-property-points__desc">
+                      新しい設備と美しい内装で快適な暮らしを実現
+                    </p>
+                  </div>
+                </li>
+                <li class="p-property-points__item">
+                  <span class="p-property-points__icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="5" y="11" width="14" height="9" rx="2" />
+                      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                    </svg>
+                  </span>
+                  <div class="p-property-points-body">
+                    <p class="p-property-points__name">
+                      オートロック・宅配ボックス完備
+                    </p>
+                    <p class="p-property-points__desc">
+                      充実のセキュリティで安心の住環境
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 物件概要 -->
+      <section class="p-property-overview" aria-labelledby="overview-title">
+        <div class="l-container">
+          <h2 class="p-property-section-title" id="overview-title">物件概要</h2>
+          <div class="p-property-overview__table">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">所在地</th>
+                  <td>東京都目黒区上目黒1丁目</td>
+                </tr>
+                <tr>
+                  <th scope="row">交通</th>
+                  <td>
+                    東急東横線・東京メトロ日比谷線 中目黒駅 徒歩7分
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">賃料</th>
+                  <td>¥92,000/月</td>
+                </tr>
+                <tr>
+                  <th scope="row">管理費</th>
+                  <td>¥8,000/月</td>
+                </tr>
+                <tr>
+                  <th scope="row">敷金 / 礼金</th>
+                  <td>1ヶ月 / 1ヶ月</td>
+                </tr>
+                <tr>
+                  <th scope="row">間取り</th>
+                  <td>1K</td>
+                </tr>
+                <tr>
+                  <th scope="row">専有面積</th>
+                  <td>25.12㎡</td>
+                </tr>
+                <tr>
+                  <th scope="row">築年月</th>
+                  <td>2020年4月</td>
+                </tr>
+                <tr>
+                  <th scope="row">構造</th>
+                  <td>RC造（鉄筋コンクリート）</td>
+                </tr>
+                <tr>
+                  <th scope="row">階数</th>
+                  <td>3階 / 7階建て</td>
+                </tr>
+                <tr>
+                  <th scope="row">駐車場</th>
+                  <td>なし</td>
+                </tr>
+                <tr>
+                  <th scope="row">ペット</th>
+                  <td>不可</td>
+                </tr>
+                <tr>
+                  <th scope="row">設備・条件</th>
+                  <td>
+                    オートロック、宅配ボックス、室内洗濯機置場、エアコン、インターネット無料、浴室乾燥機、システムキッチン
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 室内写真 -->
+      <section class="p-property-photos" aria-labelledby="photos-title">
+        <div class="l-container">
+          <h2 class="p-property-section-title" id="photos-title">室内写真</h2>
+          <ul class="p-property-photos__grid">
+            <li>
+              <img
+                src="assets/img/room-01.png"
+                alt="リビング・ダイニング"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/room-08.png"
+                alt="キッチン"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/room-10.png"
+                alt="バスルーム"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/room-11.png"
+                alt="洗面台"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/room-12.png"
+                alt="玄関"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/room-13.png"
+                alt="バルコニー"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- アクセス -->
+      <section class="p-property-access" aria-labelledby="access-title">
+        <div class="l-container">
+          <h2 class="p-property-section-title" id="access-title">アクセス</h2>
+          <div class="p-property-access__inner">
+            <div class="p-property-access__map">
+              <img
+                src="assets/img/map-nakameguro.svg"
+                alt="地図：東京都目黒区上目黒1丁目周辺（中目黒駅 徒歩7分）"
+                width="800"
+                height="500"
+                loading="lazy"
+                class="p-property-access-map__img"
+              />
+            </div>
+            <dl class="p-property-access__info">
+              <div class="p-property-access__row">
+                <dt>最寄り駅</dt>
+                <dd>
+                  東急東横線・東京メトロ日比谷線<br />
+                  中目黒駅 徒歩7分
+                </dd>
+              </div>
+              <div class="p-property-access__row">
+                <dt>住所</dt>
+                <dd>東京都目黒区上目黒1丁目</dd>
+              </div>
+              <div class="p-property-access__row">
+                <dt>バス</dt>
+                <dd>
+                  渋谷駅行き「目黒区上目黒」停 徒歩3分
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="l-cta l-cta--centered">
+        <div class="l-cta__inner">
+          <div>
+            <p class="l-cta__title">この物件について、まずはお気軽にご相談ください。</p>
+          </div>
+          <a class="c-button c-button--cta" href="contact.html">
+            無料で相談する
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__cols">
+          <div>
+            <div class="l-footer__brand">SUMIKA</div>
+            <p class="l-footer__tagline">理想の住まいに、きっと出会える。</p>
+            <div class="l-footer__sns">
+              <a
+                class="l-footer__sns-item"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.2"
+                    cy="6.8"
+                    r="1.1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4l16 16M20 4L4 20" /></svg
+              ></a>
+              <a
+                class="l-footer__sns-item"
+                href="https://line.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+                >LINE</a
+              >
+            </div>
+          </div>
+          <nav aria-label="物件を探す">
+            <div class="l-footer__col-title">物件を探す</div>
+            <a class="l-footer__link" href="area.html">エリアから探す</a>
+            <a class="l-footer__link" href="search.html">駅・路線から探す</a>
+            <a class="l-footer__link" href="conditions.html"
+              >こだわり条件から探す</a
+            >
+          </nav>
+          <nav aria-label="はじめての方へ">
+            <div class="l-footer__col-title">はじめての方へ</div>
+            <a class="l-footer__link" href="guide.html#guide-flow"
+              >お部屋探しの流れ</a
+            >
+            <a class="l-footer__link" href="guide.html#guide-flow">契約の流れ</a>
+            <a class="l-footer__link" href="guide.html#guide-cost"
+              >初期費用について</a
+            >
+          </nav>
+          <nav aria-label="サポート">
+            <div class="l-footer__col-title">サポート</div>
+            <a class="l-footer__link" href="faq.html">よくある質問</a>
+            <a class="l-footer__link" href="contact.html">お問い合わせ</a>
+            <a class="l-footer__link" href="index.html">サイトマップ</a>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__legal">
+            <a href="#">運営会社</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+          <div class="l-footer__copy">© SUMIKA Co., Ltd.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
