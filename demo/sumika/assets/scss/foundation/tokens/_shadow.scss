@@ -1,0 +1,10 @@
+// _shadow.scss
+:root {
+    --shadow-sm: 0 4px 16px rgb(42 36 31 / 0.05);
+    --shadow-md: 0 12px 32px rgb(42 36 31 / 0.08);
+    --shadow-lg: 0 18px 44px rgb(42 36 31 / 0.1);
+    --shadow-search: 0 20px 48px rgb(42 36 31 / 0.09);
+    --shadow-card: 0 2px 8px rgb(42 36 31 / 0.04), 0 12px 28px rgb(42 36 31 / 0.07);
+    --shadow-gold: 0 4px 20px rgb(184 147 90 / 0.32);
+    --shadow-gold-lg: 0 8px 32px rgb(184 147 90 / 0.4);
+}

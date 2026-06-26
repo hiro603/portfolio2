@@ -1,0 +1,59 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > about
+------------------------------
+*/
+.p-top-about {
+    margin-top: var(--space-2xl);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    background-color: var(--color-bg-soft);
+
+    @include f.mq(lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.p-top-about__img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    background-color: var(--color-placeholder);
+    filter: saturate(0.96);
+
+    @include f.mq(lg) {
+        height: 440px;
+    }
+}
+
+.p-top-about__body {
+    display: flex;
+    align-items: center;
+    padding: var(--space-lg) var(--space-md);
+
+    @include f.mq(lg) {
+        padding: var(--space-xl) 7% var(--space-xl) var(--space-xl);
+    }
+}
+
+.p-top-about__inner {
+    max-width: 540px;
+}
+
+.p-top-about__title {
+    margin-top: var(--space-sm);
+    font-family: var(--font-family-display);
+    font-size: clamp(1.6875rem, 4vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+}
+
+.p-top-about__text {
+    margin-top: var(--space-md);
+    font-size: 0.9375rem;
+    line-height: 2;
+    color: var(--color-text-sub);
+}

@@ -1,0 +1,12 @@
+// _font.scss
+:root {
+    --font-family-base: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Helvetica Neue", Arial, sans-serif;
+    --font-family-display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --font-family-en: "Cormorant Garamond", "Times New Roman", serif;
+    --font-family-price: var(--font-family-en);
+
+    --font-size-root: 100%;
+    --font-size-base: 1rem;
+    --line-height-base: 1.75;
+    --letter-spacing-base: 0.03em;
+}

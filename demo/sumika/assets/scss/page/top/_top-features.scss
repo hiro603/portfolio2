@@ -1,0 +1,113 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > features
+------------------------------
+*/
+.p-top-features {
+    width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+    margin-inline: auto;
+    margin-top: var(--space-2xl);
+
+    @include f.mq() {
+        width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+    }
+}
+
+.p-top-features__band {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+
+    @include f.mq(lg) {
+        flex-direction: row;
+    }
+}
+
+.p-top-features__badge {
+    background: linear-gradient(160deg, var(--primitive-gold-600) 0%, var(--primitive-gold-400) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg) 0;
+    color: var(--color-white);
+
+    @include f.mq(lg) {
+        width: 220px;
+        padding: 0;
+    }
+}
+
+.p-top-features__list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include f.mq(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.p-top-features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-lg) var(--space-sm);
+    border-right: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+    transition: background-color var(--transition-base);
+
+    svg {
+        color: var(--color-icon-soft);
+    }
+
+    &:nth-child(2n) {
+        border-right: none;
+    }
+
+    &:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: var(--color-bg-soft);
+        }
+    }
+
+    @include f.mq(lg) {
+        border-bottom: none;
+
+        &:nth-child(2n) {
+            border-right: 1px solid var(--color-line);
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.p-top-features__name {
+    font-family: var(--font-family-display);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-top: 14px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 2px;
+        background: var(--gradient-gold);
+        margin-top: var(--space-sm);
+        margin-inline: auto;
+    }
+}

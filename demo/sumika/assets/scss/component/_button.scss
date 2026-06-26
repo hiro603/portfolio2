@@ -1,0 +1,148 @@
+@use "../foundation" as f;
+
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.c-button--search {
+  width: 100%;
+  padding: 18px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 1rem;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--color-dark-deep);
+    }
+  }
+
+  @include f.mq() {
+    width: 190px;
+    border-radius: 0;
+  }
+}
+
+.c-button--outline {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 30px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-base);
+
+  &::after {
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid var(--color-text-muted);
+    border-right: 1.5px solid var(--color-text-muted);
+    transform: rotate(45deg);
+
+    @include f.mq() {
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--color-bg-soft);
+      border-color: var(--color-border-hover);
+    }
+  }
+}
+
+.c-button--cta {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 16px 26px;
+  background: var(--gradient-gold);
+  color: var(--color-white);
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: var(--shadow-gold);
+  letter-spacing: 0.08em;
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    filter var(--transition-base);
+
+  &::after {
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-top: 1.8px solid currentColor;
+    border-right: 1.8px solid currentColor;
+    transform: rotate(45deg);
+    opacity: 0.8;
+
+    @include f.mq() {
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold-lg);
+      filter: brightness(1.06);
+    }
+  }
+}
+
+.c-button--sidebar-search {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 0.875rem;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--color-dark-deep);
+    }
+  }
+}
+
+.c-button--sidebar-clear {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-base);
+  font-size: 0.875rem;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--color-bg-soft);
+      border-color: var(--color-border-hover);
+    }
+  }
+}
+

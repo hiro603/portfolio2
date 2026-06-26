@@ -1,0 +1,74 @@
+@use "../foundation" as f;
+
+/*!
+component > title
+------------------------------
+*/
+.c-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-family-en);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  line-height: 1;
+  color: var(--color-accent-gold);
+
+  &::before {
+    content: "";
+    flex: none;
+    width: 28px;
+    height: 1px;
+    background-color: var(--color-accent-gold);
+  }
+}
+
+.c-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: var(--space-sm);
+}
+
+.c-section-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.625rem, 4vw, 1.875rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 2px;
+    background: var(--gradient-gold);
+    margin-top: 12px;
+    border-radius: 1px;
+  }
+}
+
+.c-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: var(--color-accent-gold);
+  transition: color var(--transition-base);
+
+  svg {
+    transition: transform var(--transition-base);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--color-accent-gold-hover);
+
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}

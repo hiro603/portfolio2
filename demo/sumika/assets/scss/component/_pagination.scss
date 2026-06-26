@@ -1,0 +1,60 @@
+@use "../foundation" as f;
+
+/*!
+component > pagination
+------------------------------
+*/
+.c-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 48px;
+}
+
+.c-pagination__item {
+    min-width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-sub);
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base);
+
+    @media (any-hover: hover) {
+        &:hover:not(.is-current):not(.c-pagination__ellipsis) {
+            background-color: var(--color-bg-soft);
+        }
+    }
+
+    &.is-current {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        font-weight: 700;
+    }
+}
+
+.c-pagination__ellipsis {
+    pointer-events: none;
+    color: var(--color-text-muted);
+}
+
+.c-pagination__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--color-text-sub);
+    transition: color var(--transition-base);
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: var(--color-text-base);
+        }
+    }
+}

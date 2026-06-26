@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>エントリー | DEVCO 採用</title>
+    <meta
+      name="description"
+      content="DEVCOへのエントリーフォームです。まずはカジュアル面談から、お気軽にご参加ください。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-container l-header__inner">
+        <a href="index.html" class="l-header__logo c-logo" aria-label="DEVCO ホーム">
+          DEVCO<span class="c-logo__mark" aria-hidden="true"></span>
+        </a>
+
+        <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+          <a class="l-header__nav-link" href="index.html#mission">ミッション・バリュー</a>
+          <a class="l-header__nav-link" href="index.html#numbers">数字で見るDEVCO</a>
+          <a class="l-header__nav-link" href="index.html#interview">社員インタビュー</a>
+          <a class="l-header__nav-link" href="index.html#jobs">募集要項</a>
+          <a class="l-header__nav-link" href="index.html#faq">FAQ</a>
+        </nav>
+
+        <a href="#apply" class="l-header__cta c-button c-button--sm">
+          エントリー
+          <span class="c-button__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <button class="l-burger js-menu-open" type="button" aria-label="メニューを開く">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="l-menu js-menu" aria-label="メニュー">
+      <div class="l-menu__inner">
+        <div class="l-menu__bar">
+          <span class="c-logo c-logo--sm"
+            >DEVCO<span class="c-logo__mark" aria-hidden="true"></span
+          ></span>
+          <button class="l-menu__close js-menu-close" type="button" aria-label="メニューを閉じる">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+            >
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+        <nav class="l-menu__nav" aria-label="モバイルナビゲーション">
+          <a class="l-menu__link js-menu-link" href="index.html#mission">ミッション・バリュー</a>
+          <a class="l-menu__link js-menu-link" href="index.html#numbers">数字で見るDEVCO</a>
+          <a class="l-menu__link js-menu-link" href="index.html#interview">社員インタビュー</a>
+          <a class="l-menu__link js-menu-link" href="index.html#jobs">募集要項</a>
+          <a class="l-menu__link js-menu-link" href="index.html#faq">FAQ</a>
+        </nav>
+        <a href="#apply" class="l-menu__cta c-button c-button--block js-menu-link">
+          エントリーする
+          <span class="c-button__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </dialog>
+
+    <main>
+      <div class="l-container">
+        <section id="apply" class="p-section p-apply js-header-trigger">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 06</span> ENTRY</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h1 class="p-section__title">エントリー</h1>
+            <p class="p-section__lead">
+              あなたの挑戦を、お待ちしています。まずは1分、下記からご連絡ください。
+            </p>
+            <div class="p-apply__meta">
+              <span>// 所要 1分</span>
+              <span>// 返信 2〜3営業日</span>
+              <span>// まずはカジュアル面談から</span>
+            </div>
+            <a class="p-apply__back" href="index.html#jobs">
+              <span aria-hidden="true">←</span>
+              募集職種を見る
+            </a>
+          </div>
+
+          <div class="c-form js-entry">
+            <div class="c-form__bar">
+              <span class="c-form__dots"><i></i><i></i><i></i></span>
+              <span class="c-form__filename">entry.sh</span>
+              <span class="c-form__brand">&lt;/&gt;</span>
+            </div>
+            <div class="c-form__body">
+              <p class="c-form__prompt">
+                <span class="c-form__prompt-mark">&gt;</span>ready to commit?
+              </p>
+
+              <form
+                class="c-form__form js-entry-form"
+                action="https://formspree.io/f/mykalyqn"
+                method="POST"
+                novalidate
+              >
+                <div class="c-form__fields">
+                  <div class="c-form__field">
+                    <label class="c-form__label" for="entry-name">name:</label>
+                    <input
+                      class="c-form__input"
+                      id="entry-name"
+                      type="text"
+                      name="name"
+                      autocomplete="name"
+                      placeholder="山田 太郎"
+                      required
+                    />
+                  </div>
+
+                  <div class="c-form__field">
+                    <label class="c-form__label" for="entry-email">email:</label>
+                    <input
+                      class="c-form__input"
+                      id="entry-email"
+                      type="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="c-form__field">
+                    <label class="c-form__label" for="entry-role">role:</label>
+                    <select class="c-form__select" id="entry-role" name="role" required>
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="バックエンドエンジニア">バックエンドエンジニア</option>
+                      <option value="フロントエンドエンジニア">フロントエンドエンジニア</option>
+                      <option value="SRE">SRE</option>
+                      <option value="デザイナー">デザイナー</option>
+                      <option value="データサイエンティスト">データサイエンティスト</option>
+                      <option value="プロダクトマネージャー">プロダクトマネージャー</option>
+                      <option value="その他・相談したい">その他・相談したい</option>
+                    </select>
+                  </div>
+
+                  <div class="c-form__field">
+                    <label class="c-form__label" for="entry-message">
+                      message:
+                      <span class="c-form__opt">// 任意</span>
+                    </label>
+                    <textarea
+                      class="c-form__textarea"
+                      id="entry-message"
+                      name="message"
+                      placeholder="ひと言・質問など、あれば自由にどうぞ"
+                    ></textarea>
+                  </div>
+
+                  <label class="c-form__consent">
+                    <input class="c-form__check" type="checkbox" name="consent" required />
+                    <span>
+                      <a
+                        class="c-form__consent-link"
+                        href="index.html#"
+                        target="_blank"
+                        rel="noopener"
+                        >個人情報の取り扱い</a
+                      >に同意します。
+                    </span>
+                  </label>
+
+                  <div class="c-form__honeypot" aria-hidden="true">
+                    <label for="entry-company">会社名（入力しないでください）</label>
+                    <input
+                      id="entry-company"
+                      type="text"
+                      name="_gotcha"
+                      tabindex="-1"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+
+                <div class="c-form__actions">
+                  <button class="c-button c-button--block" type="submit">
+                    エントリーする
+                    <span class="c-button__arrow" aria-hidden="true">→</span>
+                  </button>
+                </div>
+
+                <p class="c-form__note js-entry-note" hidden role="alert">
+                  送信に失敗しました。時間をおいて、もう一度お試しください。
+                </p>
+              </form>
+
+              <div class="c-form__output js-entry-output" hidden>
+                <p class="c-form__output-line">
+                  <span class="c-form__output-prompt">&gt;</span>entry submitted.
+                </p>
+                <p class="c-form__output-line c-form__output-ok">
+                  &gt; we'll be in touch within 2–3 business days.<span
+                    class="c-form__output-caret"
+                    aria-hidden="true"
+                    >▮</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-container">
+        <p class="l-footer__num c-eyebrow">// 07</p>
+        <div class="l-footer__logo c-logo">
+          DEVCO<span class="c-logo__mark" aria-hidden="true"></span>
+        </div>
+        <div class="l-footer__grid">
+          <div>
+            <p class="l-footer__col-title">会社について</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="index.html#mission">ミッション・バリュー</a>
+              <a class="l-footer__link" href="index.html#numbers">会社概要</a>
+              <a class="l-footer__link" href="index.html#">ニュース</a>
+            </div>
+          </div>
+          <div>
+            <p class="l-footer__col-title">採用情報</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="index.html#jobs">募集要項</a>
+              <a class="l-footer__link" href="index.html#interview">社員インタビュー</a>
+              <a class="l-footer__link" href="index.html#">働く環境</a>
+            </div>
+          </div>
+          <div>
+            <p class="l-footer__col-title">サポート</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="index.html#faq">FAQ</a>
+              <a class="l-footer__link" href="index.html#">お問い合わせ</a>
+              <a class="l-footer__link" href="index.html#">プライバシーポリシー</a>
+            </div>
+          </div>
+          <div class="l-footer__meta">
+            <div class="l-footer__social">
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="X"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.5 3h3l-6.6 7.5L21.5 21h-5.9l-4.3-5.6L6.2 21H3.2l7-8L2.8 3h6l3.9 5.1L17.5 3Zm-1 16h1.6L8.1 4.6H6.4L16.5 19Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M4.8 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3 9h3.6v11H3V9Zm5.8 0h3.4v1.5h.05c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.3 4.3 5.4V20h-3.6v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V20H8.8V9Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="l-footer__copyright">
+              © DEVCO, Inc. All rights reserved.<br />※ 本サイトは架空の題材・自主制作です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

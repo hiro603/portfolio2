@@ -1,0 +1,30 @@
+@use "../foundation" as f;
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container {
+  width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+  margin-inline: auto;
+
+  &--sm {
+    width: min(100% - (var(--gutter-sp) * 2), var(--width-sm));
+  }
+
+  &--wide {
+    width: min(100% - (var(--gutter-sp) * 2), var(--width-wide));
+  }
+
+  @include f.mq() {
+    width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+
+    &--sm {
+      width: min(100% - (var(--gutter-pc) * 2), var(--width-sm));
+    }
+
+    &--wide {
+      width: min(100% - (var(--gutter-pc) * 2), var(--width-wide));
+    }
+  }
+}

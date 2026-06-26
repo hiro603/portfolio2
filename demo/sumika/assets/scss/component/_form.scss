@@ -1,0 +1,42 @@
+@use "../foundation" as f;
+
+/*!
+component > form
+------------------------------
+*/
+.c-select-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-icon-muted);
+  transition: transform var(--transition-base);
+}
+
+.c-form-required {
+  background-color: red;
+  color: var(--color-white);
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.c-form-text {
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background-color: var(--color-bg-soft);
+
+  &::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-text-muted);
+  }
+}
+.c-form-textarea {
+  min-height: 200px;
+  field-sizing: content;
+}

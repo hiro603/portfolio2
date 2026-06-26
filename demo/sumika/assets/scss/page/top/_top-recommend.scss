@@ -1,0 +1,43 @@
+@use "../../foundation" as f;
+
+/*!
+page > top > recommend
+------------------------------
+*/
+.p-top-recommend {
+    width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+    margin-inline: auto;
+    margin-top: var(--space-2xl);
+
+    @include f.mq() {
+        width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+    }
+}
+
+.p-top-recommend__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+
+    @include f.mq() {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include f.mq(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.p-top-recommend__empty {
+    margin-top: var(--space-lg);
+    text-align: center;
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+}
+
+.p-top-recommend__more {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-xl);
+}

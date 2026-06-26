@@ -1,0 +1,90 @@
+// _color.scss
+:root {
+    /* primitive — neutral (light backgrounds / borders) */
+    --primitive-white:       #fff;
+    --primitive-neutral-50:  #fcfaf7;
+    --primitive-neutral-100: #f8f5f0;
+    --primitive-neutral-150: #f3efe8;
+    --primitive-neutral-200: #ece6dc;
+    --primitive-neutral-250: #ebe8e4;
+    --primitive-neutral-300: #e8e2d8;
+    --primitive-neutral-350: #ddd6cb;
+    --primitive-neutral-400: #d4cdc2;
+
+    /* primitive — brown (warm dark scale) */
+    --primitive-brown-50:  #d9d2c8;
+    --primitive-brown-100: #ccc4ba;
+    --primitive-brown-200: #a9a096;
+    --primitive-brown-300: #948c82;
+    --primitive-brown-400: #766e65;
+    --primitive-brown-500: #5c544c;
+    --primitive-brown-600: #453d37;
+    --primitive-brown-700: #3d3530;
+    --primitive-brown-800: #322c26;
+    --primitive-brown-900: #2a241f;
+
+    /* primitive — gold */
+    --primitive-gold-50:  #fdf7ee;
+    --primitive-gold-100: #f5e8d0;
+    --primitive-gold-400: #c9a96e;
+    --primitive-gold-500: #b8935a;
+    --primitive-gold-600: #9e7a44;
+
+    /* semantic — background */
+    --color-bg:                        var(--primitive-white);
+    --color-bg-soft:                   var(--primitive-neutral-100);
+    --color-paper:                     var(--primitive-neutral-150);
+    --color-paper-deep:                var(--primitive-neutral-200);
+    --color-gradient-paper-highlight:  var(--primitive-neutral-50);
+    --color-placeholder:               var(--primitive-neutral-350);
+
+    /* semantic — text */
+    --color-text-base:   var(--primitive-brown-900);
+    --color-text-sub:    var(--primitive-brown-500);
+    --color-text-muted:  var(--primitive-brown-300);
+
+    /* semantic — surface (dark) */
+    --color-dark:       var(--primitive-brown-700);
+    --color-dark-deep:  var(--primitive-brown-800);
+
+    /* semantic — accent */
+    --color-accent:        var(--primitive-brown-700);
+    --color-accent-light:  var(--primitive-brown-200);
+    --color-accent-hover:  var(--primitive-brown-600);
+
+    /* semantic — base / on-dark */
+    --color-white:        var(--primitive-white);
+    --color-on-dark:      var(--primitive-white);
+    --color-on-dark-muted: rgb(255 255 255 / 0.88);
+
+    /* semantic — border / line */
+    --color-border:        var(--primitive-neutral-400);
+    --color-border-light:  var(--primitive-neutral-250);
+    --color-border-hover:  var(--primitive-brown-100);
+    --color-line:          var(--primitive-neutral-300);
+
+    /* semantic — icon */
+    --color-icon-base:    var(--primitive-brown-600);
+    --color-icon-soft:    var(--primitive-brown-400);
+    --color-icon-muted:   var(--primitive-brown-200);
+    --color-icon-subtle:  var(--primitive-brown-50);
+
+    /* semantic — overlay */
+    --color-overlay-dark:    rgb(42 36 31 / 0.62);
+    --color-overlay-medium:  rgb(42 36 31 / 0.38);
+    --color-overlay-soft:    rgb(42 36 31 / 0.12);
+    --color-backdrop:        rgb(42 36 31 / 0.4);
+    --color-selection:       rgb(61 53 48 / 0.16);
+
+    /* semantic — gold accent */
+    --color-accent-gold:         var(--primitive-gold-500);
+    --color-accent-gold-hover:   var(--primitive-gold-600);
+    --color-accent-gold-light:   var(--primitive-gold-100);
+    --color-accent-gold-subtle:  var(--primitive-gold-50);
+
+    /* gradient */
+    --gradient-register:     linear-gradient(180deg, var(--primitive-brown-700) 0%, var(--primitive-brown-800) 100%);
+    --gradient-wood:         linear-gradient(165deg, var(--primitive-brown-700) 0%, var(--primitive-brown-900) 100%);
+    --gradient-gold:         linear-gradient(135deg, var(--primitive-gold-600) 0%, var(--primitive-gold-400) 100%);
+    --gradient-hero-overlay: linear-gradient(155deg, var(--color-overlay-dark) 0%, rgb(42 36 31 / 0.18) 48%, transparent 72%);
+}

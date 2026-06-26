@@ -1,0 +1,12 @@
+@use "../foundation" as f;
+
+/*!
+component > notice
+------------------------------
+*/
+.c-notice {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-lg);
+}

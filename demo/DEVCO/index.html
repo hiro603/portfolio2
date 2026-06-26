@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DEVCO 採用 | 技術で、未来のあたりまえを更新する。</title>
+    <meta
+      name="description"
+      content="DEVCOは、ソフトウェアの力で人々の生活や仕事をもっとシンプルに、もっと心地よくする会社です。新卒・中途エンジニアを募集しています。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-container l-header__inner">
+        <a href="#" class="l-header__logo c-logo" aria-label="DEVCO ホーム">
+          DEVCO<span class="c-logo__mark" aria-hidden="true"></span>
+        </a>
+
+        <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+          <a class="l-header__nav-link js-nav-link" href="#mission">ミッション・バリュー</a>
+          <a class="l-header__nav-link js-nav-link" href="#numbers">数字で見るDEVCO</a>
+          <a class="l-header__nav-link js-nav-link" href="#interview">社員インタビュー</a>
+          <a class="l-header__nav-link js-nav-link" href="#jobs">募集要項</a>
+          <a class="l-header__nav-link js-nav-link" href="#faq">FAQ</a>
+        </nav>
+
+        <a href="entry.html" class="l-header__cta c-button c-button--sm">
+          エントリー
+          <span class="c-button__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <button class="l-burger js-menu-open" type="button" aria-label="メニューを開く">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="l-menu js-menu" aria-label="メニュー">
+      <div class="l-menu__inner">
+        <div class="l-menu__bar">
+          <span class="c-logo c-logo--sm"
+            >DEVCO<span class="c-logo__mark" aria-hidden="true"></span
+          ></span>
+          <button class="l-menu__close js-menu-close" type="button" aria-label="メニューを閉じる">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+            >
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+        <nav class="l-menu__nav" aria-label="モバイルナビゲーション">
+          <a class="l-menu__link js-menu-link" href="#mission">ミッション・バリュー</a>
+          <a class="l-menu__link js-menu-link" href="#numbers">数字で見るDEVCO</a>
+          <a class="l-menu__link js-menu-link" href="#interview">社員インタビュー</a>
+          <a class="l-menu__link js-menu-link" href="#jobs">募集要項</a>
+          <a class="l-menu__link js-menu-link" href="#faq">FAQ</a>
+        </nav>
+        <a href="entry.html" class="l-menu__cta c-button c-button--block js-menu-link">
+          エントリーする
+          <span class="c-button__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </dialog>
+
+    <main>
+      <div class="l-container">
+        <!-- 00 HERO -->
+        <section class="p-hero js-header-trigger">
+          <div>
+            <p class="p-hero__num c-eyebrow js-hero-item">// 00</p>
+            <h1 class="p-hero__title js-hero-item">
+              技術で、未来の<br />あたりまえを<span class="p-hero__accent">更新する。</span>
+            </h1>
+            <p class="p-hero__lead js-hero-item">
+              DEVCOは、ソフトウェアの力で人々の生活や仕事を<br />もっとシンプルに、もっと心地よくする会社です。
+            </p>
+            <div class="p-hero__actions js-hero-item">
+              <a href="entry.html" class="c-button">
+                エントリーする
+                <span class="c-button__arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#jobs" class="c-button c-button--ghost">
+                募集職種を見る
+                <span class="c-button__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <p class="c-eyebrow c-eyebrow--sub js-hero-item">// 新卒・中途エンジニア募集中</p>
+          </div>
+          <div class="p-hero__window js-hero-item" aria-hidden="true">
+            <div class="p-hero__window-bar">
+              <span class="p-hero__dots"><i></i><i></i><i></i></span>
+              <span class="p-hero__filename">about.devco</span>
+              <span class="p-hero__brand">&lt;/&gt;</span>
+            </div>
+            <div class="p-hero__window-body">
+              <p class="p-hero__line"><span class="p-hero__prompt">$</span>whoami</p>
+              <p class="p-hero__line p-hero__out">DEVCO — software studio</p>
+              <p class="p-hero__line">&nbsp;</p>
+              <p class="p-hero__line"><span class="p-hero__prompt">$</span>cat mission.txt</p>
+              <p class="p-hero__line p-hero__out">使う人の“あたりまえ”を、</p>
+              <p class="p-hero__line p-hero__out">ソフトウェアで一段良くする。</p>
+              <p class="p-hero__line">&nbsp;</p>
+              <p class="p-hero__line">
+                <span class="p-hero__status">&gt; status: hiring</span
+                ><span class="p-hero__caret">▮</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="c-notice">※本サイトはポートフォリオ用の架空案件です。</div>
+
+        <!-- 01 MISSION -->
+        <section id="mission" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 01</span> MISSION &amp; VALUES</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">ミッション &amp; バリュー</h2>
+          </div>
+          <div>
+            <p class="p-mission__label">MISSION</p>
+            <p class="p-mission__statement">使う人の“あたりまえ”を、ソフトウェアで一段良くする。</p>
+            <div class="p-mission__values">
+              <div class="c-value js-reveal">
+                <span class="c-value__index">value[01]</span>
+                <div class="c-value__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <circle cx="9" cy="8" r="3.2" />
+                    <path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" />
+                    <path d="M16 6.2a3 3 0 0 1 0 5.6M18 19c0-2.4-1.2-4-3-4.6" />
+                  </svg>
+                </div>
+                <h3 class="c-value__title">ユーザー視点</h3>
+                <p class="c-value__text">
+                  すべては、使う人のために。本質的な課題を見つけ、価値を届けます。
+                </p>
+              </div>
+              <div class="c-value js-reveal">
+                <span class="c-value__index">value[02]</span>
+                <div class="c-value__icon-code" aria-hidden="true">&lt;/&gt;</div>
+                <h3 class="c-value__title">技術の探究</h3>
+                <p class="c-value__text">
+                  学び続け、試し続ける。技術を磨き、より良い未来をつくります。
+                </p>
+              </div>
+              <div class="c-value js-reveal">
+                <span class="c-value__index">value[03]</span>
+                <div class="c-value__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M14 4c4 1 5.5 4 5.5 8-2 0-3.5-.5-5-2" />
+                    <path d="M14 4C9 5 6 9 5 14l5 5c5-1 9-4 10-9" />
+                    <circle cx="13" cy="11" r="1.6" />
+                    <path d="M9 15l-4 4M7.5 13.5L4 17" />
+                  </svg>
+                </div>
+                <h3 class="c-value__title">挑戦と改善</h3>
+                <p class="c-value__text">
+                  今の最善に満足しない。小さく早く挑戦し、継続的に改善します。
+                </p>
+              </div>
+              <div class="c-value js-reveal">
+                <span class="c-value__index">value[04]</span>
+                <div class="c-value__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path
+                      d="M12 20S4 14.5 4 9.2A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 8 2.2C20 14.5 12 20 12 20Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="c-value__title">誠実と信頼</h3>
+                <p class="c-value__text">
+                  誠実に向き合い、信頼を築く。チームで支え合い、成果を最大化します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 NUMBERS -->
+        <section id="numbers" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 02</span> DEVCO BY THE NUMBERS</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">数字で見る<br />DEVCO</h2>
+          </div>
+          <div>
+            <div class="p-numbers__grid">
+              <div class="c-stat js-reveal">
+                <div class="c-stat__label">
+                  <span class="c-stat__icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <circle cx="9" cy="8" r="3" />
+                      <path d="M4 19c0-2.8 2.2-4.5 5-4.5s5 1.7 5 4.5" />
+                      <path d="M16 6a2.6 2.6 0 0 1 0 5" /></svg></span
+                  >社員数
+                </div>
+                <p class="c-stat__value js-stat-value">128<span class="c-stat__unit">名</span></p>
+                <p class="c-stat__note">// 2024-04</p>
+              </div>
+              <div class="c-stat js-reveal">
+                <div class="c-stat__label">
+                  <span class="c-stat__icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <rect x="3.5" y="4.5" width="17" height="16" rx="1.5" />
+                      <path d="M3.5 9h17M8 3v3M16 3v3" /></svg></span
+                  >平均年齢
+                </div>
+                <p class="c-stat__value js-stat-value">29.6<span class="c-stat__unit">歳</span></p>
+                <p class="c-stat__note">// 2024-04</p>
+              </div>
+              <div class="c-stat js-reveal">
+                <div class="c-stat__label">
+                  <span class="c-stat__icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <path d="M4 19h16M4 19V6M4 19l5-5 3 3 7-8" />
+                      <path d="M19 9V5h-4" /></svg></span
+                  >売上成長率
+                </div>
+                <p class="c-stat__value js-stat-value">145<span class="c-stat__unit">%</span></p>
+                <p class="c-stat__note">// FY2023</p>
+              </div>
+              <div class="c-stat js-reveal">
+                <div class="c-stat__label">
+                  <span class="c-stat__icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <circle cx="12" cy="12" r="8" />
+                      <path d="M12 7.5V12l3 2" /></svg></span
+                  >平均残業時間
+                </div>
+                <p class="c-stat__value js-stat-value">
+                  13.2<span class="c-stat__unit">h/月</span>
+                </p>
+                <p class="c-stat__note">// FY2023</p>
+              </div>
+              <div class="c-stat js-reveal">
+                <div class="c-stat__label">
+                  <span class="c-stat__icon" aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <rect x="3.5" y="4.5" width="17" height="16" rx="1.5" />
+                      <path d="M3.5 9h17M8 3v3M16 3v3M8.5 14.5l2.2 2.2 4-4.4" /></svg></span
+                  >有給取得率
+                </div>
+                <p class="c-stat__value js-stat-value">76<span class="c-stat__unit">%</span></p>
+                <p class="c-stat__note">// FY2023</p>
+              </div>
+            </div>
+            <p class="p-numbers__note">※ すべて架空の数値です</p>
+          </div>
+        </section>
+
+        <!-- 03 INTERVIEW -->
+        <section id="interview" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 03</span> MEMBER INTERVIEWS</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">社員インタビュー</h2>
+            <p class="p-section__lead">
+              職種ごとに、入社の決め手ややりがい、DEVCOの魅力を社員が語ります。
+            </p>
+          </div>
+          <div>
+            <div class="p-interview__tabs">
+              <button class="c-chip is-active js-interview-tab" type="button" data-filter="all">
+                すべて
+              </button>
+              <button class="c-chip js-interview-tab" type="button" data-filter="エンジニア">
+                エンジニア
+              </button>
+              <button class="c-chip js-interview-tab" type="button" data-filter="デザイナー">
+                デザイナー
+              </button>
+              <button class="c-chip js-interview-tab" type="button" data-filter="SRE">SRE</button>
+              <button
+                class="c-chip js-interview-tab"
+                type="button"
+                data-filter="データサイエンティスト"
+              >
+                データサイエンティスト
+              </button>
+              <button
+                class="c-chip js-interview-tab"
+                type="button"
+                data-filter="プロダクトマネージャー"
+              >
+                プロダクトマネージャー
+              </button>
+            </div>
+            <div class="p-interview__grid">
+              <article
+                class="c-interview p-interview__card js-interview-card"
+                data-cat="エンジニア"
+              >
+                <div class="c-interview__head">
+                  <div class="c-interview__avatar">TY</div>
+                  <div class="c-interview__meta">
+                    <p class="c-interview__role">エンジニア</p>
+                    <p class="c-interview__name">@t.yamada</p>
+                    <p class="c-interview__year">since 2021</p>
+                  </div>
+                </div>
+                <div class="c-interview__body">
+                  <p class="c-interview__quote">裁量ある環境で、技術をとことん楽しめる</p>
+                  <p class="c-interview__more" aria-hidden="true">→</p>
+                </div>
+              </article>
+              <article
+                class="c-interview p-interview__card js-interview-card"
+                data-cat="デザイナー"
+              >
+                <div class="c-interview__head">
+                  <div class="c-interview__avatar">MS</div>
+                  <div class="c-interview__meta">
+                    <p class="c-interview__role">デザイナー</p>
+                    <p class="c-interview__name">@m.suzuki</p>
+                    <p class="c-interview__year">since 2022</p>
+                  </div>
+                </div>
+                <div class="c-interview__body">
+                  <p class="c-interview__quote">ユーザーの反応が、デザインの原動力になる</p>
+                  <p class="c-interview__more" aria-hidden="true">→</p>
+                </div>
+              </article>
+              <article class="c-interview p-interview__card js-interview-card" data-cat="SRE">
+                <div class="c-interview__head">
+                  <div class="c-interview__avatar">KT</div>
+                  <div class="c-interview__meta">
+                    <p class="c-interview__role">SRE</p>
+                    <p class="c-interview__name">@k.tanaka</p>
+                    <p class="c-interview__year">since 2020</p>
+                  </div>
+                </div>
+                <div class="c-interview__body">
+                  <p class="c-interview__quote">信頼される基盤をつくり、挑戦を支える</p>
+                  <p class="c-interview__more" aria-hidden="true">→</p>
+                </div>
+              </article>
+              <article
+                class="c-interview p-interview__card js-interview-card"
+                data-cat="データサイエンティスト"
+              >
+                <div class="c-interview__head">
+                  <div class="c-interview__avatar">AI</div>
+                  <div class="c-interview__meta">
+                    <p class="c-interview__role">データサイエンティスト</p>
+                    <p class="c-interview__name">@a.ito</p>
+                    <p class="c-interview__year">since 2022</p>
+                  </div>
+                </div>
+                <div class="c-interview__body">
+                  <p class="c-interview__quote">データから価値を生み出し、意思決定を後押しする</p>
+                  <p class="c-interview__more" aria-hidden="true">→</p>
+                </div>
+              </article>
+              <article
+                class="c-interview p-interview__card js-interview-card"
+                data-cat="プロダクトマネージャー"
+              >
+                <div class="c-interview__head">
+                  <div class="c-interview__avatar">TN</div>
+                  <div class="c-interview__meta">
+                    <p class="c-interview__role">プロダクトマネージャー</p>
+                    <p class="c-interview__name">@t.nakamura</p>
+                    <p class="c-interview__year">since 2019</p>
+                  </div>
+                </div>
+                <div class="c-interview__body">
+                  <p class="c-interview__quote">
+                    ユーザーとビジネスの橋渡しで、プロダクトを前に進める
+                  </p>
+                  <p class="c-interview__more" aria-hidden="true">→</p>
+                </div>
+              </article>
+            </div>
+            <div class="p-interview__footer">
+              <a href="#interview" class="c-button c-button--ghost">
+                インタビューをもっと見る
+                <span class="c-button__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 JOBS -->
+        <section id="jobs" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 04</span> OPEN POSITIONS</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">募集要項</h2>
+            <p class="p-section__lead">職種を選択すると、募集要項の詳細をご確認いただけます。</p>
+          </div>
+          <div>
+            <div class="p-jobs__tabs">
+              <button class="c-chip is-active js-job-tab" type="button" data-job="0">
+                バックエンドエンジニア
+              </button>
+              <button class="c-chip js-job-tab" type="button" data-job="1">
+                フロントエンドエンジニア
+              </button>
+              <button class="c-chip js-job-tab" type="button" data-job="2">SRE</button>
+              <button class="c-chip js-job-tab" type="button" data-job="3">デザイナー</button>
+              <button class="c-chip js-job-tab" type="button" data-job="4">
+                データサイエンティスト
+              </button>
+              <button class="c-chip js-job-tab" type="button" data-job="5">
+                プロダクトマネージャー
+              </button>
+            </div>
+            <div class="p-jobs__layout">
+              <div class="p-jobs__table">
+                <div class="p-jobs__panel js-job-panel" data-job="0">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      Webサービスの設計・開発・運用を担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      サーバーサイド開発の実務経験（言語不問）／ 技術を学び続ける意欲のある方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      言語：Go, Python, TypeScript ／ フレームワーク：Gin, FastAPI, NestJS ／
+                      インフラ：AWS ／ DB：PostgreSQL など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 450万円〜800万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+                <div class="p-jobs__panel js-job-panel is-hidden" data-job="1">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      Webフロントエンドの設計・実装・改善を担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      モダンフロントエンド開発の実務経験／ UI/UXへの関心が高い方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      言語：TypeScript ／ フレームワーク：React, Next.js ／ スタイリング：Tailwind
+                      CSS ／ ビルド：Vite など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 450万円〜800万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+                <div class="p-jobs__panel js-job-panel is-hidden" data-job="2">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      サービスの信頼性向上と開発基盤の整備を担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      クラウドインフラ運用の実務経験／ 自動化・可観測性への関心がある方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      クラウド：AWS ／ IaC：Terraform ／ 監視：Datadog, Prometheus ／
+                      コンテナ：Kubernetes など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 500万円〜900万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+                <div class="p-jobs__panel js-job-panel is-hidden" data-job="3">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      プロダクトのUI/UX設計とビジュアルデザインを担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      Webサービスのデザイン実務経験／ 課題発見から関わりたい方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      ツール：Figma ／ プロトタイピング ／ デザインシステムの構築・運用 など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 450万円〜750万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+                <div class="p-jobs__panel js-job-panel is-hidden" data-job="4">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      データ分析と機械学習モデルの開発・運用を担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      データ分析・機械学習の実務経験／ ビジネス課題への関心がある方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      言語：Python ／ ライブラリ：pandas, scikit-learn, PyTorch ／ 基盤：BigQuery,
+                      Vertex AI など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 500万円〜900万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+                <div class="p-jobs__panel js-job-panel is-hidden" data-job="5">
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">summary</div>
+                    <div class="p-jobs__row-value">
+                      プロダクトの戦略立案からロードマップ策定までを担当していただきます。
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">requirements</div>
+                    <div class="p-jobs__row-value">
+                      プロダクト開発のPM経験／ 数値に基づいて意思決定できる方
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">stack</div>
+                    <div class="p-jobs__row-value">
+                      ツール：Jira, Notion, Amplitude ／ アジャイル開発 ／ ユーザーインタビュー など
+                    </div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">employment</div>
+                    <div class="p-jobs__row-value">正社員（試用期間あり）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">location</div>
+                    <div class="p-jobs__row-value">東京都港区（リモートワーク可）</div>
+                  </div>
+                  <div class="p-jobs__row">
+                    <div class="p-jobs__row-label">salary</div>
+                    <div class="p-jobs__row-value">
+                      年収 600万円〜1,000万円（経験・能力を考慮の上、決定します）
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-jobs__entry">
+                <p class="p-jobs__entry-title">エントリーはこちら</p>
+                <div class="p-jobs__entry-actions">
+                  <a href="entry.html" class="c-button c-button--block c-button--sm">
+                    この職種に応募する
+                    <span class="c-button__arrow" aria-hidden="true">→</span>
+                  </a>
+                  <a href="#jobs" class="c-button c-button--ghost c-button--block c-button--sm">
+                    すべての職種を見る
+                    <span class="c-button__arrow" aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 FAQ -->
+        <section id="faq" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 05</span> FAQ</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">FAQ</h2>
+            <p class="p-section__lead">よくあるご質問をまとめました。</p>
+          </div>
+          <div class="p-faq__list">
+            <div class="c-faq js-faq">
+              <button class="c-faq__head js-faq-head" type="button" aria-expanded="false">
+                <span class="c-faq__q">リモートワークは可能ですか？</span>
+                <span class="c-faq__sign js-faq-sign" aria-hidden="true">[+]</span>
+              </button>
+              <div class="c-faq__panel js-faq-panel">
+                <p class="c-faq__a">
+                  はい、可能です。週2〜3日の出社を推奨していますが、業務やチームの状況に応じて柔軟に運用しています。
+                </p>
+              </div>
+            </div>
+            <div class="c-faq js-faq">
+              <button class="c-faq__head js-faq-head" type="button" aria-expanded="false">
+                <span class="c-faq__q">選考フローを教えてください。</span>
+                <span class="c-faq__sign js-faq-sign" aria-hidden="true">[+]</span>
+              </button>
+              <div class="c-faq__panel js-faq-panel">
+                <p class="c-faq__a">
+                  書類選考 → カジュアル面談 → 技術面接 →
+                  最終面接の流れです。応募から内定まではおおむね2〜3週間です。
+                </p>
+              </div>
+            </div>
+            <div class="c-faq js-faq">
+              <button class="c-faq__head js-faq-head" type="button" aria-expanded="false">
+                <span class="c-faq__q">未経験でも応募できますか？</span>
+                <span class="c-faq__sign js-faq-sign" aria-hidden="true">[+]</span>
+              </button>
+              <div class="c-faq__panel js-faq-panel">
+                <p class="c-faq__a">
+                  ポテンシャル採用も行っています。基礎的な開発経験と学び続ける意欲があれば、職種未経験でもご応募いただけます。
+                </p>
+              </div>
+            </div>
+            <div class="c-faq js-faq">
+              <button class="c-faq__head js-faq-head" type="button" aria-expanded="false">
+                <span class="c-faq__q">入社後の研修制度について教えてください。</span>
+                <span class="c-faq__sign js-faq-sign" aria-hidden="true">[+]</span>
+              </button>
+              <div class="c-faq__panel js-faq-panel">
+                <p class="c-faq__a">
+                  入社後はオンボーディング期間を設け、メンターがつきます。技術書籍の購入やカンファレンス参加の支援制度もあります。
+                </p>
+              </div>
+            </div>
+            <div class="c-faq js-faq">
+              <button class="c-faq__head js-faq-head" type="button" aria-expanded="false">
+                <span class="c-faq__q">副業は可能ですか？</span>
+                <span class="c-faq__sign js-faq-sign" aria-hidden="true">[+]</span>
+              </button>
+              <div class="c-faq__panel js-faq-panel">
+                <p class="c-faq__a">
+                  申請制で副業を認めています。本業に支障のない範囲であれば、スキルアップにつながる活動を歓迎しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06 ENTRY -->
+        <section id="entry" class="p-section">
+          <p class="p-section__divider">
+            <span class="p-section__divider-label"
+              ><span class="p-section__divider-num">// 06</span> ENTRY</span
+            >
+          </p>
+          <div class="p-section__head">
+            <h2 class="p-section__title">エントリー</h2>
+            <p class="p-section__lead">あなたの挑戦を、お待ちしています。</p>
+          </div>
+          <div class="p-entry__card">
+            <div>
+              <p class="p-entry__prompt">
+                <span class="p-entry__prompt-mark">&gt;</span>
+                ready to commit?
+              </p>
+              <p class="p-entry__title">未来のあたりまえを、一緒につくりませんか？</p>
+              <p class="p-entry__text">
+                まずはエントリーして、カジュアル面談からお気軽にご参加ください。
+              </p>
+            </div>
+            <div class="p-entry__actions">
+              <a href="entry.html" class="c-button">
+                エントリーする
+                <span class="c-button__arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#jobs" class="c-button c-button--ghost">
+                募集職種を見る
+                <span class="c-button__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="l-container">
+        <p class="l-footer__num c-eyebrow">// 07</p>
+        <div class="l-footer__logo c-logo">
+          DEVCO<span class="c-logo__mark" aria-hidden="true"></span>
+        </div>
+        <div class="l-footer__grid">
+          <div>
+            <p class="l-footer__col-title">会社について</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="#mission">ミッション・バリュー</a>
+              <a class="l-footer__link" href="#numbers">会社概要</a>
+              <a class="l-footer__link" href="#">ニュース</a>
+            </div>
+          </div>
+          <div>
+            <p class="l-footer__col-title">採用情報</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="#jobs">募集要項</a>
+              <a class="l-footer__link" href="#interview">社員インタビュー</a>
+              <a class="l-footer__link" href="#">働く環境</a>
+            </div>
+          </div>
+          <div>
+            <p class="l-footer__col-title">サポート</p>
+            <div class="l-footer__links">
+              <a class="l-footer__link" href="#faq">FAQ</a>
+              <a class="l-footer__link" href="#">お問い合わせ</a>
+              <a class="l-footer__link" href="#">プライバシーポリシー</a>
+            </div>
+          </div>
+          <div class="l-footer__meta">
+            <div class="l-footer__social">
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="X"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.5 3h3l-6.6 7.5L21.5 21h-5.9l-4.3-5.6L6.2 21H3.2l7-8L2.8 3h6l3.9 5.1L17.5 3Zm-1 16h1.6L8.1 4.6H6.4L16.5 19Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="l-footer__social-link"
+                href="#"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M4.8 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3 9h3.6v11H3V9Zm5.8 0h3.4v1.5h.05c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.3 4.3 5.4V20h-3.6v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V20H8.8V9Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="l-footer__copyright">
+              © DEVCO, Inc. All rights reserved.<br />※ 本サイトは架空の題材・自主制作です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

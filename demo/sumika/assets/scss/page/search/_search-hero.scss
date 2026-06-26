@@ -1,0 +1,19 @@
+@use "../../foundation" as f;
+
+/*!
+page > search > hero
+------------------------------
+*/
+
+.p-search-bar-wrap {
+  width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+  margin-inline: auto;
+  margin-top: -28px;
+  position: relative;
+  z-index: var(--z-raised);
+
+  @include f.mq() {
+    width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+    margin-top: -32px;
+  }
+}

@@ -1,0 +1,79 @@
+@use "../foundation" as f;
+
+/*!
+layout > subpage hero (shared across lower pages)
+------------------------------
+*/
+.l-subpage-hero {
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.l-subpage-hero__inner {
+    position: relative;
+    min-height: 160px;
+
+    @include f.mq() {
+        min-height: 228px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: linear-gradient(
+            90deg,
+            var(--color-overlay-dark) 0%,
+            var(--color-overlay-medium) 42%,
+            var(--color-overlay-soft) 62%,
+            transparent 85%
+        );
+    }
+}
+
+.l-subpage-hero__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.l-subpage-hero__frame {
+    position: relative;
+    z-index: 2;
+    width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+    margin-inline: auto;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    padding-block: 24px;
+
+    @include f.mq() {
+        width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+    }
+}
+
+.l-subpage-hero__content {
+    @include f.mq() {
+        max-width: calc(50% - 12px);
+    }
+}
+
+.l-subpage-hero__title {
+    font-family: var(--font-family-display);
+    font-size: clamp(1.625rem, 4vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--color-on-dark);
+    text-shadow: 0 1px 14px rgb(0 0 0 / 0.28);
+}
+
+.l-subpage-hero__lead {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--color-on-dark-muted);
+}

@@ -1,0 +1,69 @@
+@use "../foundation" as f;
+
+/*!
+utility > utility
+------------------------------
+*/
+/* 非表示 */
+.u-visually-hidden {
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  margin: -1px !important;
+}
+
+.u-ptb {
+  padding-block: clamp(40px, 6.25vw, 80px);
+}
+
+.u-pt {
+  padding-top: clamp(40px, 6.25vw, 80px);
+}
+
+.u-pb {
+  padding-bottom: clamp(40px, 6.25vw, 80px);
+}
+
+.u-text-hover {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+
+  @include f.mq() {
+    @media (any-hover: hover) {
+      &:hover {
+        background-size: 100% 1px;
+      }
+    }
+  }
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.65s var(--ease-out),
+    transform 0.65s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
