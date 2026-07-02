@@ -1,137 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>DEVCO 採用サイト — hiro</title>
-        <meta name="description" content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。" />
-        <meta name="format-detection" content="telephone=no, email=no" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DEVCO 採用サイト — hiro</title>
+    <meta
+      name="description"
+      content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
 
-        <link rel="canonical" href="https://webhiro.com/works/devco/" />
+    <link rel="canonical" href="https://webhiro.com/works/devco/" />
 
-        <!-- OGP -->
-        <meta property="og:title" content="DEVCO 採用サイト — hiro" />
-        <meta property="og:description" content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://webhiro.com/works/devco/" />
-        <meta property="og:image" content="https://webhiro.com/assets/img/ogp.png" />
-        <meta property="og:site_name" content="hiro" />
-        <meta property="og:locale" content="ja_JP" />
+    <!-- OGP -->
+    <meta property="og:title" content="DEVCO 採用サイト — hiro" />
+    <meta
+      property="og:description"
+      content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webhiro.com/works/devco/" />
+    <meta
+      property="og:image"
+      content="https://webhiro.com/assets/img/ogp.png"
+    />
+    <meta property="og:site_name" content="hiro" />
+    <meta property="og:locale" content="ja_JP" />
 
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DEVCO 採用サイト — hiro" />
-        <meta name="twitter:description" content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。" />
-        <meta name="twitter:image" content="https://webhiro.com/assets/img/ogp.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DEVCO 採用サイト — hiro" />
+    <meta
+      name="twitter:description"
+      content="ソフトウェアスタジオの採用サイト制作事例。エンジニアに刺さるトーンと、エントリーまでの導線設計。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://webhiro.com/assets/img/ogp.png"
+    />
 
-        <link rel="icon" href="../../assets/img/favicon/favicon.ico" />
-        <link rel="icon" href="../../assets/img/favicon/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="../../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" href="../../assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="../../assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../assets/img/favicon/apple-touch-icon.png"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Shippori+Mincho:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 
-        <script src="../../assets/js/vendor/gsap.min.js" defer></script>
-        <script src="../../assets/js/vendor/ScrollTrigger.min.js" defer></script>
-        <script type="module" src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/vendor/gsap.min.js" defer></script>
+    <script src="../../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="../../assets/js/main.js"></script>
 
-        <meta name="robots" content="noindex" />
-    </head>
-    <body>
-        <header class="l-header js-header">
-            <div class="l-header__inner">
-                <a href="../../index.html" class="c-site-logo">
-                    <span class="c-site-logo__main">hiro<span class="c-site-logo__dot">.</span></span>
-                    <span class="c-site-logo__sub">Web Designer &amp; Developer</span>
-                </a>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <a href="../../index.html" class="c-site-logo">
+          <span class="c-site-logo__main"
+            >hiro<span class="c-site-logo__dot">.</span></span
+          >
+          <span class="c-site-logo__sub">Web Designer &amp; Developer</span>
+        </a>
 
-                <button type="button" class="l-header__burger js-header-menu-open" aria-label="メニューを開く">
-                    <span></span><span></span>
-                </button>
+        <button
+          type="button"
+          class="l-header__burger js-header-menu-open"
+          aria-label="メニューを開く"
+        >
+          <span></span><span></span>
+        </button>
 
-                <dialog class="l-header__menu js-header-menu" aria-label="ナビゲーション">
-                    <button type="button" class="l-header__menu-close js-header-menu-close" aria-label="メニューを閉じる">×</button>
-                    <nav class="l-header__nav">
-                        <ul class="l-header__list">
-                            <li><a href="../../index.html#works" class="l-header__link">Works</a></li>
-                            <li><a href="../../index.html#about" class="l-header__link">About</a></li>
-                            <li><a href="../../index.html#skill" class="l-header__link">Skill</a></li>
-                            <li><a href="../../index.html#flow" class="l-header__link">Flow</a></li>
-                            <li><a href="../../index.html#contact" class="l-header__link l-header__link--cta">Contact</a></li>
-                        </ul>
-                    </nav>
-                </dialog>
+        <dialog
+          class="l-header__menu js-header-menu"
+          aria-label="ナビゲーション"
+        >
+          <button
+            type="button"
+            class="l-header__menu-close js-header-menu-close"
+            aria-label="メニューを閉じる"
+          >
+            ×
+          </button>
+          <nav class="l-header__nav">
+            <ul class="l-header__list">
+              <li>
+                <a href="../../index.html#works" class="l-header__link"
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#about" class="l-header__link"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#skill" class="l-header__link"
+                  >Skill</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#flow" class="l-header__link">Flow</a>
+              </li>
+              <li>
+                <a
+                  href="../../index.html#contact"
+                  class="l-header__link l-header__link--cta"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </dialog>
+      </div>
+    </header>
+
+    <main>
+      <section class="p-detail-kv js-header-trigger">
+        <div class="l-container p-detail-kv__inner">
+          <nav class="c-breadcrumb" aria-label="パンくず">
+            <ol class="c-breadcrumb-list">
+              <li class="c-breadcrumb-item">
+                <a href="../../index.html" class="c-breadcrumb-item-link"
+                  >Home</a
+                >
+              </li>
+              <li class="c-breadcrumb-item">
+                <a href="../../index.html#works" class="c-breadcrumb-item-link"
+                  >Works</a
+                >
+              </li>
+              <li class="c-breadcrumb-item">DEVCO 採用サイト</li>
+            </ol>
+          </nav>
+          <p class="p-detail-kv__cat">Case Study — Recruit</p>
+          <h1 class="p-detail-kv__title">
+            <span class="u-line">DEVCO</span
+            ><span class="u-line">採用サイト</span>
+          </h1>
+          <p class="p-detail-kv__lead">
+            ソフトウェアスタジオの採用サイト。ターミナル風のモチーフとアシッドグリーンで、エンジニアが「ここで働きたい」と感じるトーンを設計しました。架空案件として制作したものです。
+          </p>
+          <ul class="c-tag-list p-detail-kv__tags">
+            <li class="c-tag">Recruit</li>
+            <li class="c-tag">Design</li>
+            <li class="c-tag">Front-end</li>
+          </ul>
+          <a
+            href="../../demo/devco/index.html"
+            class="c-button c-button--on-accent p-detail-kv__demo"
+            target="_blank"
+            rel="noopener"
+            >デモサイトを見る</a
+          >
+          <div class="p-detail-kv__shot">
+            <img
+              src="../../assets/img/works/devco.webp"
+              alt="「技術で、未来のあたりまえを更新する。」のファーストビューとターミナル風UI"
+              width="1280"
+              height="782"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="p-detail-body">
+        <div class="p-detail-body__inner">
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Overview</p>
+            <h2 class="p-detail-section__title">概要</h2>
+            <div class="c-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>クライアント</th>
+                    <td>ソフトウェアスタジオ「DEVCO」</td>
+                  </tr>
+                  <tr>
+                    <th>種別</th>
+                    <td>採用サイト（リクルート）</td>
+                  </tr>
+                  <tr>
+                    <th>担当範囲</th>
+                    <td>情報設計 / デザイン / フロントエンド実装</td>
+                  </tr>
+                  <tr>
+                    <th>期間</th>
+                    <td>約1.5ヶ月</td>
+                  </tr>
+                  <tr>
+                    <th>使用技術</th>
+                    <td>HTML / CSS(SCSS) / JavaScript</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </header>
+          </div>
 
-        <main>
-            <section class="p-detail-kv js-header-trigger">
-                <div class="l-container p-detail-kv__inner">
-                    <nav class="c-breadcrumb" aria-label="パンくず">
-                        <ol class="c-breadcrumb-list">
-                            <li class="c-breadcrumb-item"><a href="../../index.html" class="c-breadcrumb-item-link">Home</a></li>
-                            <li class="c-breadcrumb-item"><a href="../../index.html#works" class="c-breadcrumb-item-link">Works</a></li>
-                            <li class="c-breadcrumb-item">DEVCO 採用サイト</li>
-                        </ol>
-                    </nav>
-                    <p class="p-detail-kv__cat">Case Study — Recruit</p>
-                    <h1 class="p-detail-kv__title"><span class="u-line">DEVCO</span><span class="u-line">採用サイト</span></h1>
-                    <p class="p-detail-kv__lead">ソフトウェアスタジオの採用サイト。ターミナル風のモチーフとアシッドグリーンで、エンジニアが「ここで働きたい」と感じるトーンを設計しました。架空案件として制作したものです。</p>
-                    <ul class="c-tag-list p-detail-kv__tags">
-                        <li class="c-tag">Recruit</li>
-                        <li class="c-tag">Design</li>
-                        <li class="c-tag">Front-end</li>
-                    </ul>
-                    <a href="../../demo/DEVCO/" class="c-button c-button--on-accent p-detail-kv__demo" target="_blank" rel="noopener">デモサイトを見る</a>
-                    <div class="p-detail-kv__shot">
-                        <img src="../../assets/img/works/devco.webp" alt="「技術で、未来のあたりまえを更新する。」のファーストビューとターミナル風UI" width="1280" height="782" loading="eager">
-                    </div>
-                </div>
-            </section>
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Client &amp; Target</p>
+            <h2 class="p-detail-section__title">クライアントとターゲット</h2>
+            <p class="p-detail-section__text">
+              クライアントは、新卒・中途のエンジニアを募集するソフトウェアスタジオ「DEVCO」。「技術で、未来のあたりまえを更新する。」という姿勢を、採用の場でも飾らずに伝えたい——そんな想定からはじめました。
+            </p>
+            <p class="p-detail-section__text">
+              届けたいのは、給与や知名度よりも「どう働くか・どんな技術文化か」で会社を選ぶエンジニア。うわべのやりがいではなく、開発の空気そのものから「ここで働きたい」と感じてもらうことを意識しました。
+            </p>
+          </div>
 
-            <section class="p-detail-body">
-                <div class="p-detail-body__inner">
-                    <div class="p-detail-section js-reveal">
-                        <p class="p-detail-section__label">Problem</p>
-                        <h2 class="p-detail-section__title">課題</h2>
-                        <p class="p-detail-section__text">エンジニア採用は競合が多く、よくある「キラキラした社員写真と抽象的なメッセージ」の採用サイトでは、技術者の心に届きにくい——。会社の技術志向と空気感を、表面的でない形でまっすぐ伝える必要がありました。</p>
-                    </div>
-                    <div class="p-detail-section js-reveal">
-                        <p class="p-detail-section__label">Approach</p>
-                        <h2 class="p-detail-section__title">アプローチ</h2>
-                        <p class="p-detail-section__text">ターミナル（コマンドライン）を主役にしたダークなUIで、エンジニアにとっての「日常」を画面そのものに落とし込みました。アシッドグリーンの差し色は「ここぞ」のCTAだけに絞り、数字・社員インタビュー・募集要項・FAQ・エントリーまでを一直線に読み進められる構成に。スクロールに連動した控えめな演出で、技術への真剣さと心地よさを両立させています。</p>
-                    </div>
-                    <div class="p-detail-section js-reveal">
-                        <p class="p-detail-section__label">Result</p>
-                        <h2 class="p-detail-section__title">成果</h2>
-                        <p class="p-detail-section__text">目指したのは、応募の前に「この会社のスタンスが分かる」採用サイト。トーンと世界観で対象を惹きつけ、エントリーという一歩までを迷わせない——その導線の設計を意図しました。</p>
-                    </div>
-                    <a href="../../index.html#contact" class="c-button">この内容で相談する</a>
-                </div>
-            </section>
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Problem &amp; Objective</p>
+            <h2 class="p-detail-section__title">課題と目標</h2>
+            <p class="p-detail-section__text">
+              エンジニア採用は競合が多く、よくある「キラキラした社員写真と抽象的なメッセージ」の採用サイトでは、技術者の心になかなか届きません。会社の技術志向と空気感を、表面的でない形でまっすぐ伝える必要がありました。
+            </p>
+            <p class="p-detail-section__text">
+              そこで目標を二つに置きました。「開発の空気感をひと目で感じてもらうこと」、そして「迷わずエントリーまで進めること」。
+            </p>
+          </div>
 
-            <nav class="p-detail-nav" aria-label="作品ナビゲーション">
-                <div class="l-container p-detail-nav__inner">
-                    <a href="../handmade-lp/index.html" class="p-detail-nav__link">← Prev</a>
-                    <a href="../../index.html#works" class="p-detail-nav__back">View all works</a>
-                    <a href="../sumika/index.html" class="p-detail-nav__link">Next →</a>
-                </div>
-            </nav>
-        </main>
-
-        <footer class="l-footer">
-            <div class="l-container l-footer__inner">
-                <a href="../../index.html" class="l-footer__logo">hiro<span>.</span></a>
-                <ul class="l-footer__nav">
-                    <li><a href="../../index.html#works">Works</a></li>
-                    <li><a href="../../index.html#about">About</a></li>
-                    <li><a href="../../index.html#contact">Contact</a></li>
-                    <li><a href="../../privacy/index.html">Privacy</a></li>
-                </ul>
-                <small class="l-footer__copy">© 2026 hiro</small>
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Solution</p>
+            <h2 class="p-detail-section__title">解決アプローチ</h2>
+            <p class="p-detail-section__text">
+              ターミナル（コマンドライン）を主役にしたダークなUIで、エンジニアにとっての「日常」を画面そのものに落とし込みました。ミッション＆バリュー・数字で見る・社員インタビュー・募集要項・FAQ・エントリーまでを、一直線に読み進められる構成に。
+            </p>
+            <p class="p-detail-section__text">
+              アシッドグリーンの差し色は「ここぞ」のCTAだけに絞り、情報量が多くても迷わないように整理しました。
+            </p>
+            <div class="p-detail-section__figure">
+              <img
+                src="../../assets/img/works/devco-shot.webp"
+                alt="ターミナル風UIで構成したミッションセクション"
+                width="800"
+                height="500"
+                loading="lazy"
+              />
             </div>
-        </footer>
-    </body>
+          </div>
+
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Design</p>
+            <h2 class="p-detail-section__title">デザインの工夫</h2>
+            <p class="p-detail-section__text">
+              見出しや数値には等幅書体（JetBrains
+              Mono）を用い、コードエディタのような「開発者の景色」を画面に持ち込みました。本文は
+              Noto Sans JP
+              で可読性を確保し、ダーク背景×アシッドグリーンの一点集中で、真剣さとテンポの良さを両立させています。
+            </p>
+            <p class="p-detail-section__text">
+              華やかさより、技術への誠実さ。エンジニアが日々見ている画面に近い手触りを、いちばん大切にしました。
+            </p>
+            <div class="p-detail-section__cols">
+              <div class="p-detail-section__figure">
+                <img
+                  src="../../assets/img/works/devco-design1.webp"
+                  alt="等幅書体を生かした数値セクション"
+                  width="600"
+                  height="375"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-detail-section__figure">
+                <img
+                  src="../../assets/img/works/devco-design2.webp"
+                  alt="アシッドグリーンを効かせた募集要項"
+                  width="600"
+                  height="375"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Development</p>
+            <h2 class="p-detail-section__title">実装のこだわり</h2>
+            <p class="p-detail-section__text">
+              スクロールに連動した控えめな演出と、ターミナルのプロンプトを思わせるモチーフで、世界観に手触りを持たせました。情報量の多い募集要項やFAQもスマートフォンで読みやすいよう調整し、エントリーボタンは常に手の届く位置に配置しています。
+            </p>
+          </div>
+
+          <div class="p-detail-section js-reveal">
+            <p class="p-detail-section__label">Result &amp; Point</p>
+            <h2 class="p-detail-section__title">成果とポイント</h2>
+            <p class="p-detail-section__text">
+              目指したのは、応募の前に「この会社のスタンスが分かる」採用サイト。トーンと世界観で対象を惹きつけ、エントリーという一歩までを迷わせない——その導線の設計を意図しました。
+            </p>
+            <p class="p-detail-section__text">
+              見どころは、ターミナル風の世界観と、差し色を絞ったメリハリ。対象を明確に狙って作り込んだ、架空案件として制作した一案件です。
+            </p>
+          </div>
+          <a href="../../index.html#contact" class="c-button"
+            >この内容で相談する</a
+          >
+        </div>
+      </section>
+
+      <nav class="p-detail-nav" aria-label="作品ナビゲーション">
+        <div class="l-container p-detail-nav__inner">
+          <a href="../hair-salon/index.html" class="p-detail-nav__link"
+            >← Prev</a
+          >
+          <a href="../../index.html#works" class="p-detail-nav__back"
+            >View all works</a
+          >
+          <a href="../photographer/index.html" class="p-detail-nav__link"
+            >Next →</a
+          >
+        </div>
+      </nav>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-container l-footer__inner">
+        <a href="../../index.html" class="l-footer__logo">hiro<span>.</span></a>
+        <ul class="l-footer__nav">
+          <li><a href="../../index.html#works">Works</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../privacy/index.html">Privacy</a></li>
+        </ul>
+        <small class="l-footer__copy">© 2026 hiro</small>
+      </div>
+    </footer>
+  </body>
 </html>
