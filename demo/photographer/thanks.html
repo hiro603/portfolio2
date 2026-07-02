@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>送信完了 — Sou Akiyama</title>
+        <meta name="description" content="お問い合わせの送信が完了しました。" />
+        <meta name="robots" content="noindex" />
+
+        <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+        <link
+            rel="icon"
+            href="./assets/img/favicon/favicon.svg"
+            type="image/svg+xml"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/img/favicon/apple-touch-icon.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <style>
+            .p-thanks {
+                min-height: 100vh;
+                display: grid;
+                place-content: center;
+                text-align: center;
+                gap: 1.5rem;
+                padding: 2rem;
+            }
+            .p-thanks__title {
+                font-family: "Cormorant Garamond", serif;
+                font-size: clamp(2rem, 5vw, 3rem);
+                font-weight: 500;
+            }
+            .p-thanks__lead {
+                line-height: 1.9;
+                max-width: 34rem;
+            }
+            .p-thanks__back {
+                display: inline-block;
+                border-bottom: 1px solid currentColor;
+                padding-bottom: 0.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="p-thanks">
+            <h1 class="p-thanks__title">Thank you.</h1>
+            <p class="p-thanks__lead">
+                お問い合わせを送信しました。内容を確認のうえ、通常2営業日以内に折り返しご連絡いたします。
+            </p>
+            <a class="p-thanks__back" href="./">トップページへ戻る</a>
+        </main>
+    </body>
+</html>
