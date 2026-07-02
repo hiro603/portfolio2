@@ -82,3 +82,13 @@ coverage/
 # =========================
 .shots/
 .superpowers/
+
+# =========================
+# メールフォーム（秘密情報・生成物）
+# =========================
+mailform/config.php
+mailform/outbox/
+contact/mailform/config.php
+contact/mailform/outbox/
+demo/*/mailform/config.php
+demo/*/mailform/outbox/

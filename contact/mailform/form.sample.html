@@ -1,0 +1,113 @@
+<!--
+  フォームマークアップの参考例。mailform.js は「掴み=js- / 状態=is- / 見た目=c-」で動く。
+  役割ごとにクラスの意味が分かれている（クラス名は規約として固定）:
+
+  JS が探すフック（js-。スタイルは当てない）:
+    .js-mailform          フォーム本体（必須）
+    .js-mailform-field    各項目のラッパー（この中にエラー文が挿入される）
+    .js-mailform-success  成功バナー
+    .js-mailform-alert    失敗バナー（文面はJSが入れる）
+    ※ 送信ボタンは [type="submit"] で拾う。ハニーポットは data-honeypot の name で拾う（クラス不要）
+
+  状態（JS が付与・CSS が装飾）:
+    is-error    入力エラーの input に付く
+    is-visible  バナー表示時に付く
+
+  見た目だけ（JS は掴まない。CSS を当てる対象）:
+    .c-form__success / .c-form__alert   バナーの見た目
+    .c-form__error                      動的挿入されるエラー文（js-mailform-error と併記される）
+
+  検証ルールはJSに書かず HTML 属性で指定する（これがルールの正）:
+    required / type="email" / type="tel" + pattern="..." / maxlength / minlength
+    デフォルト文面を変えたい項目だけ data-error="独自メッセージ" を付ける
+
+  フォーム設定（form要素の data 属性）:
+    action                    設置場所に合わせる（例: /mailform/submit.php）
+    data-ajax="true"          fetch送信（ページ遷移なし）。確認画面モード(confirm)では外す
+    data-honeypot="company"   ハニーポットの name（config.php の honeypot と一致。既定 company）
+    data-recaptcha-site-key   reCAPTCHA v3 を使うときだけ設定（下部の script も有効化）
+
+  name 属性は config.php の fields のキーと一致させる。
+-->
+<form
+  class="c-form js-mailform"
+  action="/mailform/submit.php"
+  method="POST"
+  data-ajax="true"
+  data-honeypot="company"
+>
+  <p class="c-form__success js-mailform-success" hidden>送信しました。ありがとうございます。</p>
+  <p class="c-form__alert js-mailform-alert" hidden>送信に失敗しました。時間をおいて再度お試しください。</p>
+
+  <!-- ハニーポット: 人間には見えない欄。CSSで display:none にする（name は data-honeypot と一致） -->
+  <div class="c-form__honeypot" aria-hidden="true">
+    <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <div class="c-form__field js-mailform-field">
+    <label class="c-form__label" for="name">
+      お名前<span class="c-form__required">必須</span>
+    </label>
+    <input
+      class="c-form__input"
+      type="text"
+      id="name"
+      name="name"
+      required
+      maxlength="100"
+      autocomplete="name"
+    />
+  </div>
+
+  <div class="c-form__field js-mailform-field">
+    <label class="c-form__label" for="email">
+      メールアドレス<span class="c-form__required">必須</span>
+    </label>
+    <input
+      class="c-form__input"
+      type="email"
+      id="email"
+      name="email"
+      required
+      maxlength="254"
+      autocomplete="email"
+    />
+  </div>
+
+  <div class="c-form__field js-mailform-field">
+    <label class="c-form__label" for="message">
+      お問い合わせ内容<span class="c-form__required">必須</span>
+    </label>
+    <textarea
+      class="c-form__textarea"
+      id="message"
+      name="message"
+      rows="6"
+      required
+      maxlength="5000"
+    ></textarea>
+  </div>
+
+  <button class="c-form__submit" type="submit">送信する</button>
+</form>
+
+<!--
+  是非スタイルを当てる（規約クラス。最低限これだけ用意する）:
+    .c-form__error   { color: #c0392b; font-size: .85em; display: block; margin-top: .3em; }
+    .is-error        { border-color: #c0392b; }
+    .c-form__success,
+    .c-form__alert   { display: none; }
+    .c-form__success.is-visible,
+    .c-form__alert.is-visible { display: block; }
+    .c-form__honeypot { position: absolute; left: -9999px; }
+-->
+
+<!-- reCAPTCHA v3 を使う場合のみ有効化（SITE_KEY は公開可。secret は config.php のみ）
+<script src="https://www.google.com/recaptcha/api.js?render=SITE_KEY" defer></script>
+form 側にも data-recaptcha-site-key="SITE_KEY" を追加する
+-->
+
+<!-- main.js での初期化（ES modules）
+import { initializeMailform } from "./mailform.js";
+initializeMailform();
+-->
