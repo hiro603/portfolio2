@@ -11,9 +11,8 @@
     "extract": "node scripts/extract-classes.js",
     "extract:write": "node scripts/extract-classes.js --write",
     "sass": "sass assets/scss/style.scss assets/css/style.css --watch",
-    "sass:notify": "node scripts/sass-watch.js",
     "sass:build": "sass assets/scss/style.scss assets/css/style.css --style=compressed --no-source-map",
-    "dev": "concurrently -k -n sass,serve -c green,cyan \"npm:sass:notify\" \"live-server --port=5500\""
+    "dev": "concurrently -k -n sass,serve -c green,cyan \"npm:sass\" \"live-server --port=5500\""
   },
   "keywords": [],
   "author": "",
