@@ -1,0 +1,79 @@
+@use "../foundation" as f;
+
+/*!
+component > search form
+------------------------------
+*/
+.c-search-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-search);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+
+  @include f.mq(lg) {
+    flex-direction: row;
+  }
+}
+
+.c-search-form__fields {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include f.mq(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.c-search-form__field {
+  padding: 18px 24px;
+  border-right: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+
+  &:nth-child(2n) {
+    border-right: none;
+  }
+
+  @include f.mq(lg) {
+    border-bottom: none;
+
+    &:nth-child(2n) {
+      border-right: 1px solid var(--color-border-light);
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &:focus-within .c-select-icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.c-search-form__label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 9px;
+  letter-spacing: 0.04em;
+}
+
+.c-search-form__value {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.c-search-form__select {
+  width: 100%;
+  padding-right: 22px;
+  background-color: transparent;
+  font-size: 0.9375rem;
+  color: var(--color-text-sub);
+  line-height: 1.4;
+  cursor: pointer;
+}

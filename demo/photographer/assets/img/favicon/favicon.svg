@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Sou Akiyama aperture mark"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><rect width="512" height="512" rx="104" fill="#0d0d0f"></rect><g fill="none" stroke="#ece9e3" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="176"></circle>
+    <polygon points="318,292 256,328 194,292 194,220 256,184 318,220"></polygon>
+    <line x1="432" y1="256" x2="318" y2="292"></line>
+    <line x1="344" y1="408" x2="256" y2="328"></line>
+    <line x1="168" y1="408" x2="194" y2="292"></line>
+    <line x1="80" y1="256" x2="194" y2="220"></line>
+    <line x1="168" y1="104" x2="256" y2="184"></line>
+    <line x1="344" y1="104" x2="318" y2="220"></line>
+  </g></svg>

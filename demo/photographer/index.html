@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Sou Akiyama — Photographer, Tokyo</title>
+        <meta
+            name="description"
+            content="東京を拠点に人物と風景を撮る写真家 Sou Akiyama のポートフォリオ。"
+        />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- OGP / Twitter（TODO: デプロイ先確定後、本番URLに差し替え → og:url / og:image / twitter:image の3箇所） -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://example.com/" />
+        <meta property="og:title" content="Sou Akiyama — Photographer, Tokyo" />
+        <meta
+            property="og:description"
+            content="東京を拠点に人物と風景を撮る写真家 Sou Akiyama のポートフォリオ。"
+        />
+        <meta
+            property="og:image"
+            content="https://example.com/assets/img/ogp.png"
+        />
+        <meta property="og:site_name" content="Sou Akiyama" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Sou Akiyama — Photographer, Tokyo"
+        />
+        <meta
+            name="twitter:description"
+            content="東京を拠点に人物と風景を撮る写真家 Sou Akiyama のポートフォリオ。"
+        />
+        <meta
+            name="twitter:image"
+            content="https://example.com/assets/img/ogp.png"
+        />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+        <link
+            rel="icon"
+            href="./assets/img/favicon/favicon.svg"
+            type="image/svg+xml"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/img/favicon/apple-touch-icon.png"
+        />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- js -->
+        <script src="assets/js/vendor/gsap.min.js" defer></script>
+        <script type="module" src="assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <div class="c-preloader" id="preloader">
+            <span class="c-preloader__count">
+                <span id="preloader-num">0</span>%
+            </span>
+        </div>
+
+        <header class="l-header">
+            <div class="l-header__brand">
+                <a class="l-header__name" href="#top">Sou Akiyama</a>
+                <span class="l-header__role">Photographer — Tokyo</span>
+            </div>
+            <nav class="l-header__nav" aria-label="メインナビゲーション">
+                <ul class="l-header__list">
+                    <li><a class="l-header__link" href="#works">Works</a></li>
+                    <li><a class="l-header__link" href="#about">About</a></li>
+                    <li>
+                        <a class="l-header__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button
+                class="l-header__burger js-header-menu-open"
+                type="button"
+                aria-label="メニューを開く"
+            >
+                <span class="l-header__burger-line"></span>
+                <span class="l-header__burger-line"></span>
+            </button>
+        </header>
+        <dialog class="c-drawer js-header-menu" aria-label="モバイルメニュー">
+            <button
+                class="c-drawer__close js-header-menu-close"
+                type="button"
+                aria-label="メニューを閉じる"
+            >
+                Close
+            </button>
+            <nav class="c-drawer__nav" aria-label="モバイルナビゲーション">
+                <ul class="c-drawer__list">
+                    <li><a class="c-drawer__link" href="#works">Works</a></li>
+                    <li><a class="c-drawer__link" href="#about">About</a></li>
+                    <li>
+                        <a class="c-drawer__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </dialog>
+        <div class="c-grain" aria-hidden="true"></div>
+
+        <main>
+            <section class="p-hero" id="top">
+                <div class="p-hero__inner">
+                    <div class="p-hero__lead">
+                        <p class="p-hero__eyebrow">
+                            Sou Akiyama — Selected Works 2026
+                        </p>
+                        <h1 class="p-hero__title">
+                            <span class="p-hero__title-line">Into</span>
+                            <span
+                                class="p-hero__title-line p-hero__title-line--italic"
+                                >Focus</span
+                            >
+                        </h1>
+                        <p class="p-hero__sub">
+                            光と、その一瞬の静けさを一枚に。東京を拠点に、人物と風景の輪郭をたどる。
+                        </p>
+                    </div>
+                    <figure class="p-hero__media">
+                        <div class="p-hero__frame">
+                            <img
+                                class="p-hero__img"
+                                data-webgl="hero"
+                                src="assets/img/hero.webp"
+                                alt="Sou Akiyama の作品"
+                                width="1600"
+                                height="2133"
+                            />
+                            <span class="p-hero__index">Frame 01</span>
+                        </div>
+                        <figcaption class="p-hero__data">
+                            <span>No.01</span>
+                            <span>f/2.8</span>
+                            <span>50mm</span>
+                            <span>1/250s</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <a class="p-hero__scroll" href="#works">Scroll</a>
+            </section>
+
+            <section class="p-works" id="works">
+                <div class="l-container">
+                    <div class="p-works__head">
+                        <div>
+                            <p class="p-works__eyebrow">Selected Works</p>
+                            <h2 class="p-works__heading">
+                                Frames of stillness
+                            </h2>
+                        </div>
+                        <p class="p-works__count">06 Series — 2023 / 2026</p>
+                    </div>
+
+                    <ul class="p-works__list">
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-01-still-harbor.webp"
+                                        alt="Still Harbor"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.01</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">Still Harbor</h3>
+                                    <span class="p-works__cat"
+                                        >Landscape — 2025</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-02-morning-static.webp"
+                                        alt="Morning Static"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.02</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">
+                                        Morning Static
+                                    </h3>
+                                    <span class="p-works__cat"
+                                        >Portrait — 2025</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-03-concrete-bloom.webp"
+                                        alt="Concrete Bloom"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.03</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">
+                                        Concrete Bloom
+                                    </h3>
+                                    <span class="p-works__cat"
+                                        >Street — 2024</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-04-the-long-exposure.webp"
+                                        alt="The Long Exposure"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.04</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">
+                                        The Long Exposure
+                                    </h3>
+                                    <span class="p-works__cat"
+                                        >Night — 2025</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-05-salt-and-light.webp"
+                                        alt="Salt and Light"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.05</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">
+                                        Salt &amp; Light
+                                    </h3>
+                                    <span class="p-works__cat"
+                                        >Travel — 2024</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-works__item">
+                            <a class="p-works__link" href="#" data-webgl-link>
+                                <figure class="p-works__media">
+                                    <img
+                                        class="p-works__img"
+                                        data-webgl="works"
+                                        src="assets/img/work-06-quiet-room.webp"
+                                        alt="Quiet Room"
+                                        width="1200"
+                                        height="1500"
+                                        loading="lazy"
+                                    />
+                                    <span class="p-works__no">No.06</span>
+                                </figure>
+                                <div class="p-works__meta">
+                                    <h3 class="p-works__title">Quiet Room</h3>
+                                    <span class="p-works__cat"
+                                        >Interior — 2023</span
+                                    >
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="p-about" id="about">
+                <div class="l-container">
+                    <p class="p-about__eyebrow">About</p>
+                    <div class="p-about__body">
+                        <figure class="p-about__portrait">
+                            <img
+                                class="p-about__img"
+                                src="assets/img/about.webp"
+                                alt="Sou Akiyama のポートレート"
+                                width="1200"
+                                height="1500"
+                                loading="lazy"
+                            />
+                        </figure>
+                        <div class="p-about__text">
+                            <h2 class="p-about__statement">
+                                I photograph the quiet that happens between
+                                moments.
+                            </h2>
+                            <p class="p-about__lead">
+                                Sou Akiyama
+                                は東京を拠点に活動する写真家。人物と風景のあいだにある、声にならない静けさを撮ることを軸にしている。被写体が「見られている」ことを忘れた一瞬——その素の輪郭に光が触れる瞬間を待つ。
+                            </p>
+                            <p class="p-about__lead">
+                                エディトリアル、ブランドのビジュアル、個人のポートレートまで。フィルムとデジタルを行き来しながら、過剰に語らない一枚を届ける。
+                            </p>
+                            <dl class="p-about__ledger">
+                                <div class="p-about__row">
+                                    <dt class="p-about__term">Based</dt>
+                                    <dd class="p-about__desc">Tokyo, JP</dd>
+                                </div>
+                                <div class="p-about__row">
+                                    <dt class="p-about__term">Focus</dt>
+                                    <dd class="p-about__desc">
+                                        Portrait / Landscape
+                                    </dd>
+                                </div>
+                                <div class="p-about__row">
+                                    <dt class="p-about__term">Work</dt>
+                                    <dd class="p-about__desc">
+                                        Editorial &amp; Commission
+                                    </dd>
+                                </div>
+                                <div class="p-about__row">
+                                    <dt class="p-about__term">Since</dt>
+                                    <dd class="p-about__desc">2014</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-contact" id="contact">
+                <div class="l-container">
+                    <p class="p-contact__eyebrow">Contact</p>
+                    <div class="p-contact__body">
+                        <div class="p-contact__intro">
+                            <h2 class="p-contact__heading">
+                                Let's make something still.
+                            </h2>
+                            <p class="p-contact__lead">
+                                撮影のご依頼・お問い合わせはこちらから。エディトリアル、ブランド、ポートレート、いずれもお気軽に。通常2営業日以内に返信します。
+                            </p>
+                            <div class="p-contact__direct">
+                                <div class="p-contact__direct-row">
+                                    <span class="p-contact__direct-term"
+                                        >Email</span
+                                    >
+                                    <span class="p-contact__direct-value"
+                                        >studio@souakiyama.jp</span
+                                    >
+                                </div>
+                                <div class="p-contact__direct-row">
+                                    <span class="p-contact__direct-term"
+                                        >Instagram</span
+                                    >
+                                    <span class="p-contact__direct-value"
+                                        >@sou.akiyama</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <form
+                            class="c-form js-mailform"
+                            novalidate
+                            action="mailform/submit.php"
+                            method="POST"
+                            data-ajax="true"
+                            data-honeypot="company"
+                        >
+                            <p class="c-form__success js-mailform-success">
+                                送信しました。ありがとうございます。
+                            </p>
+                            <p
+                                class="c-form__success c-form__success--error js-mailform-alert"
+                            >
+                                送信に失敗しました。時間をおいて再度お試しください。
+                            </p>
+
+                            <div class="c-form__honeypot" aria-hidden="true">
+                                <label
+                                    >Company<input
+                                        type="text"
+                                        name="company"
+                                        tabindex="-1"
+                                        autocomplete="off"
+                                /></label>
+                            </div>
+
+                            <div class="c-form__field js-mailform-field">
+                                <label class="c-form__label" for="name"
+                                    >Name<span class="c-form__required"
+                                        >required</span
+                                    ></label
+                                >
+                                <input
+                                    class="c-form__input"
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="山田 太郎"
+                                    autocomplete="name"
+                                    required
+                                    maxlength="100"
+                                    data-error="お名前を入力してください"
+                                />
+                            </div>
+
+                            <div class="c-form__field js-mailform-field">
+                                <label class="c-form__label" for="email"
+                                    >Email<span class="c-form__required"
+                                        >required</span
+                                    ></label
+                                >
+                                <input
+                                    class="c-form__input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                    maxlength="254"
+                                    data-error="メールアドレスを正しく入力してください"
+                                />
+                            </div>
+
+                            <div class="c-form__field js-mailform-field">
+                                <label class="c-form__label" for="message"
+                                    >Message<span class="c-form__required"
+                                        >required</span
+                                    ></label
+                                >
+                                <textarea
+                                    class="c-form__textarea"
+                                    id="message"
+                                    name="message"
+                                    placeholder="ご依頼内容・撮影時期・予算感など"
+                                    required
+                                    maxlength="5000"
+                                    data-error="お問い合わせ内容を入力してください"
+                                ></textarea>
+                            </div>
+
+                            <div class="js-mailform-field">
+                                <label class="c-form__agree" for="agree">
+                                    <input
+                                        class="c-form__checkbox"
+                                        type="checkbox"
+                                        id="agree"
+                                        name="agree"
+                                        required
+                                        data-error="プライバシーポリシーへの同意が必要です"
+                                    />
+                                    <span
+                                        ><a class="c-form__link" href="#"
+                                            >プライバシーポリシー</a
+                                        >に同意します</span
+                                    >
+                                </label>
+                            </div>
+
+                            <button class="c-form__submit" type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="l-footer">
+            <div class="l-container">
+                <div class="l-footer__top">
+                    <div class="l-footer__brand">
+                        <p class="l-footer__name">Sou Akiyama</p>
+                        <p class="l-footer__tagline">
+                            東京を拠点に、人物と風景の静けさを撮る写真家。2026年、撮影のご依頼を承っています。
+                        </p>
+                    </div>
+                    <nav
+                        class="l-footer__nav"
+                        aria-label="フッターナビゲーション"
+                    >
+                        <div>
+                            <p class="l-footer__nav-title">Menu</p>
+                            <ul class="l-footer__list">
+                                <li>
+                                    <a class="l-footer__link" href="#works"
+                                        >Works</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="l-footer__link" href="#about"
+                                        >About</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="l-footer__link" href="#contact"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="l-footer__nav-title">Social</p>
+                            <ul class="l-footer__list">
+                                <li>
+                                    <a
+                                        class="l-footer__link"
+                                        href="https://www.instagram.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Instagram</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="l-footer__link" href="#"
+                                        >Behance</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="l-footer__link"
+                                        href="mailto:studio@souakiyama.jp"
+                                        >Email</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="l-footer__bottom">
+                    <p class="l-footer__copy">
+                        © 2026 Sou Akiyama. All rights reserved.
+                    </p>
+                    <a class="l-footer__top-link" href="#top">Back to top ↑</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

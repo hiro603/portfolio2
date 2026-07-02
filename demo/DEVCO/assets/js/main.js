@@ -1,0 +1,21 @@
+import { initializeHamburgerMenu } from "./component/hamburger-menu.js";
+import { initializeHeaderBackgroundToggle } from "./component/header-background-toggle.js";
+import { initializeInterviewFilter } from "./component/interview-filter.js";
+import { initializeJobTabs } from "./component/job-tabs.js";
+import { initializeFaq } from "./component/faq.js";
+import { initializeCountUp } from "./component/count-up.js";
+import { initializeScrollReveal } from "./component/scroll-reveal.js";
+import { initializeHeroIntro } from "./component/hero-intro.js";
+import { initializeScrollSpy } from "./component/scroll-spy.js";
+import { initializeEntryForm } from "./form/entry-form.js";
+
+initializeHeaderBackgroundToggle();
+initializeInterviewFilter();
+initializeJobTabs();
+initializeFaq();
+initializeHamburgerMenu();
+initializeHeroIntro();
+initializeScrollReveal();
+initializeCountUp();
+initializeScrollSpy();
+initializeEntryForm();

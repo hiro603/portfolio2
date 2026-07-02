@@ -1,0 +1,33 @@
+{
+  "name": "dev-a",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint assets/js",
+    "lint:css": "stylelint \"assets/scss/**/*.scss\"",
+    "lint:html": "markuplint \"**/*.html\"",
+    "format": "prettier --write .",
+    "extract": "node scripts/extract-classes.js",
+    "extract:write": "node scripts/extract-classes.js --write",
+    "sass": "sass assets/scss/style.scss assets/css/style.css --watch",
+    "sass:build": "sass assets/scss/style.scss assets/css/style.css --style=compressed --no-source-map",
+    "dev": "concurrently -k -n sass,serve -c green,cyan \"npm:sass\" \"live-server --port=5500\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^10.0.3",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "live-server": "^1.2.2",
+    "markuplint": "^4.18.3",
+    "prettier": "^3.8.4",
+    "sass": "^1.101.0",
+    "stylelint": "^17.13.0",
+    "stylelint-config-standard-scss": "^17.0.0"
+  }
+}

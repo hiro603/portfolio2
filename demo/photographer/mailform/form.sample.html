@@ -1,0 +1,78 @@
+<!--
+  フォームマークアップの参考例。案件のデザイン（c-form 等の既存クラス）に合わせて調整する。
+  - action は設置場所に合わせる（例: /mailform/submit.php）
+  - name 属性は config.php の fields のキーと一致させる
+  - data-ajax="true" で fetch 送信（確認画面モードでは外す）
+  - reCAPTCHA v3 を使う場合: data-recaptcha-site-key を設定し、下部の script を有効化
+-->
+<form
+  class="c-form js-mailform"
+  action="/mailform/submit.php"
+  method="POST"
+  data-ajax="true"
+>
+  <p class="c-form__success js-mailform-success" hidden>
+    送信しました。ありがとうございます。
+  </p>
+  <p class="c-form__success c-form__success--error js-mailform-error" hidden>
+    送信に失敗しました。時間をおいて再度お試しください。
+  </p>
+
+  <!-- ハニーポット: 人間には見えない欄。CSSで display:none にする（name は config.php の honeypot と一致） -->
+  <div class="c-form__honeypot" aria-hidden="true">
+    <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <div class="c-form__field">
+    <label class="c-form__label" for="name">
+      お名前<span class="c-form__required">必須</span>
+    </label>
+    <input
+      class="c-form__input"
+      type="text"
+      id="name"
+      name="name"
+      required
+      autocomplete="name"
+    />
+  </div>
+
+  <div class="c-form__field">
+    <label class="c-form__label" for="email">
+      メールアドレス<span class="c-form__required">必須</span>
+    </label>
+    <input
+      class="c-form__input"
+      type="email"
+      id="email"
+      name="email"
+      required
+      autocomplete="email"
+    />
+  </div>
+
+  <div class="c-form__field">
+    <label class="c-form__label" for="message">
+      お問い合わせ内容<span class="c-form__required">必須</span>
+    </label>
+    <textarea
+      class="c-form__textarea"
+      id="message"
+      name="message"
+      rows="6"
+      required
+    ></textarea>
+  </div>
+
+  <button class="c-form__submit" type="submit">送信する</button>
+</form>
+
+<!-- reCAPTCHA v3 を使う場合のみ有効化（SITE_KEY は公開可。secret は config.php のみ）
+<script src="https://www.google.com/recaptcha/api.js?render=SITE_KEY" defer></script>
+form 側にも data-recaptcha-site-key="SITE_KEY" を追加する
+-->
+
+<!-- main.js での初期化（ES modules）
+import { initializeMailform } from "./mailform.js";
+initializeMailform();
+-->

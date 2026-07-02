@@ -1,0 +1,128 @@
+@use "../foundation" as f;
+
+/*!
+layout > footer
+------------------------------
+*/
+.l-footer {
+  background-color: var(--color-bg-soft);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.l-footer__inner {
+  width: min(100% - (var(--gutter-sp) * 2), var(--width-base));
+  margin-inline: auto;
+  padding-block: 56px 28px;
+
+  @include f.mq() {
+    width: min(100% - (var(--gutter-pc) * 2), var(--width-base));
+  }
+}
+
+.l-footer__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @include f.mq(md) {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  }
+}
+
+.l-footer__brand {
+  font-family: var(--font-family-en);
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 0.18em;
+}
+
+.l-footer__tagline {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+  line-height: 1.8;
+}
+
+.l-footer__sns {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.l-footer__sns-item {
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-en);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  color: var(--color-icon-base);
+  transition:
+    border-color var(--transition-base),
+    color var(--transition-base);
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent-hover);
+    }
+  }
+}
+
+.l-footer__col-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.l-footer__link {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-top: 13px;
+  transition: color var(--transition-base);
+
+  &:first-of-type {
+    margin-top: 16px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--color-accent-hover);
+    }
+  }
+}
+
+.l-footer__bottom {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include f.mq() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.l-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  a {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+}
+
+.l-footer__copy {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
