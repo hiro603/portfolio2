@@ -92,3 +92,4 @@ contact/mailform/config.php
 contact/mailform/outbox/
 demo/*/mailform/config.php
 demo/*/mailform/outbox/
+_assets-src/
