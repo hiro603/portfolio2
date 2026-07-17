@@ -4,9 +4,13 @@
 page > top > flow
 ------------------------------
 */
-.p-flow { background-color: var(--color-bg-subtle); }
+.p-flow {
+  background-color: var(--color-bg-subtle);
+}
 
-.p-flow__inner { padding-block: var(--space-xl); }
+.p-flow__inner {
+  padding-block: var(--space-xl);
+}
 
 .p-flow__steps {
   display: grid;
@@ -33,4 +37,6 @@ page > top > flow
   color: var(--color-accent);
 }
 
-.p-flow__name { font-size: var(--fs-small); }
+.p-flow__name {
+  font-size: var(--fs-small);
+}

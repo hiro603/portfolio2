@@ -15,7 +15,9 @@ component > work-card
   overflow: hidden;
   background-color: var(--color-bg-surface);
   aspect-ratio: 16 / 10;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 
   img {
     width: 100%;
@@ -58,17 +60,26 @@ component > work-card
     align-items: center;
   }
 
-  .c-work-card__shot { aspect-ratio: 16 / 11; }
-  .c-work-card__title { font-size: var(--fs-h2); }
+  .c-work-card__shot {
+    aspect-ratio: 16 / 11;
+  }
+
+  .c-work-card__title {
+    font-size: var(--fs-h2);
+  }
 }
 
-.c-work-card__featured-meta .c-work-card__cat { margin-top: 0; }
+.c-work-card__featured-meta .c-work-card__cat {
+  margin-top: 0;
+}
+
 .c-work-card__lead {
   line-height: var(--lh-base);
   color: var(--color-text-muted);
   margin: 0.75rem 0 1rem;
   max-width: 34ch;
 }
+
 .c-work-card__more {
   display: inline-block;
   font-family: var(--font-display);

@@ -4,9 +4,13 @@
 page > top > skill
 ------------------------------
 */
-.p-skill { background-color: var(--color-bg-base); }
+.p-skill {
+  background-color: var(--color-bg-base);
+}
 
-.p-skill__inner { padding-block: var(--space-xl); }
+.p-skill__inner {
+  padding-block: var(--space-xl);
+}
 
 .p-skill__cols {
   display: grid;
@@ -25,8 +29,15 @@ page > top > skill
   @include f.mq() {
     padding: 0 2.5rem;
     border-top: none;
-    &:first-child { border-right: 1px solid var(--color-border); padding-left: 0; }
-    &:last-child { padding-right: 0; }
+
+    &:first-child {
+      border-right: 1px solid var(--color-border);
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 

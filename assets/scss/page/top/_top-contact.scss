@@ -4,7 +4,10 @@
 page > top > contact
 ------------------------------
 */
-.p-contact { background-color: var(--color-accent); color: var(--color-on-accent); }
+.p-contact {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
 
 .p-contact__inner {
   padding-block: var(--space-xl);
@@ -26,7 +29,10 @@ page > top > contact
   line-height: var(--lh-tight);
   margin: 1rem 0;
 
-  em { font-style: italic; font-weight: var(--fw-medium); }
+  em {
+    font-style: italic;
+    font-weight: var(--fw-medium);
+  }
 }
 
 .p-contact__lead {
@@ -43,6 +49,14 @@ page > top > contact
   font-family: var(--font-display);
   letter-spacing: 0.1em;
 
-  a { opacity: 0.85; transition: opacity 0.25s ease; }
-  @media (any-hover: hover) { a:hover { opacity: 1; } }
+  a {
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+  }
+
+  @media (any-hover: hover) {
+    a:hover {
+      opacity: 1;
+    }
+  }
 }

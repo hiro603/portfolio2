@@ -4,6 +4,7 @@
 utility > utility
 ------------------------------
 */
+
 /* span 改行（br の代わりに各行を block 化） */
 .u-line {
   display: block;
@@ -40,7 +41,7 @@ utility > utility
 }
 
 .u-text-hover {
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentcolor, currentcolor);
   background-position: 0 100%;
   background-size: 0 1px;
   background-repeat: no-repeat;

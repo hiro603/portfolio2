@@ -57,7 +57,9 @@ component > form
   font-family: var(--font-base);
   font-size: 1rem;
   line-height: var(--lh-base);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 
   &::placeholder {
     color: var(--color-text-muted);
@@ -110,7 +112,9 @@ component > form
   line-height: var(--lh-base);
   appearance: none;
   cursor: pointer;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:focus {
     outline: none;

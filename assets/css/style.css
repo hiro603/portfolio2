@@ -81,8 +81,8 @@ h6 {
   font-weight: inherit;
 }
 
-q:before,
-q:after {
+q::before,
+q::after {
   content: "";
 }
 
@@ -98,7 +98,6 @@ select,
 button {
   color: inherit;
   font-family: inherit;
-  font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
   font-size: 100%;
@@ -150,7 +149,6 @@ svg {
 dialog {
   max-width: 100%;
   max-height: 100%;
-  padding: 0;
   color: inherit;
   border: none;
   margin: 0;
@@ -181,7 +179,7 @@ iframe {
 }
 
 :root {
-  --color-white: #ffffff;
+  --color-white: #fff;
   --color-paper: #f7f5f0;
   --color-paper-100: #efece4;
   --color-ink: #17120e;
@@ -355,7 +353,7 @@ utility > utility
 }
 
 .u-text-hover {
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentcolor, currentcolor);
   background-position: 0 100%;
   background-size: 0 1px;
   background-repeat: no-repeat;
@@ -441,7 +439,7 @@ component > logo
   font-size: 0.625rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: currentColor;
+  color: currentcolor;
   opacity: 0.6;
 }
 
@@ -830,7 +828,7 @@ layout > header
 */
 .l-header {
   position: fixed;
-  inset: 0 0 auto 0;
+  inset: 0 0 auto;
   z-index: var(--z-header);
   background-color: transparent;
   color: var(--color-text-invert);
@@ -865,7 +863,7 @@ layout > header
 .l-header__burger span {
   display: block;
   height: 2px;
-  background-color: currentColor;
+  background-color: currentcolor;
 }
 @media screen and (min-width: 768px) {
   .l-header__burger {

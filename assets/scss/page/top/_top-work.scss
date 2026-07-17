@@ -48,11 +48,31 @@ page > top > works
   }
 
   @media (any-hover: hover) {
-    &:hover { padding-left: 0.5rem; }
+    &:hover {
+      padding-left: 0.5rem;
+    }
   }
 }
 
-.p-works__row-no { grid-area: no; color: var(--color-accent); font-weight: var(--fw-bold); }
-.p-works__row-title { grid-area: title; font-weight: var(--fw-bold); }
-.p-works__row-cat { grid-area: cat; color: var(--color-text-muted); font-size: var(--fs-small); }
-.p-works__row-view { grid-area: view; color: var(--color-accent); font-size: var(--fs-small); }
+.p-works__row-no {
+  grid-area: no;
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+
+.p-works__row-title {
+  grid-area: title;
+  font-weight: var(--fw-bold);
+}
+
+.p-works__row-cat {
+  grid-area: cat;
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+}
+
+.p-works__row-view {
+  grid-area: view;
+  color: var(--color-accent);
+  font-size: var(--fs-small);
+}

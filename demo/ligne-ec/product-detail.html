@@ -42,9 +42,9 @@
     </head>
     <body>
         <a href="#main" class="c-skip-link">本文へスキップ</a>
-        <dialog class="c-cart-dialog js-cart-dialog">
+        <dialog class="c-cart-dialog js-cart-dialog" aria-labelledby="cart-dialog-title">
             <div class="c-cart-dialog__inner">
-              <p class="c-cart-dialog__title">カートに追加しました</p>
+              <p class="c-cart-dialog__title" id="cart-dialog-title">カートに追加しました</p>
               <div class="c-cart-dialog__product">
                 <img src="" alt="" class="c-cart-dialog__image js-cart-dialog-image" width="120" height="80">
                 <div class="c-cart-dialog__product-info">
@@ -67,11 +67,11 @@
                     </a>
                 </div>
 
-                <nav class="l-header__menu js-header-menu">
+                <nav class="l-header__menu js-header-menu" aria-label="メイン">
                     <div class="l-header__menu-decor" aria-hidden="true">
-                        <img src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_03.png" class="l-header__menu-decor-item l-header__menu-decor-item--1" alt="" loading="lazy" />
-                        <img src="./assets/img/icon/04_arrows_stars/04_arrows_stars_06.png" class="l-header__menu-decor-item l-header__menu-decor-item--2" alt="" loading="lazy" />
-                        <img src="./assets/img/icon/06_handwritten/sparkle_star.png" class="l-header__menu-decor-item l-header__menu-decor-item--3" alt="" loading="lazy" />
+                        <img src="./assets/img/icon/05_dots_scribbles/05_dots_scribbles_03.png" class="l-header__menu-decor-item l-header__menu-decor-item--1" width="68" height="65" alt="" loading="lazy" />
+                        <img src="./assets/img/icon/04_arrows_stars/04_arrows_stars_06.png" class="l-header__menu-decor-item l-header__menu-decor-item--2" width="71" height="41" alt="" loading="lazy" />
+                        <img src="./assets/img/icon/06_handwritten/sparkle_star.png" class="l-header__menu-decor-item l-header__menu-decor-item--3" width="41" height="66" alt="" loading="lazy" />
                     </div>
 
                     <div class="l-header__menu-brand">
@@ -148,10 +148,10 @@
                   >
                 </div>
                 <div class="p-product-detail__thumbnails">
-                  <button class="p-product-detail__thumb-btn is-active">
+                  <button class="p-product-detail__thumb-btn is-active" aria-label="商品画像 1">
                     <img src="" alt="" class="p-product-detail__thumb-image" width="120" height="80">
                   </button>
-                  <button class="p-product-detail__thumb-btn">
+                  <button class="p-product-detail__thumb-btn" aria-label="商品画像 2">
                     <img src="" alt="" class="p-product-detail__thumb-image" width="120" height="80">
                   </button>
                 </div>
@@ -160,15 +160,14 @@
               <!-- 商品情報エリア -->
               <div class="p-product-detail__info">
                 <p class="p-product-detail__category"></p>
-                <h1 class="p-product-detail__name"></h1>
+                <h1 class="p-product-detail__name">商品詳細</h1>
                 <p class="p-product-detail__price"></p>
                 <p class="p-product-detail__description"></p>
           
                 <!-- カラー -->
                 <div class="p-product-detail__colors">
                   <p class="p-product-detail__colors-label">COLOR</p>
-                  <ul class="p-product-detail__colors-list">
-                  </ul>
+                  <ul class="p-product-detail__colors-list" aria-busy="true"></ul>
                 </div>
           
                 <!-- 在庫状況 -->
@@ -183,8 +182,7 @@
             <!-- 関連商品 -->
             <section class="p-product-detail__related">
               <h2 class="p-product-detail__related-title">RELATED ITEMS</h2>
-              <ul class="p-product-detail__related-list">
-              </ul>
+              <ul class="p-product-detail__related-list" aria-busy="true"></ul>
             </section>
           
           </main>
@@ -198,7 +196,7 @@
               </div>
           
               <!-- ナビゲーション -->
-              <nav class="l-footer__nav">
+              <nav class="l-footer__nav" aria-label="フッター">
                 <ul class="l-footer__nav-list">
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="about.html">ABOUT</a></li>
