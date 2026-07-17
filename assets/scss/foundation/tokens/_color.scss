@@ -9,14 +9,14 @@
   // -------------------------------------------
   // primitive（素の値・直接使わない）
   // -------------------------------------------
-  --color-white:     #ffffff;
-  --color-paper:     #f7f5f0; // 暖色ニュートラルの紙地
+  --color-white: #fff;
+  --color-paper: #f7f5f0; // 暖色ニュートラルの紙地
   --color-paper-100: #efece4; // 紙地のひとつ濃い面
-  --color-ink:       #17120e; // 墨色（暗背景・濃い文字）
-  --color-ink-700:   #2a2420; // 墨色の面の補助
+  --color-ink: #17120e; // 墨色（暗背景・濃い文字）
+  --color-ink-700: #2a2420; // 墨色の面の補助
 
-  --color-gray-400:  #9a958c;
-  --color-gray-600:  #6b655c; // 紙地上のミュート文字
+  --color-gray-400: #9a958c;
+  --color-gray-600: #6b655c; // 紙地上のミュート文字
 
   // Forest Green（アクセント・3段階）
   --color-green-700: #2f4a3a; // base
@@ -27,23 +27,23 @@
   // semantic（役割名・こちらを使う）
   // -------------------------------------------
   // テキスト
-  --color-text-base:   var(--color-ink);
-  --color-text-muted:  var(--color-gray-600);
+  --color-text-base: var(--color-ink);
+  --color-text-muted: var(--color-gray-600);
   --color-text-invert: var(--color-paper); // 暗背景上の文字
 
   // 背景
-  --color-bg-base:    var(--color-paper);   // ページ全体
-  --color-bg-surface: var(--color-white);   // カード・面
-  --color-bg-subtle:  var(--color-paper-100);// セクション区切り
-  --color-bg-ink:     var(--color-ink);     // Hero/About/Footer の暗面
+  --color-bg-base: var(--color-paper); // ページ全体
+  --color-bg-surface: var(--color-white); // カード・面
+  --color-bg-subtle: var(--color-paper-100); // セクション区切り
+  --color-bg-ink: var(--color-ink); // Hero/About/Footer の暗面
 
   // アクセント
-  --color-accent:        var(--color-green-700);
-  --color-accent-hover:  var(--color-green-600);
-  --color-accent-muted:  var(--color-green-300);
-  --color-on-accent:     var(--color-paper); // 緑面上の文字
+  --color-accent: var(--color-green-700);
+  --color-accent-hover: var(--color-green-600);
+  --color-accent-muted: var(--color-green-300);
+  --color-on-accent: var(--color-paper); // 緑面上の文字
 
   // ボーダー
-  --color-border:        rgba(23, 18, 14, 0.1);  // 紙地上の罫
+  --color-border: rgba(23, 18, 14, 0.1); // 紙地上の罫
   --color-border-invert: rgba(247, 245, 240, 0.18); // 墨面上の罫
 }

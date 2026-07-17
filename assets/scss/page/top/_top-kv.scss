@@ -64,5 +64,7 @@ page > top > hero
   color: var(--color-accent-muted);
   white-space: nowrap;
 
-  span { display: inline-block; }
+  span {
+    display: inline-block;
+  }
 }

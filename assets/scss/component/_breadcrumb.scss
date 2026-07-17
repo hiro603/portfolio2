@@ -25,11 +25,11 @@
 }
 
 .c-breadcrumb-item-link {
-    transition: opacity var(--transition-base);
+  transition: opacity var(--transition-base);
 
-    @media (any-hover: hover) {
-      &:hover {
-        opacity: 0.7;
-      }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
     }
   }
+}

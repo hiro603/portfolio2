@@ -26,7 +26,10 @@ layout > footer
   font-family: var(--font-display);
   font-weight: var(--fw-bold);
   font-size: 1.25rem;
-  span { color: var(--color-accent-muted); }
+
+  span {
+    color: var(--color-accent-muted);
+  }
 }
 
 .l-footer__nav {
@@ -36,8 +39,16 @@ layout > footer
   font-size: var(--fs-small);
   letter-spacing: 0.06em;
 
-  a { opacity: 0.7; transition: opacity 0.25s ease; }
-  @media (any-hover: hover) { a:hover { opacity: 1; } }
+  a {
+    opacity: 0.7;
+    transition: opacity 0.25s ease;
+  }
+
+  @media (any-hover: hover) {
+    a:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .l-footer__copy {

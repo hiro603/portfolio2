@@ -6,11 +6,14 @@ layout > header
 */
 .l-header {
   position: fixed;
-  inset: 0 0 auto 0;
+  inset: 0 0 auto;
   z-index: var(--z-header);
   background-color: transparent;
   color: var(--color-text-invert);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
 
   &.is-active {
     background-color: var(--color-bg-base);
@@ -41,7 +44,7 @@ layout > header
   span {
     display: block;
     height: 2px;
-    background-color: currentColor;
+    background-color: currentcolor;
   }
 
   @include f.mq() {
@@ -61,7 +64,9 @@ layout > header
   background-color: var(--color-bg-ink);
   color: var(--color-text-invert);
 
-  &::backdrop { background-color: rgba(0, 0, 0, 0.5); }
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
   @include f.mq() {
     // PC: dialog をそのままインライン表示
@@ -71,7 +76,10 @@ layout > header
     height: auto;
     background-color: transparent;
     color: inherit;
-    &::backdrop { display: none; }
+
+    &::backdrop {
+      display: none;
+    }
   }
 }
 
@@ -84,7 +92,9 @@ layout > header
   cursor: pointer;
   color: inherit;
 
-  @include f.mq() { display: none; }
+  @include f.mq() {
+    display: none;
+  }
 }
 
 .l-header__list {
@@ -108,7 +118,9 @@ layout > header
   transition: opacity 0.25s ease;
 
   @media (any-hover: hover) {
-    &:hover { opacity: 0.6; }
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &--cta {

@@ -27,7 +27,9 @@ page > privacy
 }
 
 .p-privacy__block {
-  & + & { margin-top: 2rem; }
+  & + & {
+    margin-top: 2rem;
+  }
 }
 
 .p-privacy__heading {

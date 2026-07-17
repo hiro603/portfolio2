@@ -2,27 +2,27 @@
 :root {
   // フォントファミリー（display=英見出し/イタリックアクセント, base=和文本文）
   --font-display: "Fraunces", "Shippori Mincho", serif;
-  --font-base:    "Shippori Mincho", serif;
+  --font-base: "Shippori Mincho", serif;
 
   // ルート/本文
-  --font-size-root:     100%;
-  --font-size-base:     1rem;     // 16px
-  --line-height-base:   1.85;     // 明朝本文の読みやすさ
+  --font-size-root: 100%;
+  --font-size-base: 1rem; // 16px
+  --line-height-base: 1.85; // 明朝本文の読みやすさ
   --letter-spacing-base: 0.02em;
 
   // フォントサイズ（clamp でレスポンシブ）
-  --fs-display: clamp(3rem, 8vw, 5.5rem);   // Hero 大見出し
-  --fs-h2:      clamp(1.9rem, 4vw, 3rem);   // セクション見出し
-  --fs-h3:      clamp(1.25rem, 2.4vw, 1.75rem); // カード/サブ見出し
-  --fs-body:    1rem;
-  --fs-small:   0.8125rem;  // 13px ラベル・タグ
+  --fs-display: clamp(3rem, 8vw, 5.5rem); // Hero 大見出し
+  --fs-h2: clamp(1.9rem, 4vw, 3rem); // セクション見出し
+  --fs-h3: clamp(1.25rem, 2.4vw, 1.75rem); // カード/サブ見出し
+  --fs-body: 1rem;
+  --fs-small: 0.8125rem; // 13px ラベル・タグ
 
   // ウェイト
   --fw-regular: 400;
-  --fw-medium:  500;
-  --fw-bold:    700;
+  --fw-medium: 500;
+  --fw-bold: 700;
 
   // 行間
-  --lh-tight: 1.1;  // 大見出し
-  --lh-base:  1.85; // 本文
+  --lh-tight: 1.1; // 大見出し
+  --lh-base: 1.85; // 本文
 }

@@ -25,7 +25,9 @@ page > detail > nav
   transition: opacity 0.25s ease;
 
   @media (any-hover: hover) {
-    &:hover { opacity: 0.7; }
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 

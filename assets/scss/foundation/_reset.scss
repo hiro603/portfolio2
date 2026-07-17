@@ -3,8 +3,8 @@ foundation > reset
 ------------------------------
 */
 html {
-    color: #000;
-    background: #fff;
+  color: #000;
+  background: #fff;
 }
 
 body,
@@ -32,19 +32,19 @@ p,
 blockquote,
 th,
 td {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
 
 fieldset,
 img {
-    border: 0;
+  border: 0;
 }
 
 address,
@@ -56,18 +56,18 @@ em,
 strong,
 th,
 var {
-    font-style: normal;
-    font-weight: inherit;
+  font-style: normal;
+  font-weight: inherit;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 caption,
 th {
-    text-align: left;
+  text-align: left;
 }
 
 h1,
@@ -76,105 +76,103 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 100%;
-    font-weight: inherit;
+  font-size: 100%;
+  font-weight: inherit;
 }
 
-q:before,
-q:after {
-    content: "";
+q::before,
+q::after {
+  content: "";
 }
 
 abbr,
 acronym {
-    border: 0;
-    font-variant: normal;
+  border: 0;
+  font-variant: normal;
 }
 
 input,
 textarea,
 select,
 button {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    font-size: 100%;
-    border-radius: 0;
-    border: none;
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: 100%;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: inherit;
 }
 
 textarea {
-    resize: vertical;
-    display: block;
+  resize: vertical;
+  display: block;
 }
 
 select {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button {
-    padding: 0;
-    cursor: pointer;
+  padding: 0;
+  cursor: pointer;
 }
 
 legend {
-    color: inherit;
+  color: inherit;
 }
 
 tbody {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 main {
-    display: block;
+  display: block;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img,
 svg {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 dialog {
-    max-width: 100%;
-    max-height: 100%;
-    padding: 0;
-    color: inherit;
-    border: none;
-    margin: 0;
-    padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 summary {
-    display: block;
+  display: block;
 }
 
 summary::-webkit-details-marker {
-    display: none;
+  display: none;
 }
 
 iframe {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

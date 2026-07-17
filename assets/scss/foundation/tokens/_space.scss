@@ -1,13 +1,13 @@
 // _space.scss
 :root {
-    // 余白（rhythm。8割はこの刻みで統一）
-    --space-xs:    0.5rem;
-    --space-sm:    1rem;
-    --space-md:    2rem;
-    --space-lg:    4rem;
-    --space-xl:    clamp(5rem, 10vw, 8rem);  // セクション間
+  // 余白（rhythm。8割はこの刻みで統一）
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: clamp(5rem, 10vw, 8rem); // セクション間
 
-    // ガター（左右の最小余白。狭→広で切替）
-    --gutter-sm: 1rem;    // モバイル
-    --gutter-lg: 2rem;    // タブレット以上
+  // ガター（左右の最小余白。狭→広で切替）
+  --gutter-sm: 1rem; // モバイル
+  --gutter-lg: 2rem; // タブレット以上
 }
