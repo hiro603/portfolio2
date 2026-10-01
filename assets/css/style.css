@@ -1623,6 +1623,17 @@ page > detail > section
   margin-top: 1rem;
 }
 
+.p-detail-section__list {
+  margin-top: 1rem;
+  padding-left: 1.25em;
+  list-style: disc;
+  line-height: var(--lh-base);
+  color: var(--color-text-base);
+}
+.p-detail-section__list li + li {
+  margin-top: 0.4rem;
+}
+
 .p-detail-section__figure {
   margin-top: 1.5rem;
   border-radius: var(--radius-md);
