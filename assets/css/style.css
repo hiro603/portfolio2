@@ -1714,8 +1714,14 @@ page > estimate
   font-weight: var(--fw-medium);
   font-variant-numeric: tabular-nums;
   text-align: right;
+  white-space: nowrap;
 }
 
+.p-estimate__total--main {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+}
 .p-estimate__total--main dd {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
