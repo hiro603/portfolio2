@@ -62,10 +62,10 @@
         "category": "ring",
         "price": 5400,
         "colors": ["yellow", "pink"],
-        "thumbnail": "assets/img/images/éclat_Ring2.webp",
+        "thumbnail": "assets/img/images/Éclat_Ring2.webp",
         "images": [
-          "assets/img/images/éclat_Ring.webp",
-          "assets/img/images/éclat_Ring3.webp"
+          "assets/img/images/Éclat_Ring.webp",
+          "assets/img/images/Éclat_Ring3.webp"
         ],
         "description": "輝きをまとったリング。指先に上品なアクセントを添えます。",
         "inStock": true
