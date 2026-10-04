@@ -15,8 +15,7 @@ page > top > about
   gap: 2rem;
 
   @include f.mq() {
-    grid-template-columns: 280px auto;
-    justify-content: center;
+    grid-template-columns: 280px 1fr;
     gap: 3.5rem;
     align-items: center;
   }
