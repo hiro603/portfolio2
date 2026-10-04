@@ -144,6 +144,12 @@ test('clampInteger は空欄や文字を下限にする', () => {
     assert.equal(clampInteger(undefined, LIMITS.lpSections), 1);
 });
 
+test('clampInteger は表現できないほど大きい数を範囲の端に寄せる', () => {
+    assert.equal(clampInteger('1e999', LIMITS.subStandard), 30);
+    assert.equal(clampInteger('Infinity', LIMITS.sliders), 10);
+    assert.equal(clampInteger('-1e999', LIMITS.lpSections), 1);
+});
+
 test('数量が空欄や文字でも合計は数値になる', () => {
     const estimate = calculateEstimate({
         ...siteInput,

@@ -75,7 +75,10 @@ export const initializeEstimateForm = () => {
         render();
     });
     formElement.addEventListener('submit', (event) => event.preventDefault());
-    handoffElement.addEventListener('click', () => {
+    handoffElement.addEventListener('click', (event) => {
+        // 新しいタブやウィンドウで開く操作では、このタブに結果を残さない
+        if (event.metaKey || event.ctrlKey || event.shiftKey) return;
+
         saveSummary(buildSummaryText(calculateEstimate(readInput())));
     });
     // 「戻る」で復元された入力値はスクリプト実行後に入ることがあるため、表示時にも描き直す

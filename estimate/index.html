@@ -43,6 +43,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/style.css" />
+        <noscript><style>.p-estimate__body { display: none; }</style></noscript>
 
         <script src="../assets/js/vendor/gsap.min.js" defer></script>
         <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
@@ -124,10 +125,10 @@
 
                             <fieldset class="p-estimate__group js-estimate-site-fields">
                                 <legend class="p-estimate__legend">ページ数</legend>
-                                <p class="p-estimate__hint">トップページ1枚は必ず含みます。それ以外のページの枚数を入れてください。</p>
+                                <p class="p-estimate__hint" id="subStandard-hint">トップページ1枚は必ず含みます。それ以外のページの枚数を入れてください。31ページ以上はご相談ください。</p>
                                 <div class="c-form__row">
                                     <label class="c-form__label" for="subStandard">下層ページ（標準）</label>
-                                    <input class="c-form__input p-estimate__number" type="number" id="subStandard" name="subStandard" min="0" max="30" step="1" value="0" inputmode="numeric">
+                                    <input class="c-form__input p-estimate__number" type="number" id="subStandard" name="subStandard" min="0" max="30" step="1" value="0" inputmode="numeric" aria-describedby="subStandard-hint">
                                 </div>
                                 <div class="c-form__row">
                                     <label class="c-form__label" for="subComplex">下層ページ（複雑）</label>
@@ -141,7 +142,7 @@
                                 <div class="c-form__row">
                                     <label class="c-form__label" for="lpSections">セクション数</label>
                                     <input class="c-form__input p-estimate__number" type="number" id="lpSections" name="lpSections" min="1" max="20" step="1" value="10" inputmode="numeric" aria-describedby="lpSections-hint">
-                                    <p class="p-estimate__hint" id="lpSections-hint">ファーストビュー・特徴・料金・よくある質問など、見出しで区切られるまとまりを1つと数えます。</p>
+                                    <p class="p-estimate__hint" id="lpSections-hint">ファーストビュー・特徴・料金・よくある質問など、見出しで区切られるまとまりを1つと数えます。21セクション以上はご相談ください。</p>
                                 </div>
                             </fieldset>
 
@@ -170,19 +171,17 @@
 
                         <div class="p-estimate__result">
                             <h2 class="p-estimate__result-title">概算</h2>
-                            <div aria-live="polite">
-                                <ul class="p-estimate__items js-estimate-items"></ul>
-                                <dl class="p-estimate__totals">
-                                    <div class="p-estimate__total p-estimate__total--main">
-                                        <dt>合計（税抜）</dt>
-                                        <dd class="js-estimate-subtotal"></dd>
-                                    </div>
-                                    <div class="p-estimate__total">
-                                        <dt>合計（税込）</dt>
-                                        <dd class="js-estimate-total"></dd>
-                                    </div>
-                                </dl>
-                            </div>
+                            <ul class="p-estimate__items js-estimate-items"></ul>
+                            <dl class="p-estimate__totals" aria-live="polite" aria-atomic="true">
+                                <div class="p-estimate__total p-estimate__total--main">
+                                    <dt>合計（税抜）</dt>
+                                    <dd class="js-estimate-subtotal"></dd>
+                                </div>
+                                <div class="p-estimate__total">
+                                    <dt>合計（税込）</dt>
+                                    <dd class="js-estimate-total"></dd>
+                                </div>
+                            </dl>
                             <a href="../contact/index.html" class="c-button p-estimate__cta js-estimate-handoff">この内容で相談する</a>
                         </div>
                     </div>

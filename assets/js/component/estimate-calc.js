@@ -29,7 +29,7 @@ const numberFormat = new Intl.NumberFormat('ja-JP');
 export const clampInteger = (value, { min, max }) => {
     const number = Math.round(Number(value));
 
-    if (!Number.isFinite(number)) return min;
+    if (Number.isNaN(number)) return min;
 
     return Math.min(max, Math.max(min, number));
 };
