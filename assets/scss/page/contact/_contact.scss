@@ -54,6 +54,25 @@ page > contact
   }
 }
 
+.p-contact-page__calendar {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.p-contact-page__calendar-title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-tight);
+}
+
+.p-contact-page__calendar-note {
+  margin: 0.75rem 0 1.5rem;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
 /* thanks */
 .p-thanks {
   background-color: var(--color-bg-base);
