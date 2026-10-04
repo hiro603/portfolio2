@@ -1186,7 +1186,7 @@ page > estimate
   font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
   line-height: var(--lh-tight);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .p-estimate__hint {
@@ -1219,10 +1219,12 @@ page > estimate
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 
+  // reset が全 input に appearance: none を当てているため、選択の印が出るよう戻す
   input {
     flex-shrink: 0;
     width: 1.1rem;
     height: 1.1rem;
+    appearance: auto;
     accent-color: var(--color-accent);
   }
 
