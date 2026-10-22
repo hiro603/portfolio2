@@ -56,7 +56,7 @@ export const initializeHamburgerMenu = () => {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 900) {
+        if (window.innerWidth >= 1024) {
             menu.close();
             document.body.style.overflow = '';
         }
