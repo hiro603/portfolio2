@@ -48,6 +48,13 @@ page > detail > section
   & + & {
     margin-top: 1rem;
   }
+
+  // 本文中のリンクは下線で見分けられるようにする（base で下線を消しているため）
+  a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
 }
 
 .p-detail-section__list {

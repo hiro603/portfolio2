@@ -1888,6 +1888,11 @@ page > detail > section
 .p-detail-section__text + .p-detail-section__text {
   margin-top: 1rem;
 }
+.p-detail-section__text a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
 
 .p-detail-section__list {
   margin-top: 1rem;
