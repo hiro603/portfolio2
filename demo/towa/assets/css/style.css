@@ -718,6 +718,12 @@ layout > header
   .l-header-menu-list {
     flex-direction: row;
     align-items: center;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .l-header-menu-list {
+    gap: 40px;
   }
 }
 
