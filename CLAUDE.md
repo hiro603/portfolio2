@@ -2,11 +2,10 @@
 
 hiro の個人ポートフォリオ。本番 https://webhiro.com（Xserver / FTP 手動アップ）。名刺がわり運用のため全ページ noindex 維持（意図的・外さない）。
 
-## ブランチ運用（最重要・事故源）
+## ブランチ運用
 
 - `main` = FTP本番。Contact は自前PHPフォーム（PHPMailer+SMTP、`contact/mailform/`、config.php は gitignore・FTP手動アップのみ）
-- `netlify` = Netlify 自動デプロイ。Contact は Netlify Forms（PHP不可）
-- 両ブランチの差分は `contact/index.html` のみに保つ。**netlify→main の PR は出さない**。共通変更は main 起点 → netlify へ一方向マージ（詳細手順は memory: portfolio-branch-workflow）
+- Netlify のコピー（`netlify` ブランチ）は 2026-11-16 に退役・削除済み。同期作業は不要
 
 ## ビルド
 
